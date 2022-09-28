@@ -168,6 +168,13 @@ button {
   line-height: 19px;
   margin: 25px 0 30px;
 }
+.home__img::after {
+  content: url(/assets/img/homedecor3.svg);
+  position: absolute;
+  right: 0;
+  top: 5%;
+  z-index: -1;
+}
 .btn {
   cursor: pointer;
   background: var(--blue-color);
@@ -193,6 +200,7 @@ button {
   align-items: center;
   background: var(--black-color);
   padding: 80px 0 91px;
+  margin: 157px 0 0;
 }
 .about__wrapper::after {
   content: '';
