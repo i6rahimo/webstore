@@ -1,0 +1,228 @@
+/*=============== GOOGLE FONTS ===============*/
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --white-color: #ffffff;
+  --black-color: #040404;
+  --blue-color: #4944FF;
+  --black-color-lighten: rgba(4, 4, 4, 0.2);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Lato', sans-serif;
+  --biggest-font-size: 70px;
+  --h1-font-size: 50px;
+  --h2-font-size: 20px;
+  --h3-font-size: 1rem;
+  --normal-font-size: 16px;
+  --small-font-size: .813rem;
+  --smaller-font-size: 14px;
+  --very-small: 12px
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-bold: 700;
+  --font-black: 900;
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 1024px) {
+  :root {
+    /* --biggest-font-size: 4rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem; */
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: .3s; /* For animation dark mode */
+}
+
+h1 {
+  color: var(--font-black);
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-black);
+}
+h2 {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-black);
+  color: var(--font-black);
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button {
+  font-family: var(--body-font);
+  outline: none;
+  border: none;
+}
+
+/*=============== THEME ===============*/
+
+
+/*========== Variables Dark theme ==========*/
+
+
+/*========== 
+    Color changes in some parts of 
+    the website, in dark theme 
+==========*/
+
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1500px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+
+.section {
+  padding: 80px 0 0;
+}
+
+
+.main {
+  overflow: hidden; /* For the animations ScrollReveal*/
+}
+
+/* =================   HEADER =================== */
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0 0;
+}
+.header__nav {
+  flex: 0 1 715px;
+  margin: 0 15px 0;
+}
+.header__ul {
+  display: flex;
+  justify-content: space-between;
+}
+.header__list-drop {
+  display: none;
+}
+
+
+
+
+/* ==================      HOME ========================= */
+
+.home__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 183px 0 0;
+}
+.home__text {
+  width: 716px;
+  max-width: 100%;
+}
+
+.home__title {
+  text-transform: uppercase;
+  line-height: 60px;
+}
+
+.home__subtitle {
+  text-transform: uppercase;
+  font-size: var(--normal-font-size);
+  line-height: 19px;
+  margin: 25px 0 30px;
+}
+.btn {
+  cursor: pointer;
+  background: var(--blue-color);
+  color: var(--white-color);
+  font-weight: var(--font-black);
+  text-transform: uppercase;
+  font-size: 22px;
+  padding: 27px 41px;
+  border-radius: 50px;
+}
+
+
+
+
+
+/* ====================  ABOUT ======================= */
+
+.about__wrapper{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--black-color);
+  padding: 80px 0 91px;
+}
+.about__wrapper::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  background: var(--black-color);
+  z-index: -1;
+}
+.about__line {
+  width: 2px;
+  opacity: .5;
+  height: 60px;
+  background: rgba(255, 255, 255, 1);
+  margin: 0 34px 0;
+}
+.about__item:nth-child(1) {
+  width: 397px;
+}
+.about__item:nth-child(2) {
+  width: 397px;
+}
+.about__item p {
+  font-size: 25px;
+  text-align: center;
+  color: var(--white-color);
+  font-weight: var(--font-black);
+  text-transform: uppercase;
+}
