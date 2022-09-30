@@ -11,7 +11,10 @@
         
         
         <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+                    />
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="/assets/css/styles.css">
@@ -103,8 +106,33 @@
             </section>
 
             <!--==================== POPULAR ====================-->
-            <section class="section" id="popular">
-                
+            <section class="project container section">
+                <div class="project__wrapper">
+                    <div class="project__title">
+                        <p class="project___title-text">НАШИ ПРОЕКТЫ</p>
+                        <h2 class="project__title-title">WEB-РАЗРАБОТКА</h2>
+                    </div>
+                    <div class="swiper-web">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper-web">
+                          <!-- Slides -->
+                          <div class="swiper-slide">Slide 1</div>
+                          <div class="swiper-slide">Slide 1</div>
+                          <div class="swiper-slide">Slide 1</div>
+                          <div class="swiper-slide">Slide 1</div>
+                          <div class="swiper-slide">Slide 1</div>
+                          <div class="swiper-slide">Slide 2</div>
+                          <div class="swiper-slide">Slide 3</div>
+
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                      
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                      </div>
+                </div>
             </section>
 
             <!--==================== VALUE ====================-->
@@ -132,13 +160,9 @@
         <!--========== SCROLL UP ==========-->
 
 
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src=""></script>
-
-        <!--=============== SWIPER JS ===============-->
-        <script src=""></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
         <!--=============== MAIN JS ===============-->
-        <script src=""></script>
+        <script src="/assets/js/main.js" type="module"></script>
     </body>
 </html>
