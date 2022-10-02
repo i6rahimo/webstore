@@ -75,3 +75,24 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
     },
  
   })
+
+  const swiperComment = new Swiper('.swiper-service_comment', {
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 30,
+    centeredSlides: true,
+    speed: 400,
+    wrapperClass: 'swiper-wrapper-service_comment',
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.comment-button-next',
+      prevEl: '.comment-button-prev ',
+    },
+ 
+  })
