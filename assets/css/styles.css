@@ -172,7 +172,7 @@ button {
   content: url(/assets/img/homedecor3.svg);
   position: absolute;
   right: 0;
-  top: 5%;
+  top: 15%;
   z-index: -1;
 }
 .btn {
