@@ -106,7 +106,7 @@ button {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 1500px;
+  max-width: 1532px;
   margin: auto;
   padding: 0 15px;
 }
@@ -122,26 +122,65 @@ button {
 }
 
 /* =================   HEADER =================== */
-
+.header {
+}
 .header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0 0;
+  height: 152px;
 }
 .header__nav {
-  flex: 0 1 715px;
-  margin: 0 15px 0;
+  position: relative;
+}
+.header__left {
+  display: flex;
+  align-items: center;
+  gap: 111px;
 }
 .header__ul {
+  margin: 0 0 2px;
+  width: 717px;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
+  
 }
 .header__list-drop {
+  margin: 26px 0 0;
+  position: absolute;
   display: none;
 }
+.header__list-drop {
+  display: block;
+}
+.list__drop-img {
+  display: none;
+  gap: 13px;
+}
 
+.list__drop-link {
+  display: block;
+  margin-bottom: 9px;
+}
 
+.header__link-drop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.header__link-drop img {
+  width: 12px;
+  height: 6px;
+  transform: rotate(180deg);
+}
+.header__link {
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  line-height: 19px;
+}
 
 
 /* ==================      HOME ========================= */
@@ -150,7 +189,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 183px 0 0;
+  margin: 73px 0 0;
 }
 .home__text {
   width: 716px;
@@ -186,6 +225,12 @@ button {
   border-radius: 50px;
 }
 
+.home__btn {
+  font-size: 22px;
+  width: 300px;
+  padding: 27px 0;
+  line-height: 26px;
+}
 
 
 
@@ -200,7 +245,7 @@ button {
   align-items: center;
   background: var(--black-color);
   padding: 80px 0 91px;
-  margin: 157px 0 0;
+  margin: 81px 0 0;
 }
 .about__wrapper::after {
   content: '';
@@ -243,7 +288,7 @@ button {
   overflow: hidden;
   width: 100%;
   height: 623px;
-  margin: 47px 0 0;
+  margin: 119px 0 0;
 }
 .swiper-wrapper-graph {
   display: flex;
@@ -311,15 +356,18 @@ button {
 }
 .swiper-button-prev {
   position: absolute;
-  left: -70px;
+  left: -78px;
   z-index: 1;
   transform: rotate(180deg);
+  user-select: none;
 }
 
 .swiper-button-next {
   position: absolute;
-  right: -70px;
+  right: -78px;
   z-index: 1;
+  user-select: none;
+
 }
 .swiper-button-prev, .swiper-button-next {
   content: url('/assets/img/arrow.svg');
@@ -345,12 +393,15 @@ button {
   color: var(--black-color);
   font-weight: var(--font-black);
   position: absolute;
-  bottom: 2px;
+  bottom: 6px;
 }
 
 
 /* ==============  SERVICE ==================== */
 
+.service {
+  margin: -37px auto;
+}
 .service__items {
   display: flex;
   align-items: center;
@@ -370,12 +421,21 @@ button {
   border-radius: 50px;
 }
 .service__item-inner {
+  position: relative;
   background: url(/assets/img/s1.png);
   background-size: cover;
   padding: 20px 50px 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.service__item-inner::before {
+  content: '';
+  position: absolute;
+  display: block;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0) 100%);
+  border-radius: 50px;
 }
 .service__item-inner2 {
   background: url(/assets/img/s2.png);
@@ -390,18 +450,21 @@ button {
   text-align: center;
   font-weight: var(--font-black);
   color: var(--white-color);
+  z-index: 1;
 }
 .service__item-textitem {
   margin: 45px 0 109px;
   display: flex;
   flex-direction: column;
   gap: 15px;
+  z-index: 1;
+
 }
 .service__item-textitem-first {
   margin: 45px 0 148px;
 }
 .service__item-textitem p {
-  font-size: 24px;
+  font-size: 20px;
   color: var(--white-color);
   font-weight: var(--font-regular);
 }
@@ -423,6 +486,26 @@ button {
   height: 388px;
 }
 
+.swiper-wrapper-service-dev {
+  display: flex;
+  width: 100%;
+}
+.swiper-wrapper-service-dev .swiper-slide {
+  flex-shrink: 0;
+}
+
+.swiper-service-dev {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  height: 380px;
+  width: 100%;
+  margin: 55px 0 0;
+}
+.ceo {
+  display: flex;
+  margin: 55px 0 0;
+}
 .swiper-wrapper-service {
   display: flex;
   height: 348px;
@@ -431,6 +514,7 @@ button {
 .swiper-slide-service {
   display: flex;
   background: none;
+  height: auto;
 }
 .swiper-slide-text {
   width: 490px;
@@ -466,6 +550,7 @@ button {
 }
 .swiper-slide-btn {
   padding: 16px 68px;
+  font-size: 18px;
 }
 .project__swiper-service {
   margin: 80px 0 0;
@@ -491,12 +576,9 @@ button {
 .swiper-slide-active.comment-slide p {
   color: var(--white-color);
 }
-.webstore {
-  font-size: 18px;
-  font-weight: 700;
-}
 
 .name {
+  font-size: 10px;
   position: relative;
 }
 
@@ -508,7 +590,7 @@ button {
   height: 1px;
   right: 25%;
   bottom: 7px;
-  background: var(--white-color);
+  background: var(--black-color);
 }
 .name::before {
   content: '';
@@ -518,7 +600,7 @@ button {
   height: 1px;
   left: 25%;
   bottom: 7px;
-  background: var(--white-color);
+  background: var(--black-color);
 }
 .slide-text {
   font-size: 12px;
@@ -536,6 +618,26 @@ button {
   width: 230px;
   height: 230px;
 }
+.swiper-slide-active .name::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 43px;
+  height: 1px;
+  right: 25%;
+  bottom: 7px;
+  background: var(--white-color);
+}
+.swiper-slide-active .name::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 43px;
+  height: 1px;
+  left: 25%;
+  bottom: 7px;
+  background: var(--white-color);
+}
 
 .swiper-service_comment  {
   width: 100%;
@@ -552,6 +654,10 @@ button {
 }
 .comment-slide {
   flex-shrink: 0;
+}
+.webstore.webstore {
+  font-size: 15px ;
+  font-weight: 700;
 }
 /* ==============  REVIEW ======================= */
 
@@ -596,10 +702,10 @@ button {
 }
 .col__text-dream, .col__text-social {
   font-size: 12px;
-line-height: 100%;
-font-weight: 700;
-/* identical to box height, or 12px */
-letter-spacing: 0.01em;
+  line-height: 100%;
+  font-weight: 700;
+  /* identical to box height, or 12px */
+  letter-spacing: 0.01em;
 }
 
 .col__text-text {

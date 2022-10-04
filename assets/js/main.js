@@ -40,11 +40,11 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
  
   })
 
-  const swiperService = new Swiper('.swiper-service', {
+  const swiperServiceDev = new Swiper('.swiper-service-dev', {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 1,
-    wrapperClass: 'swiper-wrapper-service',
+    wrapperClass: 'swiper-wrapper-service-dev',
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
@@ -52,8 +52,8 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
   
     // Navigation arrows
     navigation: {
-      nextEl: '.service-btn-next',
-      prevEl: '.service-btn-prev',
+      nextEl: '.dev-btn-next',
+      prevEl: '.dev-btn-prev',
     },
  
   })
@@ -96,3 +96,25 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
     },
  
   })
+
+
+
+
+  // const openServiceBtn = document.querySelectorAll('.header__link-drop');
+  // openServiceBtn.forEach(e => {
+  //   e.addEventListener('click', el => {
+  //     const self = el.currentTarget;
+  //     self.classList.toggle('drop')
+  //     const dropList = self.querySelectorAll('.header__list-drop')
+  //     if(self.classList.contains('drop')) {
+  //       dropList.forEach(li => {
+  //         li.classList.add('drop')
+  //       })
+  //     }else (!self.classList.contains('drop')) {
+  //       dropList.forEach(li => {
+  //         li.classList.remove('drop')
+  //       })
+  //     }
+  //     console.log(self);
+  //   })
+  // })

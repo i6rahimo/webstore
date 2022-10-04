@@ -25,24 +25,26 @@
         <!--==================== HEADER ====================-->
         <header class="header container" id="header">
             <div class="header__wrapper">
+                <div class="header__left">
                 <picture class="header__logo">
                     <img src="/assets/img/logo.svg" alt="Логотип">
                 </picture>
                 <nav class="header__nav">
                     <ul class="header__ul">
                         <li class="header__list">
-                            <a href="#" class="header__link">Услуги</a>
-                            <ul class="header__list-drop list__drop">
-                                <li class="list__drop-li">
-                                    <a class="list__drop-link" href="">Разработка сайтов <img src="/assets/img/services.svg" alt="Корона"></a>
-                                </li>
-                                <li class="list__drop-li">
-                                    <a class="list__drop-link" href="">Графичкский дизайн</a>
-                                </li>
-                                <li class="list__drop-li">
-                                    <a class="list__drop-link" href="">Продвижение</a>
-                                </li>
-                            </ul>
+                            <a href="#" class="header__link header__link-drop">Услуги <img src="/assets/img/arrow-open.svg" alt="Открыть">
+                                <ul class="header__list-drop  list__drop">
+                                    <li class="list__drop-li">
+                                        <a class="list__drop-link" href="">Разработка сайтов <img src="/assets/img/services.svg" alt="Корона"></a>
+                                    </li>
+                                    <li class="list__drop-li">
+                                        <a class="list__drop-link" href="">Графичкский дизайн</a>
+                                    </li>
+                                    <li class="list__drop-li">
+                                        <a class="list__drop-link" href="">Продвижение</a>
+                                    </li>
+                                </ul>
+                            </a>
                         </li>
                         <li class="header__list">
                             <a href="#" class="header__link">Наши проекты</a>
@@ -54,15 +56,17 @@
                             <a href="#" class="header__link">Отзывы</a>
                         </li>
                         <li class="header__list">
-                            <a href="#" class="header__link">Контакты</a>
-                            <ul class="header__list-drop list__drop">
-                                <img src="/assets/img/vk.svg" alt="Вконтакте">
-                                <img src="/assets/img/youtube.svg" alt="Ютуб">
-                                <img src="/assets/img/telegram.svg" alt="Телеграм">
-                            </ul>
+                            <a href="#" class="header__link header__link-drop header__img">Контакты <img src="/assets/img/arrow-open.svg" alt="Открыть">
+                                <ul class="header__list-drop list__drop ">
+                                    <img src="/assets/img/vk.svg" alt="Вконтакте">
+                                    <img src="/assets/img/youtube.svg" alt="Ютуб">
+                                    <img src="/assets/img/telegram.svg" alt="Телеграм">
+                                </ul>
+                            </a>
                         </li>
                     </ul>
                 </nav>
+            </div>
                 <div class="header__switch"><img src="/assets/img/switch.svg" alt="Переключатель"></div>
             </div>
         </header>
@@ -75,7 +79,7 @@
                     <div class="home__text">
                         <h1 class="home__title">Получите бесплатное обслуживание сайта</h1>
                         <p class="home__subtitle">ЗАКАЖИТЕ РАЗРАБОТКУ САЙТА В КОМПЛКСЕ С ceo <br> оПТИМИЗАЦИЕЙ И ПОЛУЧИТЕ В ПОДАРОК БЕСПЛАТНОЕ <br> ОБСЛУЖИВАНИЕ САЙТА НА 12 МЕСЯЦЕВ</p>
-                        <button class="btn header__btn">Обсудить проект</button>
+                        <button class="btn home__btn">Обсудить проект</button>
                     </div>
                     <div class="home__img">
                         <img src="/assets/img/homebg.png" alt="Главный фон">
@@ -178,7 +182,7 @@
                                 <p>ЛОГОТИП</p>
                                 <p>ГАРАНТИЯ 12 МЕСЯЦЕВ</p>
                             </div>
-                            <p class="service__item-price">40.000Р.</p>
+                            <p class="service__item-price">40.000Р</p>
                         </div>
                             <button class="btn service__item-btn">ЗАКАЗТЬ КОМПЛЕКС</button>
                         </div>
@@ -188,11 +192,11 @@
                             <p class="service__item-title">BUSINESS <img src="/assets/img/services.svg" alt="Корона"></p>
                             <div class="service__item-textitem">
                                 <p>ЛЕНДИНГ</p>
-                                <p>Упаковка бренда</p>
+                                <p>УПАКОВКА БРЕНДА</p>
                                 <p>CEO ПРОДВИЖЕНИЕ</p>
                                 <p>ГАРАНТИЯ 12 МЕСЯЦЕВ</p>
                             </div>
-                            <p class="service__item-price">59.000Р.</p>
+                            <p class="service__item-price">59.000Р</p>
                         </div>
                             <button class="btn service__item-btn">ЗАКАЗТЬ КОМПЛЕКС</button>
                         </div>
@@ -205,7 +209,7 @@
                                 <p>CEO ПРОДВИЖЕНИЕ</p>
                                 <p>ГАРАНТИЯ 12 МЕСЯЦЕВ</p>
                             </div>
-                            <p class="service__item-price">95.000Р.</p>
+                            <p class="service__item-price">95.000Р</p>
                         </div>
                             <button class="btn service__item-btn">ЗАКАЗТЬ КОМПЛЕКС</button>
                         </div>
@@ -215,10 +219,10 @@
                 </div>
                 <div class="project__swiper-web project__swiper-service">
                     <h2>РАЗРАБОТКА САЙТОВ</h2>
-                    <div class="swiper-service">
+                    <div class="swiper-service-dev">
 
                         <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper-service">
+                        <div class="swiper-wrapper-service-dev">
                           <!-- Slides -->
                           <div class="swiper-slide swiper-slide-service">
                               <div class="swiper-slide-img">
@@ -268,8 +272,8 @@
                         
                         <!-- If we need navigation buttons -->
                     </div>
-                    <div class="swiper-button-prev service-btn-prev"></div>
-                    <div class="swiper-button-next service-btn-next"></div>
+                    <div class="swiper-button-prev dev-btn-prev"></div>
+                    <div class="swiper-button-next dev-btn-next"></div>
                 </div>
 
                 <div class="project__swiper-web project__swiper-service">
@@ -334,12 +338,9 @@
 
                 <div class="project__swiper-web project__swiper-service">
                     <h2>ПРОДВИЖЕНИЕ</h2>
-                    <div class="swiper-service swiper-service_graph">
-
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper-service swiper-wrapper-service_graph">
+             
                           <!-- Slides -->
-                          <div class="swiper-slide swiper-slide-service">
+                          <div class="ceo">
                               <div class="swiper-slide-img">
                                   <img src="/assets/img/c.png" alt="Сайт визитка">
                               </div>
@@ -352,7 +353,8 @@
                                   </div>
                               </div>
                           </div>                        
-                </div>
+                
+           
                 </div>
             </section>
 
@@ -399,7 +401,7 @@
             <section class="review section container">
                 <div class="project__title">
                     <p class="project___title-text">О НАС</p>
-                    <h2 class="project__title-title">УЗНАЙТКЕ О НАС БОЛЬШЕ</h2>
+                    <h2 class="project__title-title">УЗНАЙТЕ О НАС БОЛЬШЕ</h2>
                 </div>
                 <div class="review__content">
                     <div class="review__col-one">
