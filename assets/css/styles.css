@@ -106,7 +106,7 @@ button {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 1532px;
+  max-width: 1564px;
   margin: auto;
   padding: 0 15px;
 }
@@ -151,8 +151,16 @@ button {
   position: absolute;
   display: none;
 }
-.header__list-drop {
+.header__link-drop:hover ~ .header__list-drop{
   display: block;
+}
+.header__list-drop:hover {
+  display: block;
+}
+.drop-img.rotate{
+  transform: rotate(0deg);
+}
+.header__list-drop {
 }
 .list__drop-img {
   display: none;
@@ -207,11 +215,16 @@ button {
   line-height: 19px;
   margin: 25px 0 30px;
 }
+.home__img {
+  overflow: hidden;
+  width: 670px;
+  height: 418px;
+}
 .home__img::after {
   content: url(/assets/img/homedecor3.svg);
   position: absolute;
   right: 0;
-  top: 15%;
+  top: 8%;
   z-index: -1;
 }
 .btn {
@@ -232,7 +245,24 @@ button {
   line-height: 26px;
 }
 
-
+.swiper {
+  position: relative;
+  display: flex;
+}
+.swiper-wrapper-home{
+  /* width: 670px;  */
+  display: flex;
+}
+.home-slide.home-slide {
+  width: 100%;
+  height: 100%;
+  /* height: 418px; */
+  background: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* flex-shrink: 0; */
+}
 
 
 /* ====================  ABOUT ======================= */
@@ -845,7 +875,55 @@ button {
   width: 100%;
   border-radius: 50px 50px 0 0;
 }
-
+.check__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.check {
+  padding-left: 40px;
+}
+.check__box {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  margin-left: -16px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 0.5px solid var(--black-color);
+}
+.check__input:checked + .check__box {
+  border: none;
+  background: #4944FF;
+}
+.check__input:focus + .check__box {
+  box-shadow:
+  0 0 0 0.1em #4A90E2,  
+  0 0 0 0.2em #885FFF;
+}
+.check__input:disabled + .check__box {
+  box-shadow: 0 0 0 0.1em #9B9B9B;
+}
+.check  {
+  display: flex;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  align-items: center;
+}
+.check__input:checked:disabled + .check__box {
+  background-color: #9B9B9B;
+}
+.choose__group-wrapper {
+  display: flex;  
+  align-items: center;
+}
+.contact__form-choose p {
+  text-align: center;
+  margin: 0 0 25px;
+}
 .label {
   display: flex;
   flex-direction: column;
@@ -859,7 +937,7 @@ button {
 .form__btn {
   padding: 17px 66px 17px;
   font-size: 18px;
-  margin: 46px 0 0;
+  margin: 46px 0 8px;
 }
 .form__politic {
   font-size: 12px;
@@ -887,6 +965,7 @@ button {
 }
 
 .footer__text p {
+  font-size: 12px;
   color: var(--white-color);
 }
 .footer__social {

@@ -99,22 +99,18 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
 
 
 
+  const swiper = new Swiper('.swiper-home', {
+    // Optional parameters
+    direction: 'horizontal',
+    wrapperClass: 'swiper-wrapper-home',
+    loop: true,
+    
+    slidesPerView:1,
 
-  // const openServiceBtn = document.querySelectorAll('.header__link-drop');
-  // openServiceBtn.forEach(e => {
-  //   e.addEventListener('click', el => {
-  //     const self = el.currentTarget;
-  //     self.classList.toggle('drop')
-  //     const dropList = self.querySelectorAll('.header__list-drop')
-  //     if(self.classList.contains('drop')) {
-  //       dropList.forEach(li => {
-  //         li.classList.add('drop')
-  //       })
-  //     }else (!self.classList.contains('drop')) {
-  //       dropList.forEach(li => {
-  //         li.classList.remove('drop')
-  //       })
-  //     }
-  //     console.log(self);
-  //   })
-  // })
+    autoplay: {
+      delay: 2000,
+    },
+    speed: 1000,
+
+  });
+  

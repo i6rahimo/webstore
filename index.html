@@ -32,19 +32,19 @@
                 <nav class="header__nav">
                     <ul class="header__ul">
                         <li class="header__list">
-                            <a href="#" class="header__link header__link-drop">Услуги <img src="/assets/img/arrow-open.svg" alt="Открыть">
-                                <ul class="header__list-drop  list__drop">
-                                    <li class="list__drop-li">
-                                        <a class="list__drop-link" href="">Разработка сайтов <img src="/assets/img/services.svg" alt="Корона"></a>
-                                    </li>
-                                    <li class="list__drop-li">
-                                        <a class="list__drop-link" href="">Графичкский дизайн</a>
-                                    </li>
-                                    <li class="list__drop-li">
-                                        <a class="list__drop-link" href="">Продвижение</a>
-                                    </li>
-                                </ul>
+                            <a href="#" class="header__link header__link-drop header__droplist-links ">Услуги <img src="/assets/img/arrow-open.svg" alt="Открыть">
                             </a>
+                            <ul class="header__list-drop  list__drop">
+                                <li class="list__drop-li">
+                                    <a class="list__drop-link" href="">Разработка сайтов <img src="/assets/img/services.svg" alt="Корона"></a>
+                                </li>
+                                <li class="list__drop-li">
+                                    <a class="list__drop-link" href="">Графичкский дизайн</a>
+                                </li>
+                                <li class="list__drop-li">
+                                    <a class="list__drop-link" href="">Продвижение</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="header__list">
                             <a href="#" class="header__link">Наши проекты</a>
@@ -56,13 +56,13 @@
                             <a href="#" class="header__link">Отзывы</a>
                         </li>
                         <li class="header__list">
-                            <a href="#" class="header__link header__link-drop header__img">Контакты <img src="/assets/img/arrow-open.svg" alt="Открыть">
-                                <ul class="header__list-drop list__drop ">
-                                    <img src="/assets/img/vk.svg" alt="Вконтакте">
-                                    <img src="/assets/img/youtube.svg" alt="Ютуб">
-                                    <img src="/assets/img/telegram.svg" alt="Телеграм">
-                                </ul>
+                            <a href="#" class="header__link header__link-drop header__droplist-img">Контакты <img class="drop-img" src="/assets/img/arrow-open.svg" alt="Открыть">
                             </a>
+                            <ul class="header__list-drop list__drop header__droplist-img_dop">
+                                <img src="/assets/img/vk.svg" alt="Вконтакте">
+                                <img src="/assets/img/youtube.svg" alt="Ютуб">
+                                <img src="/assets/img/telegram.svg" alt="Телеграм">
+                            </ul>
                         </li>
                     </ul>
                 </nav>
@@ -82,8 +82,22 @@
                         <button class="btn home__btn">Обсудить проект</button>
                     </div>
                     <div class="home__img">
-                        <img src="/assets/img/homebg.png" alt="Главный фон">
-                        <!-- <img class="decor3" src="/assets/img/homedecor3.svg" alt="Главный фон"> -->
+                        <div class="swiper-home">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper-home">
+                              <!-- Slides -->
+                              <div class="swiper-slide home-slide">
+                                  <img src="/assets/img/homebg.png" alt="Главный фон">
+                              </div>
+                              <div class="swiper-slide home-slide">
+                                <img src="/assets/img/home1.png" alt="Главный фон">
+                              </div>
+                              <div class="swiper-slide home-slide">
+                                <img src="/assets/img/home2.png" alt="Главный фон">
+                              </div>
+                            </div>
+                          
+                          </div>
                     </div>
                 </div>
             </section>
@@ -493,11 +507,29 @@
                                 E-MAIL
                                 <input class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
                             </label>
-                            <p class="name-title">ПРЕДМЕТ ЗВОНКА</p>
+                            <div class="contact__form-choose">
+                                <p class="name-title">ПРЕДМЕТ ЗВОНКА</p>
+                                <div class="choose__group-wrapper">
+                                    <div class="choose__group">
+                                        <label class="check option">
+                                            <input class="check__input" type="checkbox">
+                                            <span class="check__box"></span>
+                                            Обсудить заказ
+                                        </label>
+                                    </div>
+                                    <div class="choose__group">
+                                        <label class="check option">
+                                            <input class="check__input" type="checkbox" checked>
+                                            <span class="check__box"></span>
+                                            Консультация
+                                        </label>
+                                </div>
+                            </div>
+                            <!-- <p class="name-title">ПРЕДМЕТ ЗВОНКА</p>
                             <label for="">
                                 <input type="checkbox" name="talk" id="">
                                 <input type="checkbox" name="cansult" id="">
-                            </label>
+                            </label> -->
                             <button class="btn form__btn">ЗАКАЗАТЬ ЗВОНОК</button>
                             <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="">политикой конфеденциальности</a></p>
                         </div>
