@@ -151,16 +151,14 @@ button {
   position: absolute;
   display: none;
 }
-.header__link-drop:hover ~ .header__list-drop{
+.header__link-drop.drop ~ .header__list-drop{
   display: block;
+}
+.header__link-drop img.rotate {
+  transform: rotate(0deg);
 }
 .header__list-drop:hover {
   display: block;
-}
-.drop-img.rotate{
-  transform: rotate(0deg);
-}
-.header__list-drop {
 }
 .list__drop-img {
   display: none;
@@ -196,8 +194,7 @@ button {
 .home__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin: 73px 0 0;
+  margin: 149px 0 0;
 }
 .home__text {
   width: 716px;
@@ -216,7 +213,7 @@ button {
   margin: 25px 0 30px;
 }
 .home__img {
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 670px;
   height: 418px;
 }
@@ -224,7 +221,7 @@ button {
   content: url(/assets/img/homedecor3.svg);
   position: absolute;
   right: 0;
-  top: 8%;
+  top: 11%;
   z-index: -1;
 }
 .btn {
@@ -245,17 +242,21 @@ button {
   line-height: 26px;
 }
 
-.swiper {
+.swiper-home {
   position: relative;
-  display: flex;
+  overflow: hidden;
+  top: -44px;
 }
 .swiper-wrapper-home{
-  /* width: 670px;  */
+  width: 100%;
+  height: 100%; 
   display: flex;
+  /* overflow: hidden; */
 }
 .home-slide.home-slide {
   width: 100%;
   height: 100%;
+  flex-shrink: 0;
   /* height: 418px; */
   background: none;
   background-size: cover;
@@ -275,7 +276,7 @@ button {
   align-items: center;
   background: var(--black-color);
   padding: 80px 0 91px;
-  margin: 81px 0 0;
+  margin: 50px 0 0;
 }
 .about__wrapper::after {
   content: '';
@@ -325,6 +326,9 @@ button {
   position: relative;
   height: 100%;
   width: 100%;
+}
+.swiper-wrapper-graph .swiper-slide {
+  background: none;
 }
 .swiper-web {
   position: relative;

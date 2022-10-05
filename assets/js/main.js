@@ -104,7 +104,7 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
     direction: 'horizontal',
     wrapperClass: 'swiper-wrapper-home',
     loop: true,
-    
+
     slidesPerView:1,
 
     autoplay: {
@@ -114,3 +114,14 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
 
   });
   
+
+
+
+  const dropBtn = document.querySelectorAll('.header__link-drop')
+  dropBtn.forEach(e => {
+    e.addEventListener('click', el => {
+      e.classList.toggle('drop')    
+      const img = e.querySelector('img')
+      img.classList.toggle('rotate')
+    })
+  })
