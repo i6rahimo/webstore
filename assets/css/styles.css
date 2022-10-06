@@ -155,8 +155,9 @@ button {
   display: block;
 }
 .header__link-drop img.rotate {
-  transform: rotate(0deg);
+  transform: rotate(180deg);
 }
+
 .header__list-drop:hover {
   display: block;
 }
@@ -179,7 +180,7 @@ button {
 .header__link-drop img {
   width: 12px;
   height: 6px;
-  transform: rotate(180deg);
+  transform: rotate(0deg);
 }
 .header__link {
   text-transform: uppercase;
@@ -319,7 +320,10 @@ button {
   overflow: hidden;
   width: 100%;
   height: 623px;
-  margin: 119px 0 0;
+  margin: 50px 0 0;
+}
+.swiper-graph-title {
+  margin: 44px 0 0;
 }
 .swiper-wrapper-graph {
   display: flex;
@@ -603,9 +607,23 @@ button {
 }
 .comment-slide p {
   color: var(--black-color);
-  font-size: 12px;
+  font-size: 10px;
   text-align: center;
   width: 335px;
+}
+.comment {
+  display: flex;
+  flex-direction: column;
+}
+.comment__btn {
+  display: flex;
+  align-self: flex-end;
+  font-size: 18px;
+  padding: 16px ;
+  display: block;
+  text-align: center;
+  max-width: 230px;
+  margin: 50px 0 0;
 }
 .swiper-slide-active.comment-slide p {
   color: var(--white-color);
@@ -953,7 +971,12 @@ button {
 .form__politic a {
   text-decoration: underline;
 }
-
+.input::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
 
 /*  ==========  FOOTER ================ */
 
