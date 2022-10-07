@@ -158,14 +158,11 @@ button {
   transform: rotate(180deg);
 }
 
-.header__list-drop:hover {
-  display: block;
-}
+
 .list__drop-img {
   display: none;
   gap: 13px;
 }
-
 .list__drop-link {
   display: block;
   margin-bottom: 9px;
@@ -188,7 +185,20 @@ button {
   letter-spacing: 0.05em;
   line-height: 19px;
 }
+.header__droplist-img_dop {
+  width: 150px;
+  margin: 10px 0 0;
+}
+.header__droplist-img_dop img{
+  /* display: flex; */
+  margin-right: 13px;
+  transition: transform .1s ease;
+}
+.header__droplist-img_dop img:hover {
+  transform: scale(1.4);
+  transition: transform .1s ease;
 
+}
 
 /* ==================      HOME ========================= */
 
