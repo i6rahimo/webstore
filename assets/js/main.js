@@ -110,7 +110,7 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
     autoplay: {
       delay: 2000,
     },
-    speed: 1000,
+    speed: 2500,
 
   });
   

@@ -147,7 +147,7 @@ button {
   
 }
 .header__list-drop {
-  margin: 26px 0 0;
+  margin: 8px 3px 0;
   position: absolute;
   display: none;
 }
@@ -187,7 +187,7 @@ button {
 }
 .header__droplist-img_dop {
   width: 150px;
-  margin: 10px 0 0;
+  margin: 10px -9px 0;
 }
 .header__droplist-img_dop img{
   /* display: flex; */
@@ -197,7 +197,6 @@ button {
 .header__droplist-img_dop img:hover {
   transform: scale(1.4);
   transition: transform .1s ease;
-
 }
 
 /* ==================      HOME ========================= */
@@ -786,7 +785,10 @@ button {
   gap: 13px;
   margin: 15px 0 0;
 }
-
+.col__text-img img:hover {
+  transform: scale(1.4);
+  transition: transform .1s ease;
+}
 .col__three-text {
   margin-top: 24px;
 }
@@ -872,6 +874,10 @@ button {
   margin: 15px 0 27px;
   display: flex;
   gap: 13px;
+}
+.col__second-social img:hover {
+  transform: scale(1.4);
+  transition: transform .1s ease;
 }
 .col__second-text {
   text-align: start;
@@ -1010,6 +1016,10 @@ button {
   justify-content: center;
   gap: 23px;
   margin: 0 0 78px;
+}
+.footer__social img:hover {
+  transform: scale(1.4);
+  transition: transform .1s ease;
 }
 .footer__social img {
   width: 54px;
