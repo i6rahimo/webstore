@@ -465,6 +465,7 @@ button {
   color: var(--black-color-lighten);
   font-size: var(--biggest-font-size);
   font-family: var(--font-wblack);
+  text-transform: lowercase;
 }
 .project__title-title {
   font-size: var(--h2-font-size);
