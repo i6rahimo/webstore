@@ -2,6 +2,18 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"); */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 /*=============== VARIABLES CSS ===============*/
+@font-face {
+  font-family: 'Lato Regular';
+  src: url('../fonts/lato-regular.ttf');
+}
+@font-face {
+  font-family: 'Lato Bold';
+  src: url('../fonts/lato-bold.ttf');
+}
+@font-face {
+  font-family: 'Lato Black';
+  src: url('../fonts/lato-black.ttf');
+}
 :root {
   --white-color: #ffffff;
   --black-color: #040404;
@@ -11,6 +23,9 @@
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Lato', sans-serif;
+  --font-regular: 'Lato Regular';
+  --font-wbold: 'Lato Bold';
+  --font-wblack: 'Lato Black';
   --biggest-font-size: 70px;
   --h1-font-size: 50px;
   --h2-font-size: 20px;
@@ -54,7 +69,8 @@ html {
 }
 
 body {
-  font-family: var(--body-font);
+  font-family: var(--font-regular);
+  /* font-family: var(--body-font); */
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
@@ -65,8 +81,10 @@ h1 {
   color: var(--font-black);
   font-size: var(--h1-font-size);
   font-weight: var(--font-black);
+  font-family: var(--font-wblack);
 }
 h2 {
+  font-family: var(--font-wblack);
   font-size: var(--h2-font-size);
   font-weight: var(--font-black);
   color: var(--font-black);
@@ -317,8 +335,8 @@ button {
   font-size: 25px;
   text-align: center;
   color: var(--white-color);
-  font-weight: var(--font-black);
   text-transform: uppercase;
+  font-family: var(--font-wblack);
 }
 
 
@@ -495,7 +513,7 @@ button {
 .service__item-title {
   font-size: 25px;
   text-align: center;
-  font-weight: var(--font-black);
+  font-family: var(--font-wblack);
   color: var(--white-color);
   z-index: 1;
 }
@@ -517,12 +535,12 @@ button {
 }
 .service__item-price {
   color: var(--white-color);
-  font-weight: var(--font-black);
+  font-family: var(--font-wblack);
   text-align: end;
   font-size: 20px;
 }
 
-.service__item-btn {
+.service__item-btn {  
   border-radius: 0 0 50px 50px;
 }
 
@@ -575,7 +593,7 @@ button {
   margin: 0 30px 0 0;
 }
 .swiper-slide-text__title {
-  font-weight: var(--font-black);
+  font-family: var(--font-wblack);
   font-size: 25px;
 } 
 .swiper-slide-text__subtitle {
@@ -591,7 +609,7 @@ button {
   align-items: center;
 }
 .swiper-slide-price {
-  font-weight: var(--font-black);
+  font-family: var(--font-wblack);
   font-size: 25px;
   color: var(--black-color);
 }
@@ -641,6 +659,7 @@ button {
 .name {
   font-size: 10px;
   position: relative;
+  font-family: var(--font-wbold);
 }
 
 .name::after {
@@ -718,7 +737,7 @@ button {
 }
 .webstore.webstore {
   font-size: 15px ;
-  font-weight: 700;
+  font-family: var(--font-wbold);
 }
 /* ==============  REVIEW ======================= */
 
@@ -747,7 +766,7 @@ button {
 }
 .col__text-up {
   font-size: 12px;
-  font-weight: var(--font-black);
+  font-family: var(--font-wblack);
   color: var(--black-color);
 }
 .col__text-up span {
@@ -756,7 +775,7 @@ button {
 }
 .col__text-main {
   font-size: 50px;
-  font-weight: var(--font-black);
+  font-family: var(--font-wblack);
   color: var(--black-color);
   line-height: 100%;
   letter-spacing: 0.01em;
@@ -764,7 +783,7 @@ button {
 .col__text-dream, .col__text-social {
   font-size: 12px;
   line-height: 100%;
-  font-weight: 700;
+  font-family: var(--font-wbold);
   /* identical to box height, or 12px */
   letter-spacing: 0.01em;
 }
@@ -836,7 +855,7 @@ button {
 
 .name-title {
   font-size: 15px;
-  font-weight: var(--font-black);
+  font-family: var(--font-wblack);
   color: var(--black-color);
   font-style: normal;
 }
