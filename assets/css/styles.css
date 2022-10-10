@@ -205,7 +205,7 @@ button {
 }
 .header__droplist-img_dop {
   width: 150px;
-  margin: 10px -9px 0;
+  margin: 10px -14px 0;
 }
 .header__droplist-img_dop img{
   /* display: flex; */
@@ -256,7 +256,7 @@ button {
   cursor: pointer;
   background: var(--blue-color);
   color: var(--white-color);
-  font-weight: var(--font-black);
+  font-family: var(--font-wblack);
   text-transform: uppercase;
   font-size: 22px;
   padding: 27px 41px;
@@ -268,6 +268,7 @@ button {
   width: 300px;
   padding: 27px 0;
   line-height: 26px;
+  font-family: var(--font-wblack);
 }
 
 .swiper-home {
@@ -426,7 +427,18 @@ button {
   transform: rotate(180deg);
   user-select: none;
 }
-
+.swiper-button-next-graph, .swiper-button-prev-graph {
+  user-select: none;
+}
+.dev-btn-next, .dev-btn-prev {
+  user-select: none;
+}
+.graph-btn-next,.graph-btn-prev {
+  user-select: none;
+}
+.comment-button-next, .comment-button-prev {
+  user-select: none;
+}
 .swiper-button-next {
   position: absolute;
   right: -78px;
@@ -451,7 +463,7 @@ button {
 .project___title-text {
   color: var(--black-color-lighten);
   font-size: var(--biggest-font-size);
-  font-weight: var(--font-black);
+  font-family: var(--font-wblack);
 }
 .project__title-title {
   font-size: var(--h2-font-size);
@@ -754,7 +766,7 @@ button {
   width: 714px;
 }
 .review__col-two  {
-  width: 321px;
+  width: 322px;
   max-width: 100%;
   margin: 0 72px 0 63px;
 }
@@ -851,6 +863,7 @@ button {
 }
 .contact__col-first_name span {
   color: var(--black-color);
+  font-family: var(--font-wblack);
 }
 
 .name-title {
@@ -866,11 +879,12 @@ button {
   padding: 14px 0;
   margin: 10px 0 24px;
   width: 310px;
+
 }
 .input-text a {
   font-style: normal;
   color: var(--blue-color);
-  font-weight: var(--font-bold);
+  font-family: var(--font-wbold);
 }
 .input-text a:nth-child(2) {
   font-size: 12px;
@@ -923,12 +937,12 @@ button {
   margin: 23px 0 29px;
 }
 .form__title {
-  font-size: 12px;
+  font-size: 15px;
   text-align: center;
   background: var(--blue-color);
   padding: 17px 0 16px;
   color: var(--white-color);
-  font-weight: 600;
+  font-family: var(--font-wblack);
   width: 100%;
   border-radius: 50px 50px 0 0;
 }
@@ -1041,8 +1055,8 @@ button {
   transition: transform .1s ease;
 }
 .footer__social img {
-  width: 54px;
-  height: 54px;
+  width: 44px;
+  height: 44px;
 }
 .footer__text {
   text-align: center;
