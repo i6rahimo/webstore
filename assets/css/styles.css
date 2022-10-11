@@ -615,7 +615,6 @@ button {
   font-size: 25px;
 } 
 .swiper-slide-text__subtitle {
-  text-transform: uppercase;
   font-size: 14px;
   color: var(--black-color);
   margin: 20px 0 63px;
@@ -935,7 +934,7 @@ button {
   flex-direction: column;
   align-items: center;
   position: relative;
-  /* padding: 17px 0 29px; */
+  background: var(--white-color);
 }
 .form__wrapper {
   display: flex;
@@ -973,19 +972,38 @@ button {
   overflow: hidden;
   border-radius: 50%;
   border: 0.5px solid var(--black-color);
+  position: absolute;
+  left: 0;
 }
-.check__input:checked + .check__box {
+.check__input {
+  border: 1px solid #040404;
+  width: 11px;
+  height: 11px;
+  border-radius: 100%;
+  margin: 0 0 0 -20px;
+  appearance: none;
+  /* background-color: var(--blue-color); */
+}
+.check__input:checked {
+  background: var(--blue-color);
+  border: none;
+}
+.choose__group {
+  position: relative;
+  width: 150px;
+}
+/* .check__input:checked + .check__box {
   border: none;
   background: #4944FF;
-}
-.check__input:focus + .check__box {
+} */
+/* .check__input:focus + .check__box {
   box-shadow:
   0 0 0 0.1em #4A90E2,  
   0 0 0 0.2em #885FFF;
-}
-.check__input:disabled + .check__box {
+} */
+/* .check__input:disabled + .check__box {
   box-shadow: 0 0 0 0.1em #9B9B9B;
-}
+} */
 .check  {
   display: flex;
   text-transform: uppercase;
@@ -1075,3 +1093,48 @@ button {
 .footer__text p {
   margin-bottom: 7px;
 }
+.popup__wrapper {
+  position: absolute;
+  width: 100%;
+  inset: 0;
+  background:  rgba(4, 4, 4, .5);
+  -webkit-backdrop-filter: blur(2.5px);
+  backdrop-filter: blur(2.5px);
+  z-index: 1;
+}
+.home__popup-wrapper {
+  display: none;
+}
+.home__popup-wrapper.active {
+  display: block;
+}
+.popup__wrapper.close {
+  display: none;
+}
+.popup {
+  position: fixed;
+  width: 648px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+}
+.popup p:nth-child(1) {
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 26px 0;
+}
+.popup img {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  cursor: pointer;
+}
+.popup .input-text {
+  width: 387px;
+}
+.popup .form__btn {
+  margin: 10px 0 38px;
+  width: 100%;
+}
+

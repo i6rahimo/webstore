@@ -125,3 +125,29 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
       img.classList.toggle('rotate')
     })
   })
+
+
+
+const homeBtn = document.querySelector('.home__btn'),
+      homePopup = document.querySelector('.home__popup-wrapper'),
+      closeImg = document.querySelector('.close-popup'),
+      popup = document.querySelector('.popup__wrapper'),
+      serviceBtns = document.querySelectorAll('.form__btn'),
+      servicePopup = document.querySelector('.service__popup-wrapper');
+
+      serviceBtns.forEach(e => {
+        e.addEventListener('click', () => {
+          servicePopup.classList.toggle('active')
+        } )
+      })
+closeImg.addEventListener('click', () => {
+  if(!popup.classList.contains('active')) {
+    popup.classList.add('active')
+  }else {
+    popup.classList.remove('active')
+  }
+  // homePopup.classList.toggle('active')
+})
+homeBtn.addEventListener('click', () => {
+  homePopup.classList.toggle('active')
+})
