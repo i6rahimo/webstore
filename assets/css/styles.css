@@ -70,15 +70,18 @@ html {
 
 body {
   font-family: var(--font-regular);
-  /* font-family: var(--body-font); */
+  font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--body-color);
-  color: var(--text-color);
-  transition: .3s; /* For animation dark mode */
+  background-color: var(--white-color);
+  color: var(--white-color);
+  transition: .3s; 
 }
-
+body.night {
+  background-color: var(--black-color);
+  color: var(--black-color);
+}
 h1 {
-  color: var(--font-black);
+  color: var(--black-color);
   font-size: var(--h1-font-size);
   font-weight: var(--font-black);
   font-family: var(--font-wblack);
@@ -87,7 +90,7 @@ h2 {
   font-family: var(--font-wblack);
   font-size: var(--h2-font-size);
   font-weight: var(--font-black);
-  color: var(--font-black);
+  color: var(--black-color);
 }
 ul {
   list-style: none;
@@ -216,6 +219,24 @@ button {
   transform: scale(1.4);
   transition: transform .1s ease;
 }
+.header__switch {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 60px;
+  height: 32px;
+  padding: 0 0 0 1px;
+  background-color: var(--blue-color);
+  border-radius: 50px;
+  transition: all 1.3s ease-in-out;
+}
+.header__switch.switch {
+  transition: all 1.3s ease-in-out;
+  justify-content: flex-end;
+}
+
+
 
 /* ==================      HOME ========================= */
 
@@ -1156,3 +1177,6 @@ button {
   width: 100%;
 }
 
+.night .project__title-title, .home__title, .home__subtitle, .swiper-slide-text p, .review p, .contact__col-second p, .contact__col-first_name span, .input-text a, .header__link, .list__drop-link  {
+  color: var(--white-color);
+}
