@@ -366,6 +366,10 @@ button {
 .swiper-wrapper-graph .swiper-slide {
   background: none;
 }
+.swiper-slide img {
+  height: 100%;
+  width: 100%;
+}
 .swiper-web {
   position: relative;
   display: flex;
@@ -1094,6 +1098,7 @@ button {
   margin-bottom: 7px;
 }
 .popup__wrapper {
+  display: none;
   position: absolute;
   width: 100%;
   inset: 0;
@@ -1110,6 +1115,19 @@ button {
 }
 .popup__wrapper.close {
   display: none;
+}
+.service__popup-wrapper {
+  /* display: none; */
+  position: absolute;
+  width: 100%;
+  inset: 0;
+  background:  rgba(4, 4, 4, .5);
+  -webkit-backdrop-filter: blur(2.5px);
+  backdrop-filter: blur(2.5px);
+  z-index: 1;
+}
+.service__popup-wrapper.active {
+  display: block;
 }
 .popup {
   position: fixed;

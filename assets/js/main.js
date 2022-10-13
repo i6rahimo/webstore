@@ -127,27 +127,44 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
   })
 
 
+function homePopup() {
+    const homeBtn = document.querySelector('.home__btn'),
+          homePopup = document.querySelector('.home__popup-wrapper'),
+          closeImg = document.querySelectorAll('.close-popup'),
+          popup = document.querySelector('.popup__wrapper');
 
-const homeBtn = document.querySelector('.home__btn'),
-      homePopup = document.querySelector('.home__popup-wrapper'),
-      closeImg = document.querySelector('.close-popup'),
-      popup = document.querySelector('.popup__wrapper'),
-      serviceBtns = document.querySelectorAll('.form__btn'),
-      servicePopup = document.querySelector('.service__popup-wrapper');
 
-      serviceBtns.forEach(e => {
-        e.addEventListener('click', () => {
-          servicePopup.classList.toggle('active')
-        } )
+    closeImg.forEach(e => {
+
+      e.addEventListener('click', () => {
+        if(!popup.classList.contains('active')) {
+          popup.classList.add('active')
+        }else {
+          popup.classList.remove('active')
+        }
       })
-closeImg.addEventListener('click', () => {
-  if(!popup.classList.contains('active')) {
-    popup.classList.add('active')
-  }else {
-    popup.classList.remove('active')
-  }
-  // homePopup.classList.toggle('active')
-})
-homeBtn.addEventListener('click', () => {
-  homePopup.classList.toggle('active')
-})
+
+    })
+    
+    homeBtn.addEventListener('click', () => {
+      homePopup.classList.toggle('active')
+    })
+}
+homePopup()
+function servicePopup() {
+  const serviceBtn = document.querySelector('.service__item-btn'),
+        homePopup = document.querySelector('.service__popup-wrapper'),
+        closeImg = document.querySelector('.close-popup'),
+        popup = document.querySelector('.popup__wrapper');
+  // closeImg.addEventListener('click', () => {
+  //   if(!popup.classList.contains('active')) {
+  //     popup.classList.add('active')
+  //   }else {
+  //     popup.classList.remove('active')
+  //   }
+  // })
+  serviceBtn.addEventListener('click', () => {
+    homePopup.classList.toggle('active')
+  })
+}
+servicePopup()
