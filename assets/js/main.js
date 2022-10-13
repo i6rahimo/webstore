@@ -167,4 +167,17 @@ function servicePopup() {
     homePopup.classList.toggle('active')
   })
 }
-servicePopup()
+servicePopup();
+
+
+
+(function switchNight() {
+  const switchBtn = document.querySelector('.header__switch');
+  const body = document.querySelector('body');
+  switchBtn.addEventListener('click', e => {
+    const el = e.currentTarget;
+    el.classList.toggle('switch')
+    el.classList.toggle('night')
+    body.classList.toggle('night')
+  })
+})()
