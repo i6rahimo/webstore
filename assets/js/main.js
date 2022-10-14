@@ -121,8 +121,11 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
   dropBtn.forEach(e => {
     e.addEventListener('click', el => {
       e.classList.toggle('drop')    
-      const img = e.querySelector('img')
-      img.classList.toggle('rotate')
+      const img = e.querySelectorAll('img')
+      img.forEach(e => {
+
+        e.classList.toggle('rotate')
+      }) 
     })
   })
 
