@@ -172,12 +172,14 @@ servicePopup();
 
 
 (function switchNight() {
-  const switchBtn = document.querySelector('.header__switch');
+  const switchBtn = document.querySelectorAll('.header__switch');
   const body = document.querySelector('body');
-  switchBtn.addEventListener('click', e => {
-    const el = e.currentTarget;
-    el.classList.toggle('switch')
-    el.classList.toggle('night')
-    body.classList.toggle('night')
+  switchBtn.forEach(el => {
+    el.addEventListener('click', e => {
+      const el = e.currentTarget;
+      el.classList.toggle('switch')
+      el.classList.toggle('night')
+      body.classList.toggle('night')
+    })
   })
 })()

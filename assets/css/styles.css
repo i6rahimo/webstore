@@ -419,6 +419,9 @@ button {
 .swiper-pagination-bullet-active {
   background: var(--blue-color);
 }
+.swiper-pagination-bullet {
+  background: #D9D9D9;
+}
 .project__swiper-web {
   position: relative;
 }
@@ -1177,6 +1180,38 @@ button {
   width: 100%;
 }
 
-.night .project__title-title, .home__title, .home__subtitle, .swiper-slide-text p, .review p, .contact__col-second p, .contact__col-first_name span, .input-text a, .header__link, .list__drop-link  {
+.night .header__link,
+.night .home__title,
+.night .home__subtitle,
+.night .list__drop-link,
+.night .swiper-slide-text p,
+.night .review p,
+.night .contact__col-second p,
+.night .input-text a,
+.night .contact__col-first_name span {
   color: var(--white-color);
+}
+
+.night .about__wrapper,
+.night .footer,
+.night .about__wrapper::after,
+.night .about__line {
+  background: var(--black-color);
+  background-color: var(--white-color);
+}
+.night .about__item-text,
+.night .footer p,
+.night .footer a {
+  color: var(--black-color);
+}
+
+.night-logo {
+  display: none;
+}
+
+.night .night-logo {
+  display: block;
+}
+.night .light-logo {
+  display: none;
 }
