@@ -128,61 +128,108 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
       }) 
     })
   })
+  function switchNight() {
+    const switchBtn = document.querySelectorAll('.header__switch');
+    const body = document.querySelector('body');
+    switchBtn.forEach(el => {
+      el.addEventListener('click', e => {
+        const el = e.currentTarget;
+        el.classList.toggle('switch')
+        el.classList.toggle('night')
+        body.classList.toggle('night')
+      })
+    })
+  };
+  switchNight()
 
+
+function popupClose() {
+  const closeImg = document.querySelectorAll('.close-popup'),
+        popup = document.querySelectorAll('.popup__wrapper');
+        
+        closeImg.forEach(e => {
+          e.addEventListener('click', (el) => {
+            const selfImg = el.currentTarget;
+            console.log(selfImg);
+            popup.forEach(e => {
+              //   if(!e.classList.contains('active')) {
+                //     e.classList.add('active')
+                //   }else {
+                  //     e.classList.remove('active')
+                  //   }
+              e.classList.remove('active')
+            })
+          })})}
+popupClose()
 
 function homePopup() {
     const homeBtn = document.querySelector('.home__btn'),
-          homePopup = document.querySelector('.home__popup-wrapper'),
-          closeImg = document.querySelectorAll('.close-popup'),
-          popup = document.querySelector('.popup__wrapper');
+          homePopup = document.querySelector('.home__popup-wrapper');
 
-
-    closeImg.forEach(e => {
-
-      e.addEventListener('click', () => {
-        if(!popup.classList.contains('active')) {
-          popup.classList.add('active')
-        }else {
-          popup.classList.remove('active')
-        }
-      })
-
-    })
-    
     homeBtn.addEventListener('click', () => {
-      homePopup.classList.toggle('active')
+      homePopup.classList.add('active')
     })
 }
 homePopup()
-function servicePopup() {
-  const serviceBtn = document.querySelector('.service__item-btn'),
-        homePopup = document.querySelector('.service__popup-wrapper'),
-        closeImg = document.querySelector('.close-popup'),
-        popup = document.querySelector('.popup__wrapper');
-  // closeImg.addEventListener('click', () => {
-  //   if(!popup.classList.contains('active')) {
-  //     popup.classList.add('active')
-  //   }else {
-  //     popup.classList.remove('active')
-  //   }
-  // })
-  serviceBtn.addEventListener('click', () => {
-    homePopup.classList.toggle('active')
+
+
+
+// function servicePopup() {
+//   const serviceBtn = document.querySelector('.service__item-btn'),
+//         homePopup = document.querySelector('.service__popup-wrapper'),
+//         closeImg = document.querySelector('.close-popup'),
+//         popup = document.querySelector('.popup__wrapper');
+//   closeImg.addEventListener('click', () => {
+//     if(!popup.classList.contains('active')) {
+//       popup.classList.add('active')
+//     }else {
+//       popup.classList.remove('active')
+//     }
+//   })
+//   serviceBtn.addEventListener('click', () => {
+//     homePopup.classList.toggle('active')
+//   })
+// }
+// servicePopup();
+
+
+function commentPopup() {
+  const commentBtn = document.querySelector('.comment__btn');
+  const commentPopup = document.querySelector('.comment__popup-wrapper')
+
+  commentBtn.addEventListener('click', () => {
+    commentPopup.classList.add('active')
   })
 }
-servicePopup();
+
+commentPopup()
 
 
 
-(function switchNight() {
-  const switchBtn = document.querySelectorAll('.header__switch');
-  const body = document.querySelector('body');
-  switchBtn.forEach(el => {
-    el.addEventListener('click', e => {
-      const el = e.currentTarget;
-      el.classList.toggle('switch')
-      el.classList.toggle('night')
-      body.classList.toggle('night')
-    })
+function popupStart() {
+  const popupStartBtn = document.querySelector('.service__item-btn_start'),
+        popupStartWrapper = document.querySelector('.service__popup-wrapper_start');
+
+  popupStartBtn.addEventListener('click', ()=> {
+    popupStartWrapper.classList.toggle('active')
   })
-})()
+}
+popupStart()
+function popupBusines() {
+  const popupBusinessBtn = document.querySelector('.service__item-btn_business'),
+        popupBusinesstWrapper = document.querySelector('.service__popup-wrapper_business');
+
+        popupBusinessBtn.addEventListener('click', ()=> {
+          popupBusinesstWrapper.classList.toggle('active')
+  })
+}
+popupBusines()
+function popupPremium() {
+  const popupPremiumBtn = document.querySelector('.service__item-btn_premium'),
+        popupPremiumWrapper = document.querySelector('.service__popup-wrapper_premium');
+
+        popupPremiumBtn.addEventListener('click', ()=> {
+          popupPremiumWrapper.classList.toggle('active')
+  })
+}
+popupPremium()
