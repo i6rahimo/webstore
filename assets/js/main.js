@@ -157,6 +157,7 @@ function popupClose() {
                 //   }else {
                   //     e.classList.remove('active')
                   //   }
+                  console.log(e);
               e.classList.remove('active')
             })
           })})}
@@ -233,3 +234,46 @@ function popupPremium() {
   })
 }
 popupPremium()
+
+
+// function servicePopupSite() {
+//   const popup = document.querySelector('.site__popup-wrapper');
+//   const btn = document.querySelector('.swiper-service-site-btn');
+//   btn.addEventListener('click', ()=> {
+//     popup.classList.add('active')
+//   })
+// }
+// servicePopupSite()
+
+function projectPopup() {
+  const popup = document.querySelector('.project__popup-wrapper');
+  const btn = document.querySelectorAll('.swiper-project-site-btn');
+  console.log(popup);
+  btn.forEach(e => {
+    e.addEventListener('click', ()=> {
+      popup.classList.toggle('active')
+    })
+  })
+}
+projectPopup()
+
+function logoPopup() {
+  const popup = document.querySelector('.logo__popup-wrapper');
+  const btn = document.querySelectorAll('.swiper-project-logo-btn')
+  btn.forEach(e => {
+    e.addEventListener('click', ()=> {
+      popup.classList.toggle('active')
+    })
+  })
+}
+logoPopup()
+
+function ceoPopup() {
+  const popup = document.querySelector('.ceo__popup-wrapper');
+  const btn = document.querySelector('.ceo-swiper-btn')
+  btn.addEventListener('click', ()=> {
+    popup.classList.toggle('active')
+  })
+} 
+
+ceoPopup()

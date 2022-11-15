@@ -490,7 +490,7 @@ button {
 .project__title {
   position: relative;
 }
-.project___title-text {
+.project___title-text.project___title-text {
   color: var(--black-color-lighten);
   font-size: var(--biggest-font-size);
   font-family: var(--font-wblack);
@@ -638,10 +638,7 @@ button {
 .swiper-slide-img {
   margin: 0 30px 0 0;
 }
-.swiper-slide-text__title {
-  font-family: var(--font-wblack);
-  font-size: 25px;
-} 
+ 
 .swiper-slide-text__subtitle {
   font-size: 14px;
   color: var(--black-color);
@@ -1139,9 +1136,8 @@ textarea:focus {
 }
 .popup__wrapper {
   display: none;
-  position: fixed;
   width: 100%;
-  height: 100%;
+  height: 102%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1155,6 +1151,7 @@ textarea:focus {
 }
 .home__popup-wrapper.active {
   display: block;
+  position: fixed;
 }
 .popup__wrapper.close {
   display: none;
@@ -1258,10 +1255,11 @@ textarea:focus {
 }
 
 .comment__popup-wrapper {
-  display: block;
+  display: none;
 }
 .comment__popup-wrapper.active {
   display: block;
+  position: fixed;
 }
 .comment__popup-wrapper .popup p:nth-child(1) {
   padding: 16px 0;
@@ -1281,17 +1279,28 @@ textarea:focus {
   display: block;
 } 
 #file-input {
-  width: 0.1px;
-	height: 0.1px;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute;
-	z-index: -1;
+  display: none;
 }
-#file-input + label {
+.file-choose {
+  position: relative;
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+}
+.file-choose label {
   font-size: 8px;
   font-family: var(--font-regular);
-  
+  cursor: pointer;
+}
+.file-choose label::before {
+  content: url('../img/file.svg');
+  display: block;
+  width: 14px;
+  height: 8px;
+  z-index: 1;
+  position: absolute;
+  left: -15px;
+  bottom: 4px;
 }
 
 /* .file-wrapper {
@@ -1301,3 +1310,41 @@ textarea:focus {
   font-size: 8px;
   font-family: var(--font-regular);
 } */
+
+
+.site__popup-wrapper {
+  display: none;
+}
+.site__popup-wrapper.active {
+  
+}
+.swiper-slide-text__title  {
+  font-weight: 600;
+  font-family: var(--font-bold);
+  color: var(--black-color);
+  font-size: 25px;
+}
+
+.project__popup-wrapper {
+  display: none;
+}
+.project__popup-wrapper.active {
+  display: block;
+  position: fixed;
+}
+
+.logo__popup-wrapper {
+  display: none;
+}
+.logo__popup-wrapper.active {
+  display: block;
+  position: fixed;
+}
+
+.ceo__popup-wrapper {
+  display: none;
+}
+.ceo__popup-wrapper.active {
+  display: block;
+  position: fixed;
+}
