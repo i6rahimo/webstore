@@ -1261,6 +1261,9 @@ textarea:focus {
   display: block;
   position: fixed;
 }
+.comment__popup-wrapper .form__btn {
+  margin: 0 0 15px;
+}
 .comment__popup-wrapper .popup p:nth-child(1) {
   padding: 16px 0;
 }
@@ -1286,6 +1289,7 @@ textarea:focus {
   display: flex;  
   align-items: center;
   justify-content: center;
+  margin: 10px 0 28px;
 }
 .file-choose label {
   font-size: 8px;
