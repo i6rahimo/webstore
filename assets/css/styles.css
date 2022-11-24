@@ -991,7 +991,7 @@ textarea:focus {
   width: 100%;
   border-radius: 50px 50px 0 0;
   /* border: 12px solid var(--blue-color); */
-  outline: 1px solid var(--blue-color);
+  /* outline: 1px solid var(--blue-color); */
 }
 .check__input {
   position: absolute;
@@ -1142,8 +1142,8 @@ textarea:focus {
   left: 50%;
   transform: translate(-50%, -50%);
   background:  rgba(4, 4, 4, .5);
-  -webkit-backdrop-filter: blur(2.5px);
-  backdrop-filter: blur(2.5px);
+  /* -webkit-backdrop-filter: blur(2.5px); */
+  /* backdrop-filter: blur(2.5px); */
   z-index: 31;
 }
 .home__popup-wrapper {
@@ -1243,8 +1243,8 @@ textarea:focus {
   width: 100%;
   inset: 0;
   background:  rgba(4, 4, 4, .5);
-  -webkit-backdrop-filter: blur(2.5px);
-  backdrop-filter: blur(2.5px);
+  /* -webkit-backdrop-filter: blur(2.5px); */
+  /* backdrop-filter: blur(2.5px); */
   z-index: 2;
 }
 .service__popup-wrapper .popup p:nth-child(1) {
@@ -1323,8 +1323,8 @@ textarea:focus {
   
 }
 .swiper-slide-text__title  {
-  font-weight: 600;
-  font-family: var(--font-bold);
+  /* font-weight: 600; */
+  font-family: var(--font-wblack);
   color: var(--black-color);
   font-size: 25px;
 }

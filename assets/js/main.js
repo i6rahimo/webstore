@@ -277,3 +277,17 @@ function ceoPopup() {
 } 
 
 ceoPopup()
+
+
+
+
+
+
+
+
+const form = document.querySelectorAll('.form');
+form.forEach(e => {
+  const telSelector = e.querySelectorAll('input[type="tel"]');
+  const inputMask = new Inputmask('+7 (999) 999-99-99');
+  inputMask.mask(telSelector);
+})
