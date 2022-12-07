@@ -1412,6 +1412,9 @@ textarea:focus {
 }
 .portfolio__page-btn {
   display: flex;
+  justify-content: center;
+  width: 230px;
+  padding: 16px 0;
   margin-left: auto;
 }
 
@@ -1452,6 +1455,17 @@ textarea:focus {
 }
 
 @media (max-width: 480px) {
+  .simplebar-track.simplebar-vertical  {
+    height: 230px;
+    visibility: visible;
+  }
+  .simplebar-scrollbar {
+    display: block;
+  }
+  .portfolio__page-swiper-wrapper {
+    /* display: flex; */
+    /* flex-direction: column; */
+  }
   .portfolio__page-swiper {
     width: 600px;
     height: 284px;
