@@ -120,7 +120,7 @@
     loop: true,
     slidesPerView: 1,
     centeredSlides: true,
-    direction: 'horizontal',
+    // direction: 'horizontal',
     wrapperClass: 'portfolio__page-swiper-wrapper',
     pagination: {
       el: '.swiper-pagination',
@@ -129,7 +129,16 @@
       nextEl: '.portfolio-page-button-next',
       prevEl: '.portfolio-page-button-prev',
     },
-
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        direction: 'horizontal',
+      },
+      // when window width is >= 480px
+      480: {
+        direction: 'horizontal',
+      }
+    }
   });
   
   
