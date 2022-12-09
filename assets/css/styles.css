@@ -1370,12 +1370,13 @@ textarea:focus {
   width: 1530px;
   height: 640px;
   max-width: 100%;
+  display: flex;
 }
 
 .portfolio__page-swiper-wrapper {
   /* max-width: 100%; */
   /* height: 100%; */
-  /* display: flex; */
+  display: flex;
 }
 
 .portfolio__page-slide {
@@ -1454,7 +1455,12 @@ textarea:focus {
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (orientation:portrait) {
+  .portfolio {
+    display: flex;
+    transform: rotate(90deg);
+    height: 100vw;
+  }
   .simplebar-track.simplebar-vertical  {
     height: 230px;
     visibility: visible;
@@ -1471,25 +1477,27 @@ textarea:focus {
     height: 284px;
   }
   .potfolio__main {
-    margin: 50px 0 0;
+    margin: 14px 0 0;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
-    transform: rotate(90deg);
+    /* transform: rotate(90deg); */
   }
   .portfolio__page-link {
     left: 700px;
     top: 150px;
     position: absolute;
-    transform: rotate(-90deg);
+    /* transform: rotate(-90deg); */
   }
   .potfolio__header {
+    padding: 0;
     position: relative;
-    left: 130px;
-    top: 130px;
+    margin: 14px 0 0;
+    /* left: 130px; */
+    /* top: 130px; */
     /* padding-top: 0;
     margin: 90px 0 auto 100px; */
-    transform: rotate(90deg);
+    /* transform: rotate(90deg); */
   }
   .potrfolio__page-title {
     /* display: flex; */
@@ -1536,6 +1544,7 @@ textarea:focus {
     font-weight: 400;
     font-size: 10px;
     line-height: 12px;
+    width: 254px;
   }
   .swiper-service_comment {
     margin: 0;

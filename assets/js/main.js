@@ -119,7 +119,7 @@
     // Optional parameters
     loop: true,
     slidesPerView: 1,
-    direction: 'vertical',
+    direction: 'horizontal',
     perSlideRotate: 90,
     wrapperClass: 'portfolio__page-swiper-wrapper',
     pagination: {
