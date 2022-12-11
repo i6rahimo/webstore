@@ -1460,7 +1460,7 @@ textarea:focus {
   .portfolio {
     display: flex;
     /* transform: rotate(90deg); */
-    height: 100vw;
+    /* height: 100vw; */
   }
   .potfolio__main {
     max-width: 650px;
