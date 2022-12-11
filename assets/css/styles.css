@@ -1455,7 +1455,7 @@ textarea:focus {
   }
 }
 
-@media screen and (orientation: portrait) and (max-width: 360px) {
+@media screen and (orientation: portrait)  {
   .portfolio {
     display: flex;
     transform: rotate(90deg);
