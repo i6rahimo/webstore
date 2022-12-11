@@ -1455,7 +1455,7 @@ textarea:focus {
   }
 }
 
-@media screen and (orientation: landscape) and (max-width: 360px) {
+@media screen and (orientation: landscape)  {
   .portfolio {
     display: flex;
     /* transform: rotate(90deg); */
@@ -1469,7 +1469,7 @@ textarea:focus {
     display: block;
   }
   .portfolio__page-swiper-wrapper {
-    display: block;
+    /* display: block; */
     /* flex-direction: column; */
   }
   .portfolio__page-swiper {
@@ -1484,10 +1484,10 @@ textarea:focus {
     /* transform: rotate(90deg); */
   }
   .portfolio__page-link {
-    left: 700px;
+    left: 900px;
     top: 150px;
     position: absolute;
-    /* transform: rotate(-90deg); */
+    transform: rotate(-90deg);
   }
   .potfolio__header {
     padding: 0;
@@ -1517,23 +1517,25 @@ textarea:focus {
     top: 241px;
 
   }
-  .portfolio-page-button-prev {
-    left: -70px;
+  .portfolio-page-button-prev.portfolio-page-button-prev  {
+    left: -55px ;
+    bottom: 0;
   }
-  .portfolio-page-button-next {
-    right: 37px;
+  .portfolio-page-button-next.portfolio-page-button-next {
+    right: 42px;
+    bottom: 0;
   }
   .portfolio__page-wrapper {
     width: 700px;
-    margin: 0 0 0 100px;
+    margin: 0 0 0 0;
   }
   .swiper-pagination  {
     display: none;
   }
-  .portfolio__page-btn {
+  .portfolio__page-btn.portfolio__page-btn {
     font-size: 14px;
     padding: 6px 36px;
-    margin: 30px 350px 0 358px;
+    margin: 16px auto 0;
     width: 150px;
   }
   .prompt {
@@ -1552,6 +1554,8 @@ textarea:focus {
   .portfolio__page-link {
     margin: auto;
     padding-left: 50px;
+    
+    
   }
   .portfolio__page-link a {
     font-size: 12px;
