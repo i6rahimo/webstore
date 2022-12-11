@@ -1456,10 +1456,14 @@ textarea:focus {
 }
 
 @media screen and (orientation: landscape)  {
+ 
   .portfolio {
     display: flex;
     /* transform: rotate(90deg); */
     height: 100vw;
+  }
+  .potfolio__main {
+    max-width: 650px;
   }
   .simplebar-track.simplebar-vertical  {
     height: 230px;
@@ -1535,7 +1539,7 @@ textarea:focus {
   .portfolio__page-btn.portfolio__page-btn {
     font-size: 14px;
     padding: 6px 36px;
-    margin: 16px auto 0;
+    margin: 16px auto 10px;
     width: 150px;
   }
   .prompt {
