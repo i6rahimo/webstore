@@ -1458,7 +1458,7 @@ textarea:focus {
 @media screen and (orientation: landscape) and (max-width: 360px) {
   .portfolio {
     display: flex;
-    transform: rotate(90deg);
+    /* transform: rotate(90deg); */
     height: 100vw;
   }
   .simplebar-track.simplebar-vertical  {
