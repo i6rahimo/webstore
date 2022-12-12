@@ -1642,3 +1642,62 @@ textarea:focus {
     height: 273px;
   }
 }
+
+@media (max-width: 481px) {
+  .project___title-text.project___title-text {
+    font-size: 25px;
+  }
+  .project__title-title {
+    font-size: 14px;
+    bottom: 20px;
+  }
+  .prompt {
+    color: #fff;
+    display: block;
+    position: relative;
+    top: 20px;
+    font-size: 10px;
+  }
+  .potrfolio__page-title {
+    margin: 20px 0 20px;
+  }
+  .portfolio__page-slide {
+    height: 156px;
+  }
+  .portfolio__page-swiper {
+    height: 206px;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal { 
+    display: none; 
+  }
+  .portfolio__page-btn {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 7px 36px ;
+    max-width: 150px;
+  }
+  .swiper-button-prev, .swiper-button-next {
+    width: 20px;
+    height: 20px;
+    padding: 6px;
+  }
+  .portfolio__page-link  a{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .portfolio__page-link {
+    /* right: 0; */
+    width: 20px;
+    margin: 0;
+    /* position: absolute; */
+  }
+}
+
+
+@media (max-width: 361px) {
+  .portfolio__page-wrapper {
+    max-height: 156px;
+  }
+}
