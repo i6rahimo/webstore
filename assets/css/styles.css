@@ -1400,7 +1400,8 @@ textarea:focus {
 
 }
 .simplebar-scrollbar {
-
+  left: -3px;
+  min-width: 12px;
   border-radius: 50px;
   background-color: #4944FF;
 }
@@ -1408,8 +1409,9 @@ textarea:focus {
   background: rgba(4, 4, 4, 0.2);
   margin: 30px 15px 15px 0;
   max-height: 667px;
+  max-width: 6px;
   border-radius: 50px;
-
+  overflow: visible;
 }
 .portfolio__page-btn {
   display: flex;
@@ -1568,6 +1570,21 @@ textarea:focus {
   .potrfolio__page-title {
     margin: 20px 0 15px;
   }
+  .simplebar-scrollbar {
+    right:  1px;
+    min-width: 4px;
+    max-height: 30px;
+    border-radius: 50px;
+    background-color: #4944FF;
+  }
+  .simplebar-track, .simplebar-vertical {
+    max-height: 143px;
+    background: rgba(4, 4, 4, 0.2);
+    margin: 6px 7px 6px 0;
+    max-width: 2px;
+    border-radius: 50px;
+    overflow: visible;
+  }
 }
 
 @media (max-width: 1230px) {
@@ -1643,13 +1660,31 @@ textarea:focus {
   }
 }
 
-@media (max-width: 481px) {
+@media (max-width: 768px) {
+  .simplebar-scrollbar {
+    left: -1px;
+    min-width: 6px;
+    max-height: 40px;
+  }
+  .simplebar-track, .simplebar-vertical {
+    max-width: 4px;
+  }
+  .portfolio__page-swiper {
+    max-height: 349px;
+  }
+  .portfolio__page-slide {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 481px) and (orientation: portrait) {
+  
   .project___title-text.project___title-text {
     font-size: 25px;
   }
   .project__title-title {
     font-size: 14px;
-    bottom: 20px;
+    bottom: 15px;
   }
   .prompt {
     color: #fff;
@@ -1665,7 +1700,7 @@ textarea:focus {
     height: 156px;
   }
   .portfolio__page-swiper {
-    height: 206px;
+    height: 170px;
   }
   .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal { 
     display: none; 
@@ -1688,16 +1723,29 @@ textarea:focus {
     line-height: 15px;
   }
   .portfolio__page-link {
-    /* right: 0; */
-    width: 20px;
-    margin: 0;
-    /* position: absolute; */
+    margin: 43px 0px 73px auto;
+    width: 170px;
+  }
+  .simplebar-scrollbar {
+    right:  1px;
+    min-width: 4px;
+    max-height: 30px;
+    border-radius: 50px;
+    background-color: #4944FF;
+  }
+  .simplebar-track, .simplebar-vertical {
+    max-height: 143px;
+    background: rgba(4, 4, 4, 0.2);
+    margin: 6px 7px 6px 0;
+    max-width: 2px;
+    border-radius: 50px;
+    overflow: visible;
   }
 }
 
 
 @media (max-width: 361px) {
   .portfolio__page-wrapper {
-    max-height: 156px;
+    max-height: 170px;
   }
 }

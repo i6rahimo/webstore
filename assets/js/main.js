@@ -119,21 +119,10 @@
     // Optional parameters
     loop: true,
     slidesPerView: 1,
-    // direction: 'vertical',
+    direction: 'horizontal',
     perSlideRotate: 90,
     wrapperClass: 'portfolio__page-swiper-wrapper',
-    breakpoints: {
-      // when window width is >= 320px
-      320: {
-        direction: 'vertical',
-      },
-      360: {
-        direction: 'horizontal',
-      },
-    },
-    pagination: {
-      el: '.swiper-pagination',
-    },
+    
     navigation: {
       nextEl: '.portfolio-page-button-next',
       prevEl: '.portfolio-page-button-prev',
