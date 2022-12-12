@@ -1455,7 +1455,7 @@ textarea:focus {
   }
 }
 
-@media screen and (orientation: landscape)  {
+@media screen and (max-width: 480px) and (orientation: landscape)   {
  
   .portfolio {
     display: flex;
