@@ -994,7 +994,7 @@ textarea:focus {
   justify-content: space-between;
   text-align: center;
   background: var(--blue-color);
-  padding: 17px 28px 16px 20%;
+  padding: 0 28px 0 15%;
   color: var(--white-color);
   font-family: var(--font-wblack);
   width: 100%;
@@ -1761,7 +1761,55 @@ textarea:focus {
   
 }
 @media (max-width: 481px) and (orientation: portrait) {
-  
+  .popup {
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+  }
+  .portfolio__popup-wrapper .popup p:nth-child(1){
+    padding: 10px 0;
+  }
+  .portfolio__popup-wrapper .popup p:nth-child(1) {
+    font-size: 11px;
+  }
+  .portfolio__popup-wrapper .form__btn {
+    font-size: 14px;
+  }
+  .text__popup {
+    gap: 5px;
+    padding: 0 10px 0 0;
+    border-radius: 20px 20px 0 0;
+  }
+  .popup img {
+    width: 18px;
+    height: 18px;
+  }
+  .label {
+    gap: 0;
+  }
+  .name-title {
+    font-size: 11px;
+  }
+  .form__wrapper {
+    margin: 10px 0 10px;
+  }
+  .input-text {
+    padding: 5px 0;
+    font-size: 14px;
+    margin: 10px 0 ;
+  }
+  .form__btn {
+    padding: 10px;
+    margin: 0;
+  }
+  .popup .form__btn {
+    margin: 5px 0 ;
+  }
+  .form__politic {
+    font-size: 11px;
+    word-break: break-all;
+    max-width: 100%;
+  }
   .project___title-text.project___title-text {
     font-size: 25px;
   }
