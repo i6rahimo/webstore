@@ -21,3 +21,23 @@ const portfolioPageSwiper = new Swiper('.portfolio__page-swiper', {
      clickOnTrack: true,
    });
   
+   
+   
+   function pageForm() {
+    const btn = document.querySelector('.portfolio__page-btn');
+    const form = document.querySelector('.portfolio__popup-wrapper')
+    btn.addEventListener('click', ()=> {
+      console.log(form);
+      form.classList.toggle('active');
+    })
+   }
+   pageForm()
+   
+  function closePopup() {
+    const closeBtn = document.querySelector('.close-popup')
+    const form = document.querySelector('.portfolio__popup-wrapper')
+    closeBtn.addEventListener('click', ()=> {
+      form.classList.toggle('active')
+    })
+  }
+  closePopup()
