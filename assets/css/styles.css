@@ -270,7 +270,7 @@ button {
   height: 418px;
 }
 .home__img::after {
-  content: url(/assets/img/homedecor3.svg);
+  content: url(/img/homedecor3.svg);
   position: absolute;
   right: 0;
   top: 11%;
@@ -428,7 +428,7 @@ button {
 }
 .swiper-button-prev-graph,
 .swiper-button-next-graph {
-  content: url('/assets/img/arrow.svg');
+  content: url('/img/arrow.svg');
   background-size: cover;
   background-repeat: no-repeat;
   padding: 3px 13px;
@@ -477,7 +477,7 @@ button {
 
 }
 .swiper-button-prev, .swiper-button-next {
-  content: url('/assets/img/arrow.svg');
+  content: url('/img/arrow.svg');
   background-size: cover;
   background-repeat: no-repeat;
   padding: 3px 13px;
@@ -532,7 +532,7 @@ button {
 }
 .service__item-inner {
   position: relative;
-  background: url(/assets/img/s1.png);
+  background: url(/img/s1.png);
   background-size: cover;
   padding: 20px 50px 24px;
   display: flex;
@@ -548,11 +548,11 @@ button {
   border-radius: 50px;
 }
 .service__item-inner2 {
-  background: url(/assets/img/s2.png);
+  background: url(/img/s2.png);
   background-size: cover;
 }
 .service__item-inner3 {
-  background: url(/assets/img/s3.png);
+  background: url(/img/s3.png);
   background-size: cover;
 }
 .service__item-title {
@@ -1424,6 +1424,12 @@ textarea:focus {
   border-radius: 50px;
   overflow: visible;
 }
+.simplebar-track.simplebar-horizontal {
+  display: none;
+}
+.simplebar-track.simplebar-vertical {
+  display: none;
+}
 .portfolio__page-btn {
   display: flex;
   justify-content: center;
@@ -1715,7 +1721,7 @@ textarea:focus {
     height: 260px;
   }
   .home__img::after { 
-    content: url('../img/home-small-bg.svg');
+    content: url('/img/home-small-bg.svg');
   }
   .about__item p {
     font-size: 14px;
