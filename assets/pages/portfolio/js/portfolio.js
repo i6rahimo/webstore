@@ -10,7 +10,10 @@ const portfolioPageSwiper = new Swiper('.portfolio__page-swiper', {
       nextEl: '.portfolio-page-button-next',
       prevEl: '.portfolio-page-button-prev',
     },
-  
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
   });
   
   
@@ -36,11 +39,17 @@ const portfolioPageSwiper = new Swiper('.portfolio__page-swiper', {
   function closePopup() {
     const closeBtn = document.querySelector('.close-popup')
     const form = document.querySelector('.portfolio__popup-wrapper')
+    const wrapperPopup = document.querySelector('.wrapper-popup');
+    wrapperPopup.addEventListener('click', ()=> {
+      form.classList.toggle('active')
+    })
     closeBtn.addEventListener('click', ()=> {
       form.classList.toggle('active')
     })
   }
   closePopup()
+  
+  
   
   const form = document.querySelector('.form');
   const telSelector = form.querySelector('input[type="tel"]');
