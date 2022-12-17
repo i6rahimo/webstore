@@ -35,6 +35,7 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
     // If we need pagination
     pagination: {
       el: '.swiper-pagination-graph',
+      type: 'bullets',
     },
   
     // Navigation arrows
