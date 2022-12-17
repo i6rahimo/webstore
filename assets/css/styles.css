@@ -274,7 +274,7 @@ button {
   position: absolute;
   right: 0;
   top: 11%;
-  /* z-index: -1; */
+  z-index: -1;
 }
 .btn {
   cursor: pointer;
@@ -1720,6 +1720,7 @@ textarea:focus {
   .home__img {
     height: 260px;
   }
+  
   .home__img::after { 
     content: url('../img/home-small-bg.svg');
   }
