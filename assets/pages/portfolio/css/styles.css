@@ -428,7 +428,7 @@ button {
 }
 .swiper-button-prev-graph,
 .swiper-button-next-graph {
-  content: url('../img/arrow.svg');
+  content: url('/img/arrow.svg');
   background-size: cover;
   background-repeat: no-repeat;
   padding: 3px 13px;
@@ -477,7 +477,7 @@ button {
 
 }
 .swiper-button-prev, .swiper-button-next {
-  content: url('/img/arrow.svg');
+  content: url('../img/arrow.svg');
   background-size: cover;
   background-repeat: no-repeat;
   padding: 3px 13px;
@@ -532,7 +532,7 @@ button {
 }
 .service__item-inner {
   position: relative;
-  background: url(/assets/img/s1.png);
+  background: url(/img/s1.png);
   background-size: cover;
   padding: 20px 50px 24px;
   display: flex;
@@ -1403,7 +1403,7 @@ textarea:focus {
   flex-shrink: 0;
   max-height: 736px;
   object-fit: contain;
-  overflow: scroll;
+  /* overflow: scroll; */
   border-radius: 0;
 }
 
@@ -1425,6 +1425,11 @@ textarea:focus {
   border-radius: 50px;
   background-color: #4944FF;
 }
+.simplebar-track {
+
+}
+.simplebar-horizontal {
+}
 .simplebar-track, .simplebar-vertical {
   background: rgba(4, 4, 4, 0.2);
   margin: 30px 15px 15px 0;
@@ -1432,6 +1437,9 @@ textarea:focus {
   max-width: 6px;
   border-radius: 50px;
   overflow: visible;
+}
+.simplebar-track.simplebar-vertical::-webkit-scrollbar {
+  display: none;
 }
 .portfolio__page-btn {
   display: flex;

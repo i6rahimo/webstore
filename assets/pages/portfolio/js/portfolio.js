@@ -18,12 +18,11 @@ const portfolioPageSwiper = new Swiper('.portfolio__page-swiper', {
   
   
   
-   new SimpleBar(document.getElementById('portfolio__page-slide'),{
+  const simpleBar = new SimpleBar(document.getElementById('portfolio__page-slide'),{
      autoHide: false,
      // scrollbarMaxSize: 40,
      clickOnTrack: true,
    });
-  
    
    
    function pageForm() {
