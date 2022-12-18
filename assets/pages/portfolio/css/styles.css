@@ -1720,7 +1720,7 @@ textarea:focus {
     overflow: visible;
   }
 }
-@media  (max-width: 680px) and (orientation: landscape)   {
+@media all and (max-width: 1024px) and (max-height: 768px) and (orientation:landscape)    {
   .popup {
     width: 300px;
     height: 350px;
