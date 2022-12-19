@@ -1914,6 +1914,9 @@ textarea:focus {
   .label {
     color: black;
   }
+  .simplebar-scrollbar {
+    left: -1px;
+  }
 }
 
 
