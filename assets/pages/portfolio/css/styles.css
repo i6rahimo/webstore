@@ -1778,7 +1778,7 @@ textarea:focus {
   .potfolio__main {
     max-width: 650px;
   }
-  .simplebar-track.simplebar-vertical  {
+  .simplebar-track .simplebar-vertical  {
     height: 230px;
     visibility: visible;
   }
@@ -1890,7 +1890,7 @@ textarea:focus {
     background-color: #4944FF;
   }
   .simplebar-track, .simplebar-vertical {
-    max-height: 143px;
+    max-height: 267px;
     background: rgba(4, 4, 4, 0.2);
     margin: 6px 7px 6px 0;
     max-width: 2px;
@@ -1899,6 +1899,15 @@ textarea:focus {
   }
   .input-text::placeholder {
     font-size: 8px;
+  }
+  .form__wrapper {
+    background-color: var(--white-color);
+  }
+  .popup .input-text {
+    background-color: var(--white-color);
+  }
+  .label {
+    color: black;
   }
 }
 
