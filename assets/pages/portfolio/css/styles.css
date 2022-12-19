@@ -1902,6 +1902,7 @@ textarea:focus {
   }
   .form__wrapper {
     background-color: var(--white-color) !important;
+    z-index: 99999999999999999999 !important;
   }
   .popup .input-text {
     background-color: var(--white-color);
