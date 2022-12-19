@@ -42,6 +42,10 @@
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
+  
+}
+:root {
+  color-scheme: light only;
 }
 
 /* Responsive typography */
