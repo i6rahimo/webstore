@@ -1917,6 +1917,9 @@ textarea:focus {
   .simplebar-scrollbar {
     left: -1px;
   }
+  .portfolio__page-slide {
+    max-height: 280px;
+  }
 }
 
 
