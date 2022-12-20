@@ -54,7 +54,7 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
     wrapperClass: 'swiper-wrapper-service-dev',
     // If we need pagination
     pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper-pagination-service-dev',
     },
   
     // Navigation arrows
@@ -72,7 +72,7 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
     wrapperClass: 'swiper-wrapper-service_graph',
     // If we need pagination
     pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper-pagination-service-graph',
     },
   
     // Navigation arrows
