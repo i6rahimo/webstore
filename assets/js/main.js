@@ -300,3 +300,15 @@ form.forEach(e => {
 })
 
 
+
+
+function showMenu() {
+  const burgerBtn = document.querySelector('.header__burger');
+  const menu = document.querySelector(".header__wrapper");
+  
+  burgerBtn.addEventListener('click', ()=> {
+    menu.classList.toggle('show')
+    burgerBtn.classList.toggle('click')
+  })
+}
+showMenu()
