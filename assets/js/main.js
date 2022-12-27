@@ -69,7 +69,31 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
   
  
   })
-
+  const swiperServiceComplex = new Swiper('.service__complex-items', {
+    direction: 'horizontal',
+    slidesPerView: 3,
+    spaceBetween: 30,
+    wrapperClass: 'service__items-wrapper',
+    slideClass: 'service__item',
+    pagination: {
+      el: '.swiper-pagination-service-dev',
+    },
+  
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      650: {
+        slidesPerView: 3,
+      }
+    },
+    // Navigation arrows
+    navigation: {
+      // nextEl: '.',
+      // prevEl: '.',
+    },
+ 
+  })
   const swiperServiceDev = new Swiper('.swiper-service-dev', {
     direction: 'horizontal',
     loop: true,
