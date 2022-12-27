@@ -16,6 +16,18 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
       type: 'bullets',
     },
   
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      // when window width is >= 480px
+      460: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+    },
   
     // Navigation arrows
     navigation: {
@@ -37,7 +49,18 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
       el: '.swiper-pagination-graph',
       type: 'bullets',
     },
-  
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      // when window width is >= 480px
+      460: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+    },
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next-graph',
@@ -97,6 +120,16 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
       el: '.swiper-pagination',
     },
   
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        centeredSlides: true,
+        spaceBetween: 20,
+      },
+      625: {
+        slidesPerView: 3,
+      }
+    },
     // Navigation arrows
     navigation: {
       nextEl: '.comment-button-next',
@@ -312,3 +345,14 @@ function showMenu() {
   })
 }
 showMenu()
+
+
+function readMore() {
+  const readBtn = document.querySelector('.read-more');
+  const readText = document.querySelector('.col__three-text');
+  
+  readBtn.addEventListener('click', ()=> {
+    readText.classList.toggle('read')
+  })
+}
+readMore()
