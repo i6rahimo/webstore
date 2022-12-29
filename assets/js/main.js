@@ -56,7 +56,7 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
         spaceBetween: 20
       },
       // when window width is >= 480px
-      460: {
+      461: {
         slidesPerView: 3,
         spaceBetween: 30
       },
@@ -82,15 +82,17 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
     breakpoints: {
       320: {
         slidesPerView: 1,
+        loop: true,
+        centeredSlides: true,
       },
-      650: {
+      700: {
         slidesPerView: 3,
       }
     },
     // Navigation arrows
     navigation: {
-      // nextEl: '.',
-      // prevEl: '.',
+      nextEl: '.complex-btn-next',
+      prevEl: '.complex-btn-prev',
     },
  
   })
@@ -209,22 +211,25 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
 
 function popupClose() {
   const closeImg = document.querySelectorAll('.close-popup'),
-        popup = document.querySelectorAll('.popup__wrapper');
+        popup = document.querySelectorAll('.popup__wrapper'),
+        wrapperClose = document.querySelectorAll('.wrapper-popup');
         
         closeImg.forEach(e => {
           e.addEventListener('click', (el) => {
             const selfImg = el.currentTarget;
             console.log(selfImg);
             popup.forEach(e => {
-              //   if(!e.classList.contains('active')) {
-                //     e.classList.add('active')
-                //   }else {
-                  //     e.classList.remove('active')
-                  //   }
-                  console.log(e);
               e.classList.remove('active')
             })
-          })})}
+          })})
+        wrapperClose.forEach(wrapper => {
+          wrapper.addEventListener('click', () => {
+            popup.forEach(e => {
+              e.classList.remove('active')
+            })
+          })
+        })
+}
 popupClose()
 
 function homePopup() {

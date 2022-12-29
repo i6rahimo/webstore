@@ -91,26 +91,29 @@
                 <div class="header__switch"><img src="/assets/img/switch.svg" alt="Переключатель"></div>
             </div>
             <div class="popup__wrapper home__popup-wrapper">
-            <form class="contact__col-third form popup header-popup">
-                <p class="form__title">заполните форму, чтобы обсудить проект</p>
-                <img src="/assets/img/close.svg" alt="Закрыть" class="close-popup">
-                <div class="form__wrapper">
-                <label for="name" class="name-title label">
-                    ИМЯ
-                    <input class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
-                </label>
-                <label for="tel" class="name-title label">
-                    НОМЕР ТЕЛЕФОНА
-                    <input class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
-                </label>
-                <label for="email" class="name-title label">
-                    E-MAIL
-                    <input class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
-                </label>
-                <button class="btn form__btn">ЗАКАЗАТЬ ЗВОНОК</button>
-                <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="">политикой конфеденциальности</a></p>
-            </div>
-            </form>
+                <form class="contact__col-third form popup header-popup">
+                    <div class="popup__header">
+                        <p class="form__title">заполните форму, чтобы обсудить проект</p>
+                        <img src="/assets/img/close.svg" alt="Закрыть" class="close-popup">
+                    </div>
+                    <div class="form__wrapper">
+                    <label for="name" class="name-title label">
+                        ИМЯ
+                        <input class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
+                    </label>
+                    <label for="tel" class="name-title label">
+                        НОМЕР ТЕЛЕФОНА
+                        <input class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
+                    </label>
+                    <label for="email" class="name-title label">
+                        E-MAIL
+                        <input class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
+                    </label>
+                    <button class="btn form__btn">ЗАКАЗАТЬ ЗВОНОК</button>
+                    <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="">политикой конфеденциальности</a></p>
+                </div>
+                </form>
+                <div class="wrapper-popup"></div>
             </div>
             <button class="header__burger">
                 <span></span>
@@ -353,8 +356,9 @@
                                     </form>
                                 </div>  
                             </div>
-                            
                         </div>
+                        <div class="swiper-button-prev complex-btn-prev"></div>
+                        <div class="swiper-button-next complex-btn-next"></div>
                     </div>
                     
                 </div>
@@ -382,6 +386,8 @@
                                 <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="">политикой конфеденциальности</a></p>
                             </div>
                             </form>
+                             <div class="wrapper-popup"></div>
+                            
                         </div> 
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper-service-dev">
