@@ -1152,6 +1152,9 @@ textarea:focus {
   text-transform: uppercase;
 }
 .contact__col-third .popup__header{
+  display: flex;
+}
+.contact .form .popup__header {
   display: block;
 }
 
@@ -1923,6 +1926,12 @@ textarea:focus {
   }
 }
 @media (max-width: 770px) {
+  .swiper-service-dev {
+    margin: 20px 0 0;
+  }
+  .ceo {
+    margin: 20px 0 0;
+  }
   .simplebar-scrollbar {
     left: -1px;
     min-width: 6px;
@@ -1968,6 +1977,9 @@ textarea:focus {
 }
 
 @media (max-width: 700px) { 
+  .review, .review__content, .contact, .contact__content, .footer {
+    margin: 20px auto 0;
+  }
   .header {
     height: 70px;
     position: fixed;
@@ -2214,6 +2226,7 @@ textarea:focus {
   }
   .form {
     border-radius: 20px;
+    margin: auto;
   }
   .form .label .input-text {
     margin: 11px 0 12px;
@@ -2243,11 +2256,32 @@ textarea:focus {
     font-size: 7px;
     line-height: 100%;
   }
+  .footer .header__list:nth-child(5) {
+    margin: 0 0 30px;
+  }
+  .footer .header__list:nth-child(1) {
+    margin: 0 0 30px;
+  }
+  .footer .header__nav {
+    display: none;
+  }
+  .footer__switch {
+    display: none;
+  }
+  .footer__social {
+    display: none;
+  }
+  .footer__text {
+    margin: 42px 0 30px;
+  }
 }
 @media (max-width: 625px) {
   .swiper-service_comment {
     width: 203px;
-    margin: 50px auto 40px;
+    margin: 20px auto 40px;
+  }
+  .service__complex-items, .swiper-graph {
+    margin: 20px auto 0;
   }
   .swiper-slide-text {
     display: none;
@@ -2281,12 +2315,23 @@ textarea:focus {
   .swiper-service_comment {
     /* margin: 20px auto 22px; */
   }
-  
+  .main h2 {
+    font-size: 12px;
+  }
+  .project__title h2 {
+    bottom: 2px;
+  }
+  .swiper-slide-active.comment-slide {
+    height: 273px;
+  }
 }
 
 
 
 @media (max-width: 481px)  {
+  .project__swiper-service {
+    margin: 25px 0 0;
+  }
   .popup {
     width: 300px;
     height: 350px;
