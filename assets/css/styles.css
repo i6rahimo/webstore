@@ -1070,45 +1070,41 @@ textarea:focus {
   border-radius: 50px 50px 0 0;
   gap: 10px;
 }
+.choose label {
+  color: var(--black-color);
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+.choose {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 .check__input {
-  position: absolute;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-}
-.check {
-  padding-left: 30px;
-  color: var(--black-color);
-  font-size: 12px;
-}
-.check__box {
-  position: absolute;
   width: 11px;
   height: 11px;
-  margin-left: -16px;
-  overflow: hidden;
-  border-radius: 50%;
-  border: 0.5px solid var(--black-color);
-  position: absolute;
-  left: 0;
-}
-.check__input {
-  border: 1px solid #040404;
-  width: 11px;
-  height: 11px;
+  display: block;
+  border: 1px solid var(--black-color);
   border-radius: 100%;
-  margin: 0 0 0 -20px;
-  appearance: none;
-  /* background-color: var(--blue-color); */
 }
-.check input[type=radio]:checked {
-  background: var(--blue-color);
+.check__input:checked {
+  background-color: var(--blue-color);
   border: none;
-  /* width: 100%; */
-  /* height: 100%; */
+  
 }
-.choose__group {
+.choose__wrapper {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 300px;
+  gap: 28px;
+  /* max-width: 100%; */
 }
 
 .check  {
@@ -1175,8 +1171,18 @@ textarea:focus {
 
 .footer {
   margin: 80px 0 0;
-  padding: 10px 0 21px;
+  padding: 48px 0 21px;
   background: var(--black-color);
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: safe;
+}
+.footer__left {
+  display: flex;
+  align-items: center;
+  gap: 129px;
 }
 
 .footer__container nav ul li a {
@@ -1901,9 +1907,11 @@ textarea:focus {
     /* flex: 1 0 auto; */
     width: 90%;
     height: auto;
+    gap: 30px;
+    align-items: flex-start;
   }
   .footer__left .header__nav {
-    margin: 44px auto 25px;
+    margin: 0 auto 25px 50px;
   }
   .col__text-up{
     font-size: 12px;
