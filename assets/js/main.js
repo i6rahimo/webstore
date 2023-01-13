@@ -75,9 +75,7 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
     spaceBetween: 30,
     wrapperClass: 'service__items-wrapper',
     slideClass: 'service__item',
-    pagination: {
-      el: '.swiper-pagination-service-dev',
-    },
+    
   
     breakpoints: {
       320: {
@@ -189,7 +187,6 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
       e.classList.toggle('drop')    
       const img = e.querySelectorAll('img')
       img.forEach(e => {
-
         e.classList.toggle('rotate')
       }) 
     })

@@ -544,6 +544,7 @@ button {
 }
 .complex-btn-prev, .complex-btn-next {
   display: none;
+  /* opacity: 0; */
 }
 .service__items {
   display: flex;
@@ -738,10 +739,11 @@ button {
   align-items: center;
   user-select: none;
   background: #F7F7F7;
-  padding: 140px 0 107px;  
+  padding: 140px 67px 107px;  
+  max-width: 490px;
 }
 .swiper-slide-active.comment-slide {
-  padding: 97px 0 107px;
+  padding: 97px 67px 107px;
   
 }
 .swiper-slide-active.comment-slide {
@@ -815,11 +817,13 @@ textarea:focus {
 .comment-slide img {
   width: 144px;
   height: 144px;
-  margin: 0 0 40px;
+  margin: 0 0 83px;
 }
 .swiper-slide-active.comment-slide img {
   width: 230px;
   height: 230px;
+  margin: 0 0 40px;
+  
 }
 
 .swiper-service_comment  {
@@ -827,7 +831,7 @@ textarea:focus {
   position: relative;
   display: flex;
   overflow: hidden;
-  margin: 50px 0 0;
+  margin: 50px 0 20px;
 }
 .swiper-wrapper-service_comment {
   display: flex;
@@ -1109,7 +1113,7 @@ textarea:focus {
   position: relative;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   max-width: 300px;
   gap: 28px;
   /* max-width: 100%; */
@@ -1752,7 +1756,7 @@ textarea:focus {
   }
 
   .service__item-inner .service__item-textitem {
-    margin: 17px 0 52px;
+    margin: 17px 0 42px;
   }
   .service__item-inner2 .service__item-textitem {
     margin: 17px 0 21px;
@@ -2527,6 +2531,18 @@ textarea:focus {
   .popup__header {
     gap: 5px;
   }
+  .project___title-text.project___title-text {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .project__title h2 {
+    bottom: -4px;
+  }
+  .comment__btn {
+    position: relative;
+    bottom: 25px;
+  }
 }
 
 @media (max-width: 460px) {
@@ -2544,9 +2560,21 @@ textarea:focus {
     display: flex;
     top: 14%;
   }
-  .choose__wrapper {
+  /* .choose__wrapper {
     justify-content: center;
     gap: 10px;
+  } */
+  .choose label {
+    font-weight: 900;
+    font-size: 7px;
+    line-height: 8px;
+  }
+  .check__input {
+    width: 6px;
+    height: 6px;
+  }
+  .contact__col-third .form__btn {
+    width: 100%;
   }
 }
 
