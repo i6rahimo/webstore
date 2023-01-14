@@ -489,10 +489,9 @@ button {
 }
 .swiper-button-next {
   position: absolute;
-  right: -78px;
   z-index: 1;
+  right: -78px;
   user-select: none;
-
 }
 .swiper-button-prev, .swiper-button-next {
   content: url('/assets/img/arrow.svg');
@@ -1651,7 +1650,7 @@ textarea:focus {
     left: -1px;
     top: auto;
   }
-  .swiper-button-next, .swiper-button-next-graph {
+  .swiper-button-next {
     right: 0;
     top: auto;
   }
@@ -1756,7 +1755,7 @@ textarea:focus {
   }
 
   .service__item-inner .service__item-textitem {
-    margin: 17px 0 42px;
+    margin: 17px 0 52px;
   }
   .service__item-inner2 .service__item-textitem {
     margin: 17px 0 21px;
@@ -2349,9 +2348,9 @@ textarea:focus {
   .footer__text {
     margin: 42px 0 30px;
   }
-  /* #comment {
-    max-width: 202px;
-  } */
+  .service__item-inner .service__item-textitem {
+    margin: 17px 0 42px;
+  }
 }
 @media (max-width: 625px) {
   .swiper-service_comment {
@@ -2548,13 +2547,14 @@ textarea:focus {
 @media (max-width: 460px) {
   .swiper-slide {
     width: 203px;
-    height: 246px;
+    /* height: 246px; */
   }
   .swiper-button-prev,.swiper-button-next, .swiper-button-prev-graph {
-    top: 50%;
+    
+    /* top: 50%; */
   }
   .swiper-button-next-graph, .swiper-button-prev-graph {
-    top: 40%;
+    /* top: 40%; */
   }
   .complex-btn-prev, .complex-btn-next {
     display: flex;
