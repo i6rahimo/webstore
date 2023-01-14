@@ -255,7 +255,7 @@ button {
 }
 
 .home__subtitle {
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-size: var(--normal-font-size);
   line-height: 19px;
   margin: 25px 0 30px;
@@ -370,7 +370,7 @@ button {
   margin: 0 auto 80px;
 }
 .project__wrapper {
-  margin: 30px 0 0;
+  margin: 80px 0 0;
 }
 .swiper-graph {
   position: relative;
@@ -1154,6 +1154,7 @@ textarea:focus {
   font-family: var(--font-wblack);
 }
 .form__politic {
+  margin: 0;
   font-size: 12px;
   text-align: center;
   /* width: 330px; */
