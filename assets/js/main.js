@@ -23,7 +23,7 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
         spaceBetween: 20
       },
       // when window width is >= 480px
-      460: {
+      461: {
         slidesPerView: 3,
         spaceBetween: 30
       },
