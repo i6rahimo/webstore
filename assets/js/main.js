@@ -117,6 +117,7 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
     loop: true,
     slidesPerView: 1,
     wrapperClass: 'swiper-wrapper-service_graph',
+    slideClass: 'swiper-slide-service-graph',
     // If we need pagination
     pagination: {
       el: '.swiper-pagination-service-graph',
