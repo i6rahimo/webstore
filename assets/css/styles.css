@@ -983,6 +983,7 @@ textarea:focus {
   font-size: 15px;
   font-weight: var(--font-black);
   text-align: center;
+  font-family: var(--font-wbold);
 }
 .contact__col-first_name span {
   color: var(--black-color);
@@ -2086,7 +2087,7 @@ textarea:focus {
     margin: 0 0 12px;
   }
   .swiper-service_graph {
-    height: 280px;
+    /* height: 280px; */
   }
   .col__second-text {
     font-weight: 400;
@@ -2147,6 +2148,10 @@ textarea:focus {
   }
   .footer {
     margin: 40px 0 0;
+  }
+  .col__text-img a img {
+    width: 21px;
+    height: 21px;
   }
 }
 
@@ -2677,6 +2682,9 @@ textarea:focus {
   }
   .contact__col-third .form__btn {
     width: 100%;
+  }
+  .swiper-button-prev, .swiper-button-next {
+    bottom: -7px;
   }
 }
 
