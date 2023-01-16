@@ -550,6 +550,7 @@ button {
   flex-shrink: 0;
 }
 .complex-btn-prev, .complex-btn-next {
+  opacity: 1 !important;
   display: none;
   /* opacity: 0; */
 }
