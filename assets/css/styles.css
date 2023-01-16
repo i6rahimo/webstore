@@ -1702,7 +1702,7 @@ textarea:focus {
   }
   .header__nav {
     max-width: 100%;
-    margin: 20px auto 0 40px;
+    margin: 20px auto 0 20px;
   }
   .header__switch {
     min-width: 63px;
@@ -2169,13 +2169,13 @@ textarea:focus {
     position: fixed;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    /* align-items: center; */
     height: 100vh;
     width: 80%;
     top: 0;
     right: 0;
     background-color: var(--white-color);
-    z-index: 9;
+    z-index: 20;
     padding: 150px 0 0;
     transition: transform .3s ease;
     transform: translateX(100%);
@@ -2207,7 +2207,7 @@ textarea:focus {
   }
   .header__burger {
     display: flex;
-    z-index: 9;
+    z-index: 21;
   }
   .header__wrapper.show {
     transform: translateX(0);
@@ -2230,7 +2230,7 @@ textarea:focus {
     padding: 7px;
   }
   .header__switch {
-    margin: 0;
+    margin: 0 auto 0;
   }
   
   .home__wrapper {
