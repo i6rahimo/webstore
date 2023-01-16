@@ -1627,8 +1627,6 @@ textarea:focus {
 }
 .swiper-help {
   display: none;
-  position: relative;
-  top: -20px;
 }
 .swiper-help-wrapper {
   display: flex;
@@ -2511,6 +2509,19 @@ textarea:focus {
   .swiper-slide-img img {
     width: auto;
   }
+  .swiper-help {
+    display: flex;
+    margin: 20px 0 0;
+  }
+  .swiper-help img {
+    width: 6px;
+    height: 6px;
+  }
+  .swiper-slide-service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 
@@ -2709,10 +2720,19 @@ textarea:focus {
     top: 14% ;
   }
   .project__swiper-service {
-    margin: 0;
+    /* margin: 0; */
   }
-  .dev-btn-prev.dev-btn-prev, .dev-btn-next.dev-btn-next {
-    top: 101%;
+  .dev-btn-prev.dev-btn-prev, .dev-btn-next.dev-btn-next, .graph-btn-prev{ 
+    top: 96%;
+  }
+  .project__swiper-web  {
+    top: 96%;
+  }
+  .comment-button-next.comment-button-next {
+    top: 113%;
+  }
+  .comment-button-prev.comment-button-prev {
+    top: 113%;
   }
 }
 
