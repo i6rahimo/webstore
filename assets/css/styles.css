@@ -1322,7 +1322,8 @@ textarea:focus {
 .night .contact__col-second p,
 .night .input-text a,
 .night .contact__col-first_name span,
-.night .project__title-title {
+.night .project__title-title,
+.night .form__title {
   color: var(--white-color);
 }
 
