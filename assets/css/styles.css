@@ -14,6 +14,10 @@
   font-family: 'Lato Black';
   src: url('../fonts/lato-black.ttf');
 }
+@font-face {
+  font-family: 'Lato Heavy';
+  src: url('../fonts/lato-heavy.ttf');
+}
 :root {
   --white-color: #ffffff;
   --black-color: #040404;
@@ -988,7 +992,7 @@ textarea:focus {
 }
 .contact__col-first_name span {
   color: var(--black-color);
-  font-family: var(--font-wblack);
+  font-family: 'Lato Heavy';
 }
 .contact__content-left{
   display: flex;
@@ -1087,6 +1091,7 @@ textarea:focus {
   text-align: center;
   padding: 28px 28px 28px 28px;
   margin: 0 25px;
+  bottom: 2px;
 }
 .form__title {
   font-size: 15px;
@@ -1109,7 +1114,8 @@ textarea:focus {
 }
 .choose label {
   color: var(--black-color);
-  font-weight: 900;
+  /* font-weight: 900; */
+  font-family: 'Lato Heavy', sans-serif;
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
