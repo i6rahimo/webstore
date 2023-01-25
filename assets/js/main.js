@@ -145,6 +145,8 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
       el: '.swiper-pagination',
     },
   
+    autoplay: true,
+    disableOnInteraction: true,
     breakpoints: {
       320: {
         slidesPerView: 1,
