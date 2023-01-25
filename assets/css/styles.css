@@ -1641,6 +1641,7 @@ textarea:focus {
   align-items: center;
   justify-content: center;
   gap: 1px;
+  margin: auto;
 }
 .swiper-help p {
   font-weight: 900;
@@ -2170,7 +2171,20 @@ textarea:focus {
 
 @media (max-width: 700px) { 
   .review, .review__content, .contact, .contact__content, .footer {
-    margin: 20px auto 0;
+    margin: 0px auto 0;
+  }
+  .review__col-one {
+    margin: 20px 0 0;
+    object-fit: contain;
+    height: auto;
+  }
+  .contact {
+    margin: 25px auto 25px;
+  }
+  .contact__content-left {
+    margin: 23px 0 0;
+  }
+  .review__col-one {
   }
   .header {
     height: 70px;
@@ -2521,6 +2535,7 @@ textarea:focus {
     position: relative;
   }
   .swiper-slide-img_more {
+    display: block;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -2561,6 +2576,7 @@ textarea:focus {
   .swiper-help {
     display: flex;
     margin: 20px 0 0;
+    text-align: center;
   }
   .swiper-help img {
     width: 6px;
@@ -2588,7 +2604,7 @@ textarea:focus {
 
 @media (max-width: 481px)  {
   .project__swiper-service {
-    margin: 25px 0 0;
+    margin: 15px 0 0;
   }
   .popup {
     width: 300px;
