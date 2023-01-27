@@ -1664,6 +1664,9 @@ textarea:focus {
 .swiper-slide-img_more {
   display: none;
 }
+.swiper-slide-img_order {
+  display: none;
+}
 @media (max-width: 1714px) {
   .portfolio__page-btn {
     margin: 30px auto 0;
@@ -2504,6 +2507,7 @@ textarea:focus {
   }
 }
 @media (max-width: 625px) {
+  
   .swiper-service_comment {
     width: 203px;
     margin: 20px auto 40px;
@@ -2548,6 +2552,7 @@ textarea:focus {
     font-size: 12px;
     line-height: 14px;
     text-transform: uppercase;
+    cursor: pointer;
   }
   .swiper-button-prev.dev-btn-prev {
     top: 90%;
@@ -2597,6 +2602,46 @@ textarea:focus {
   }
   .choose__wrapper {
     gap: 40px;
+  }
+  .swiper-slide-img_order {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    inset: 0;
+    background-color: #040404;
+    border-radius: 20px;
+    padding: 27px 20px 21px;
+  }
+  .swiper-slide-img_more.active  ~ .swiper-slide-img_order {
+    display: flex;
+  }
+  .swiper-slide-img_order div {
+    display: flex;
+    justify-content: space-between;
+  }
+  .swiper-slide-img_order p {
+    /* font-weight: 400; */
+    font-size: 10px;
+    line-height: 12px;
+    font-family: var(--font-regular);
+    color: #FFFFFF;
+  }
+  .swiper-slide-img_order span{
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .swiper-slide-img_order button {
+    background-color: #4944FF;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 4px 33px;
+    border-radius: 50px;
+    font-size: 8px;
+    line-height: 10px;
+
   }
 }
 
