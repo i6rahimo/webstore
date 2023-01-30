@@ -82,9 +82,13 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
         slidesPerView: 1,
         loop: true,
         centeredSlides: true,
+        spaceBetween: 30
+        
       },
       700: {
         slidesPerView: 3,
+        spaceBetween: 30
+        
       }
     },
     // Navigation arrows
@@ -99,6 +103,7 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
     loop: true,
     slidesPerView: 1,
     wrapperClass: 'swiper-wrapper-service-dev',
+    spaceBetween: 30,
     // If we need pagination
     pagination: {
       el: '.swiper-pagination-service-dev',
@@ -118,6 +123,8 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
     slidesPerView: 1,
     wrapperClass: 'swiper-wrapper-service_graph',
     slideClass: 'swiper-slide-service-graph',
+    spaceBetween: 30,
+    
     // If we need pagination
     pagination: {
       el: '.swiper-pagination-service-graph',
@@ -137,18 +144,19 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
     slidesPerView: 3,
     spaceBetween: 30,
     centeredSlides: true,
-    speed: 400,
+    speed: 900,
     wrapperClass: 'swiper-wrapper-service_comment',
     // If we need pagination
-
+    
     pagination: {
       el: '.swiper-pagination',
     },
-  
+    
     autoplay: true,
     disableOnInteraction: true,
     breakpoints: {
       320: {
+        delay: 7000,
         slidesPerView: 1,
         centeredSlides: true,
         spaceBetween: 20,
@@ -399,17 +407,17 @@ function cardTabs() {
         let tabId = currentBtn.getAttribute("data-tab");
         let currentTab = document.querySelector(tabId);
 
-        if( ! currentBtn.classList.contains('active') ) {
+        if( ! currentBtn.classList.contains('rotate') ) {
             tabsBtn.forEach(function(item) {
-                item.classList.remove('active');
+                item.classList.remove('rotate');
             });
     
             tabsItems.forEach(function(item) {
-                item.classList.remove('active');
+                item.classList.remove('rotate');
               });
               
-            currentBtn.classList.add('active');
-            currentTab.classList.add('active');
+            currentBtn.classList.add('rotate');
+            currentTab.classList.add('rotate');
           }
     });
   }

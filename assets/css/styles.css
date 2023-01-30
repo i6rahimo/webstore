@@ -2289,6 +2289,7 @@ textarea:focus {
   }
   .swiper-home {
     top: 0;
+    /* width: 100%; */
   }
   .home__btn {
     font-size: 12px;
@@ -2298,7 +2299,7 @@ textarea:focus {
   }
   .home__img::after {
     content: url('../img/bg-mobile.svg');
-    top: 28%;
+    top: 15%;
   }
   .about__wrapper {
     flex-direction: column;
@@ -2406,6 +2407,9 @@ textarea:focus {
   .input-text a {
     font-size: 6px;
   }
+  .col__second-item:nth-child(1) a {
+    font-size: 9px;
+  }
   .col__second-item .input-text {
     width: 130px;
   }
@@ -2417,8 +2421,8 @@ textarea:focus {
     width: auto;
   }
   .col__second-social a {
-    width: 13px;
-    height: 13px;
+    width: 23px;
+    height: 23px;
   }
   .col__second-social {
     margin: 7px 0 14px;
@@ -2537,6 +2541,7 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     position: relative;
+    perspective: 1200px;
   }
   .swiper-slide-img_more {
     display: block;
@@ -2613,9 +2618,24 @@ textarea:focus {
     border-radius: 20px;
     padding: 27px 20px 21px;
   }
-  .swiper-slide-img_more.active  ~ .swiper-slide-img_order {
+  .swiper-slide-img_more.rotate  ~ .swiper-slide-img_order {
     display: flex;
   }
+  .rotate {
+    transform: rotateY(-180deg);
+  }
+  .card-depth {
+    transform: translateZ(100px) scale(0.98);
+    perspective: inherit;
+    backface-visibility: hidden;
+ }
+ .swiper-slide-front {        transform-style: preserve-3d;transition: all 1s ease;
+   transform-style: preserve-3d;
+ }
+ .swiper-slide-back {
+   transform: rotateY(180deg);
+   transform-style: preserve-3d;
+ }
   .swiper-slide-img_order div {
     display: flex;
     justify-content: space-between;
@@ -2709,7 +2729,7 @@ textarea:focus {
   }
   .form__politic {
     font-size: 11px;
-    word-break: break-all;
+    /* word-break: break-all; */
     max-width: 100%;
   }
  
