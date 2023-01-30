@@ -2273,12 +2273,12 @@ textarea:focus {
     margin: 90px 0 0;
   }
   .home__title {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 22px;
+    line-height: 26px;
   }
   .home__subtitle {
-    font-size: 8px;
-    line-height: 10px;
+    font-size: 12px;
+    line-height: 16px;
     margin: 10px 0 15px;
   }
   .home__img {
@@ -2299,7 +2299,7 @@ textarea:focus {
   }
   .home__img::after {
     content: url('../img/bg-mobile.svg');
-    top: 15%;
+    top:18%;
   }
   .about__wrapper {
     flex-direction: column;
