@@ -2260,6 +2260,7 @@ textarea:focus {
   .header__droplist-img_dop.header__droplist-img_dop.header__droplist-img_dop {
     height: 50px;
     padding: 7px;
+    margin-left: 17px;
   }
   .header__switch {
     margin: 0 auto 0;
