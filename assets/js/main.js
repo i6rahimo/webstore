@@ -394,34 +394,13 @@ function readMore() {
 }
 readMore()
 
-function cardTabs() {
-  
-  const tabsBtn   = document.querySelectorAll(".swiper-slide-img_more");
-  const tabsItems = document.querySelectorAll(".swiper-slide-img_order");
-  
-  tabsBtn.forEach(onTabClick);
-  
-  function onTabClick(item) {
-    item.addEventListener("click", function() {
-        let currentBtn = item;
-        let tabId = currentBtn.getAttribute("data-tab");
-        let currentTab = document.querySelector(tabId);
-
-        if( ! currentBtn.classList.contains('rotate') ) {
-            tabsBtn.forEach(function(item) {
-                item.classList.remove('rotate');
-            });
-    
-            tabsItems.forEach(function(item) {
-                item.classList.remove('rotate');
-              });
-              
-            currentBtn.classList.add('rotate');
-            currentTab.classList.add('rotate');
-          }
-    });
-  }
-  // document.querySelector('.swiper-slide-img_more').click();
-  
+function cardContent() {
+  const cardBtns = document.querySelectorAll('.swiper-slide-img')
+  cardBtns.forEach(e => {
+    e.addEventListener('click', (el)=> {
+      e.classList.toggle('rotate');
+      console.log(el);
+    })
+  })
 }
-cardTabs()
+cardContent();
