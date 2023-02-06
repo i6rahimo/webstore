@@ -790,9 +790,7 @@ button {
   margin: 40px auto 0;
 }
 #comment  {
-  max-width: 100%;
-  max-height: 74px;
-  padding: 13px 34px;
+  padding: 13px ;
   overflow: hidden;
   resize: none;
 }
@@ -1393,8 +1391,15 @@ textarea:focus {
 .comment__popup-wrapper .form__btn {
   margin: 0 0 15px;
 }
-.comment__popup-wrapper .popup p:nth-child(1) {
+/* .comment__popup-wrapper .popup p:nth-child(1) {
   padding: 16px 0;
+} */
+.comment__popup-wrapper .form__title {
+  margin: auto;
+  transform: translateX(25px);
+}
+.comment__popup-wrapper .popup__header {
+  padding: 15px 28px 15px;
 }
 .service__popup-wrapper {
   display: none;
@@ -1426,18 +1431,18 @@ textarea:focus {
   margin: 10px 0 28px;
 }
 .file-choose label {
-  font-size: 8px;
+  font-size: 12px;
   font-family: var(--font-regular);
   cursor: pointer;
 }
 .file-choose label::before {
   content: url('../img/file.svg');
   display: block;
-  width: 14px;
-  height: 8px;
+  width: 24px;
+  height: 10px;
   z-index: 1;
   position: absolute;
-  left: -15px;
+  left: -25px;
   bottom: 4px;
 }
 
@@ -2115,7 +2120,7 @@ textarea:focus {
     line-height: 100%;
   }
   .contact__col-third .popup__header {
-    padding: 18px 0;
+    /* padding: 18px 0; */
   }
   .contact__col-third .popup__header p { 
     font-weight: 900;
@@ -2437,7 +2442,7 @@ textarea:focus {
     border-radius: 20px 20px 0 0;
   }
   .popup__header {
-    gap: 40px;
+    /* gap: 40px; */
   }
   .contact__col-third .popup__header .form__title {
     font-weight: 900;
@@ -2516,7 +2521,7 @@ textarea:focus {
   }
 }
 @media (max-width: 625px) {
-  
+
   .swiper-service_comment {
     width: 203px;
     margin: 20px auto 40px;
@@ -2663,10 +2668,10 @@ textarea:focus {
     -o-transform: rotateY(180deg);
   }
   .swiper-button-prev.dev-btn-prev {
-    top: 90%;
+    /* top: 90%; */
   }
   .swiper-button-next.dev-btn-next  {
-    top: 90%;
+    /* top: 90%; */
   }
   .swiper-pagination-service-dev.swiper-pagination-service-dev, .swiper-pagination-service-graph {
     margin: 0;
@@ -2699,7 +2704,7 @@ textarea:focus {
     align-items: center;
   }
   .contact__col-third {
-    width: 290px;
+    /* width: 290px; */
   }
   .choose label {
     font-weight: 900;
@@ -2717,6 +2722,7 @@ textarea:focus {
 
 
 @media (max-width: 481px)  {
+  
   .project__swiper-service {
     margin: 15px 0 0;
   }
@@ -2852,6 +2858,12 @@ textarea:focus {
   .comment__btn {
     position: relative;
     bottom: 25px;
+  }
+  #comment {
+    font-size: 9px;
+  }
+  .comment__popup-wrapper .form__title {
+    transform: translateX(15px);
   }
 }
 

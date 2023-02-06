@@ -323,9 +323,8 @@ popupPremium()
 // servicePopupSite()
 
 function projectPopup() {
-  const popup = document.querySelector('.project__popup-wrapper');
+  const popup = document.querySelector('.site__popup-wrapper');
   const btn = document.querySelectorAll('.swiper-project-site-btn');
-  console.log(popup);
   btn.forEach(e => {
     e.addEventListener('click', ()=> {
       popup.classList.toggle('active')
@@ -333,6 +332,31 @@ function projectPopup() {
   })
 }
 projectPopup()
+function landingPopup() {
+  const popup = document.querySelector('.landing__popup-wrapper');
+  const btn = document.querySelectorAll('.swiper-project-landing-btn');
+  console.log(popup);
+  btn.forEach(e => {
+    e.addEventListener('click', ()=> {
+      popup.classList.toggle('active')
+    })
+  })
+}
+landingPopup();
+
+
+function marketPopup() {
+  const popup = document.querySelector('.market__popup-wrapper');
+  const btn = document.querySelectorAll('.swiper-project-market-btn');
+  console.log(popup);
+  btn.forEach(e => {
+    e.addEventListener('click', ()=> {
+      popup.classList.toggle('active')
+    })
+  })
+}
+marketPopup();
+
 
 function logoPopup() {
   const popup = document.querySelector('.logo__popup-wrapper');
@@ -345,11 +369,47 @@ function logoPopup() {
 }
 logoPopup()
 
+function bannerPopup() {
+  const popup = document.querySelector('.banner__popup-wrapper');
+  const btn = document.querySelectorAll('.swiper-project-banner-btn')
+  btn.forEach(e => {
+    e.addEventListener('click', ()=> {
+      popup.classList.toggle('active')
+    })
+  })
+}
+bannerPopup()
+
+
+function prezentationPopup() {
+  const popup = document.querySelector('.prezentaion__popup-wrapper');
+  const btn = document.querySelectorAll('.swiper-project-prezentation-btn')
+  btn.forEach(e => {
+    e.addEventListener('click', ()=> {
+      popup.classList.toggle('active')
+    })
+  })
+}
+prezentationPopup()
+
+function paketPopup() {
+  const popup = document.querySelector('.paket__popup-wrapper');
+  const btn = document.querySelectorAll('.swiper-project-paket-btn')
+  btn.forEach(e => {
+    e.addEventListener('click', ()=> {
+      popup.classList.toggle('active')
+    })
+  })
+}
+paketPopup()
+
 function ceoPopup() {
   const popup = document.querySelector('.ceo__popup-wrapper');
-  const btn = document.querySelector('.ceo-swiper-btn')
-  btn.addEventListener('click', ()=> {
-    popup.classList.toggle('active')
+  const btn = document.querySelectorAll('.ceo-swiper-btn')
+  btn.forEach(e => {
+    e.addEventListener('click', ()=> {
+      popup.classList.toggle('active')
+    })
   })
 } 
 
@@ -396,7 +456,6 @@ readMore()
 
 function cardContent() {
   const cardBtns = document.querySelectorAll('.swiper-slide-img')
-  const btn = document.querySelectorAll('.slide-img-backcontent_down button');
   cardBtns.forEach(e => {
     e.addEventListener('click', (el)=> {
       if(!e.classList.contains('rotate')) {
@@ -405,21 +464,18 @@ function cardContent() {
         e.classList.remove('rotate');
       }
     });
-    btn.forEach(btn => {
-      btn.addEventListener('click', () => {
-        e.classList.add('rotate')
-      })
-    })
   })
 }
 cardContent();
 
 
 
-function seoPopup() {
-  const btn = document.querySelector('.slide-img-backcontent_down-seo');
-  btn.addEventListener('click', ()=> {
-    console.log('qwe');
-  }
-)}
-seoPopup()
+// function seoPopup() {
+//   const btn = document.querySelector('.slide-img-backcontent_down-seo');
+//   const seoPopup = document.querySelector('.ceo__popup-wrapper')
+//   btn.addEventListener('click', ()=> {
+//     console.log('qwe');
+//     seoPopup.classList.add('active')
+//   }
+// )}
+// seoPopup()
