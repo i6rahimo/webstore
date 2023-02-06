@@ -2487,13 +2487,16 @@ textarea:focus {
   .footer .header__list:nth-child(1) {
     margin: 0 0 30px;
   }
-  .footer .header__nav {
-    display: none;
+  .footer .header__ul {
+    /* display: none; */
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .footer__left .header__nav {
+    margin: 0;
   }
   .footer__switch {
-    display: none;
-  }
-  .footer__social {
     display: none;
   }
   .footer__text {
