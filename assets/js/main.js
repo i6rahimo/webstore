@@ -399,11 +399,15 @@ function cardContent() {
   const btn = document.querySelectorAll('.slide-img-backcontent_down button');
   cardBtns.forEach(e => {
     e.addEventListener('click', (el)=> {
-      e.classList.toggle('rotate');
+      if(!e.classList.contains('rotate')) {
+        e.classList.add('rotate');
+      } else {
+        e.classList.remove('rotate');
+      }
     });
     btn.forEach(btn => {
       btn.addEventListener('click', () => {
-        // e.classList.add('rotate') 
+        e.classList.add('rotate')
       })
     })
   })

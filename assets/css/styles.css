@@ -2611,6 +2611,7 @@ textarea:focus {
     height: 100%;
     width: 100%;
     padding: 27px 20px ;
+    z-index: 1;
   }
   .slide-img-backcontent_down {
     display: flex;
