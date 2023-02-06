@@ -396,11 +396,26 @@ readMore()
 
 function cardContent() {
   const cardBtns = document.querySelectorAll('.swiper-slide-img')
+  const btn = document.querySelectorAll('.slide-img-backcontent_down button');
   cardBtns.forEach(e => {
     e.addEventListener('click', (el)=> {
       e.classList.toggle('rotate');
-      console.log(el);
+    });
+    btn.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // e.classList.add('rotate') 
+      })
     })
   })
 }
 cardContent();
+
+
+
+function seoPopup() {
+  const btn = document.querySelector('.slide-img-backcontent_down-seo');
+  btn.addEventListener('click', ()=> {
+    console.log('qwe');
+  }
+)}
+seoPopup()
