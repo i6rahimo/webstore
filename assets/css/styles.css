@@ -2215,6 +2215,9 @@ textarea:focus {
 }
 
 @media (max-width: 700px) { 
+  .politic__title-title {
+    font-size: 11px;
+  }
   .night .header__link-drop {
     color: var(--black-color);
   }
