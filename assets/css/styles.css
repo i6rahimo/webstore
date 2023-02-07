@@ -2305,7 +2305,7 @@ textarea:focus {
   }
   .home__img::after {
     content: url('../img/bg-mobile.svg');
-    top:18%;
+    top: 21%;
   }
   .about__wrapper {
     flex-direction: column;
