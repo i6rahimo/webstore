@@ -470,12 +470,15 @@ cardContent();
 
 
 
-// function seoPopup() {
-//   const btn = document.querySelector('.slide-img-backcontent_down-seo');
-//   const seoPopup = document.querySelector('.ceo__popup-wrapper')
-//   btn.addEventListener('click', ()=> {
-//     console.log('qwe');
-//     seoPopup.classList.add('active')
-//   }
-// )}
-// seoPopup()
+function closeNavLink() {
+  const links = document.querySelectorAll('.header__link');
+  const nav = document.querySelector('.header__wrapper')
+  const burger = document.querySelector('.header__burger')
+  links.forEach(e => {
+    e.addEventListener('click', ()=> {
+      nav.classList.remove('show');
+      burger.classList.remove('click')
+    })
+  })
+}
+closeNavLink()
