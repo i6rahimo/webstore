@@ -1256,6 +1256,16 @@ textarea:focus {
 .footer__text p {
   margin-bottom: 7px;
 }
+
+.footer__left .night-logo {
+  display: none;
+}
+.night .footer__left .light-logo {
+  display: none;
+}
+.night .footer__left .night-logo {
+  display: flex;
+}
 .popup__wrapper {
   display: none;
   width: 100%;
@@ -1367,6 +1377,10 @@ textarea:focus {
 }
 .night .swiper-pagination-bullet-active {
   background: var(--blue-color);
+}
+
+.night .footer .header__ul .header__link {
+  color: var(--black-color) !important;
 }
 
 
@@ -1676,6 +1690,11 @@ textarea:focus {
 .slide-img-back {
   display: none;
 }
+
+.logo-tl, .logo-mb {
+  display: none;
+}
+
 @media (max-width: 1714px) {
   .portfolio__page-btn {
     margin: 30px auto 0;
@@ -2043,6 +2062,12 @@ textarea:focus {
   .project__swiper-service {
     margin: 40px  0 0;
   }
+  .logo-dt, .logo-mb {
+    display: none;
+  }
+  .logo-tl {
+    display: flex;
+  }
 }
 @media (max-width: 770px) {
   .swiper-service-dev {
@@ -2189,6 +2214,7 @@ textarea:focus {
     margin: 20px 0 0;
     object-fit: contain;
     height: auto;
+    width: 100%;
   }
   .contact {
     margin: 25px auto 25px;
@@ -2497,7 +2523,8 @@ textarea:focus {
     margin: 0;
   }
   .footer__switch {
-    display: none;
+    position: absolute;
+    right: 15px;
   }
   .footer__text {
     margin: 42px 0 30px;
@@ -2524,7 +2551,6 @@ textarea:focus {
   }
 }
 @media (max-width: 625px) {
-
   .swiper-service_comment {
     width: 203px;
     margin: 20px auto 40px;
@@ -2719,6 +2745,12 @@ textarea:focus {
   }
   .swiper-wrapper-service-dev .swiper-slide {
     width: 100%;
+  }
+  .logo-dt, .logo-tl {
+    display: none;
+  }
+  .logo-mb {
+    display: flex;
   }
 }
 
