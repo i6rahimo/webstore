@@ -471,7 +471,7 @@ cardContent();
 
 
 function closeNavLink() {
-  const links = document.querySelectorAll('.header__link');
+  const links = document.querySelectorAll('.header__link, .list__drop-link');
   const nav = document.querySelector('.header__wrapper')
   const burger = document.querySelector('.header__burger')
   links.forEach(e => {

@@ -48,18 +48,7 @@
   --z-fixed: 100;
 }
 
-/* Responsive typography */
-@media screen and (min-width: 1024px) {
-  :root {
-    /* --biggest-font-size: 4rem;
-    --h1-font-size: 2.25rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem; */
-  }
-}
+
 
 /*=============== BASE ===============*/
 * {
@@ -147,8 +136,7 @@ button {
 }
 
 /* =================   HEADER =================== */
-.header {
-}
+
 .header__wrapper {
   display: flex;
   justify-content: space-between;
@@ -434,9 +422,7 @@ button {
 .project__swiper-web {
   position: relative;
 }
-.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
-  /* bottom: 0; */
-}
+
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
   bottom: 0;
 }
@@ -665,9 +651,6 @@ button {
 }
 .swiper-slide-service-graph:nth-child(5) .swiper-slide-text__subtitle{
   margin: 20px 0 12px;
-}
-
-.swiper-wrapper-service_graph .swiper-slide {
 }
 .swiper-wrapper-service-dev .swiper-slide {
   flex-shrink: 0;
@@ -1381,15 +1364,10 @@ textarea:focus {
 
 
 
-.service__popup-wrapper {
-
-}
 .service__popup-wrapper .popup p:nth-child(1) {
   padding: 20px 0;
 }
-.service__popup-wrapper.active {
-  
-}
+
 
 .comment__popup-wrapper {
   display: none;
@@ -1467,9 +1445,6 @@ textarea:focus {
 
 .site__popup-wrapper {
   display: none;
-}
-.site__popup-wrapper.active {
-  
 }
 .swiper-slide-text__title  {
   /* font-weight: 600; */
@@ -1609,6 +1584,7 @@ textarea:focus {
 
 .swiper-pagination {
   position: relative;
+  z-index: -1;
 }
 .header__logo-mobile {
   display: none;
@@ -1789,9 +1765,7 @@ textarea:focus {
   .home__img::after { 
     top: 14%;
   }
-  .swiper-slide {
-    /* height: auto; */
-  }
+
   .swiper-web, .swiper-graph, .service__items {
     margin: 25px 0 0;
     /* height: 500px; */
@@ -2120,12 +2094,7 @@ textarea:focus {
   .footer__social {
     margin: 0 0 25px;
   }
-  .swiper-service-graph.swiper-wrapper-service {
-    /* height: 315px; */
-  }
-  .swiper-slide-img img {
-    /* width: 457px; */
-  }
+
   .swiper-slide-text__subtitle {
     margin: 14px 0 37px;
   }
@@ -2135,16 +2104,10 @@ textarea:focus {
   .swiper-slide-text__items {
     margin: 0 0 12px;
   }
-  .swiper-service_graph {
-    /* height: 280px; */
-  }
   .col__second-text {
     font-weight: 400;
     font-size: 10px;
     line-height: 100%;
-  }
-  .contact__col-third .popup__header {
-    /* padding: 18px 0; */
   }
   .contact__col-third .popup__header p { 
     font-weight: 900;
@@ -2220,8 +2183,6 @@ textarea:focus {
   }
   .contact__content-left {
     margin: 23px 0 0;
-  }
-  .review__col-one {
   }
   .header {
     height: 70px;
@@ -2381,8 +2342,6 @@ textarea:focus {
   .service__items-wrapper {
     display: flex;
   }
-  .service__item {
-  }
   .complex-btn-prev, .complex-btn-next {
     display: flex;
     top: 14%;
@@ -2466,9 +2425,7 @@ textarea:focus {
     padding: 15px;
     border-radius: 20px 20px 0 0;
   }
-  .popup__header {
-    /* gap: 40px; */
-  }
+ 
   .contact__col-third .popup__header .form__title {
     font-weight: 900;
     font-size: 10px;
@@ -2698,12 +2655,6 @@ textarea:focus {
     -ms-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
   }
-  .swiper-button-prev.dev-btn-prev {
-    /* top: 90%; */
-  }
-  .swiper-button-next.dev-btn-next  {
-    /* top: 90%; */
-  }
   .swiper-pagination-service-dev.swiper-pagination-service-dev, .swiper-pagination-service-graph {
     margin: 0;
   }
@@ -2733,9 +2684,6 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .contact__col-third {
-    /* width: 290px; */
   }
   .choose label {
     font-weight: 900;
@@ -2905,13 +2853,7 @@ textarea:focus {
 }
 
 @media (max-width: 461px) {
-  .swiper-button-prev,.swiper-button-next, .swiper-button-prev-graph {
-    
-    /* top: 50%; */
-  }
-  .swiper-button-next-graph, .swiper-button-prev-graph {
-    /* top: 40%; */
-  }
+
   .complex-btn-prev, .complex-btn-next {
     display: flex;
     top: 14%;
@@ -2949,9 +2891,6 @@ textarea:focus {
   }
   .complex-btn-prev {
     top: 14% ;
-  }
-  .project__swiper-service {
-    /* margin: 0; */
   }
   .graph-btn-next {
     top: 96% !important;
