@@ -1708,7 +1708,9 @@ textarea:focus {
   display: flex;
   position: fixed;
 }
-
+.tech__popup-wrapper .popup {
+  height: auto;
+}
 @media (max-width: 1714px) {
   .portfolio__page-btn {
     margin: 30px auto 0;
