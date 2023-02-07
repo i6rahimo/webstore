@@ -1232,9 +1232,13 @@ textarea:focus {
   color: white;
 }
 
-.footer__text p {
+.footer__text p  {
   font-size: 12px;
   color: var(--white-color);
+}
+.footer__text a {
+  font-size: 12px;
+  color: var(--white-color);  
 }
 .footer__social {
   display: flex;
@@ -1694,9 +1698,17 @@ textarea:focus {
   line-height: 19px;
   margin: 50px 0;
 }
+.night .politic__text {
+  color: var(--white-color);
+}
 .politic {
   margin: 106px auto;
 }
+.tech__popup-wrapper.active {
+  display: flex;
+  position: fixed;
+}
+
 @media (max-width: 1714px) {
   .portfolio__page-btn {
     margin: 30px auto 0;

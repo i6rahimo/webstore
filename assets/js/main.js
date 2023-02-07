@@ -482,3 +482,17 @@ function closeNavLink() {
   })
 }
 closeNavLink()
+
+
+function techPopup() {
+  const btn = document.querySelector('.tech-btn');
+  const popup = document.querySelector('.tech__popup-wrapper');  
+  btn.addEventListener('click', ()=> {
+    popup.classList.toggle('active')
+  })
+ 
+}
+techPopup()
+
+
+
