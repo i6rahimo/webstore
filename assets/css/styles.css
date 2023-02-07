@@ -187,6 +187,7 @@ button {
   flex-direction: column;
   align-items: center;
   gap: 8px;
+  text-transform: uppercase;
 }
 .header__link-drop img {
   width: 12px;
@@ -2516,6 +2517,14 @@ textarea:focus {
   }
 }
 @media (max-width: 625px) {
+  .swiper-slide-text__items p {
+    color: var(--white-color);
+    font-size: 9px;
+  }
+  .swiper-slide-text__items p::before {
+    width: 5px;
+    height: 5px;
+  }
   .popup img{
     top: 20px;
     right: 1;
@@ -2945,7 +2954,15 @@ textarea:focus {
   }
 
 }
-
+@media (max-width: 391px) {
+  .swiper-slide-text__items {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .swiper-slide-text__items p{
+    font-size: 8px;
+  }
+}
 @media (max-width: 361px) {
   .portfolio__page-wrapper {
     max-height: 170px;
