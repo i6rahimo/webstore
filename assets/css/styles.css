@@ -1687,6 +1687,16 @@ textarea:focus {
   display: none;
 }
 
+.politic__text {
+  color: var(--black-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 50px 0;
+}
+.politic {
+  margin: 106px auto;
+}
 @media (max-width: 1714px) {
   .portfolio__page-btn {
     margin: 30px auto 0;
@@ -2063,6 +2073,10 @@ textarea:focus {
   }
 }
 @media (max-width: 770px) {
+  .politic__text  {
+    font-size: 12px;
+    line-height: 15px;
+  }
   .swiper-service-dev {
     margin: 20px 0 0;
   }
@@ -2222,6 +2236,7 @@ textarea:focus {
     z-index: 9;
     left: 0;
     right: 0;
+    top: 0;
   }
   .header__wrapper {
     position: fixed;
@@ -2538,6 +2553,9 @@ textarea:focus {
   }
 }
 @media (max-width: 625px) {
+  .politic__text  {
+    font-size: 10px;
+  }
   .swiper-slide-text__items p {
     color: var(--white-color);
     font-size: 9px;
