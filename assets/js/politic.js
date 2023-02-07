@@ -60,3 +60,26 @@ function closeNavLink() {
   }
   techPopup()
   
+  
+  function popupClose() {
+    const closeImg = document.querySelectorAll('.close-popup'),
+          popup = document.querySelectorAll('.popup__wrapper'),
+          wrapperClose = document.querySelectorAll('.wrapper-popup');
+          
+          closeImg.forEach(e => {
+            e.addEventListener('click', (el) => {
+              const selfImg = el.currentTarget;
+              console.log(selfImg);
+              popup.forEach(e => {
+                e.classList.remove('active')
+              })
+            })})
+          wrapperClose.forEach(wrapper => {
+            wrapper.addEventListener('click', () => {
+              popup.forEach(e => {
+                e.classList.remove('active')
+              })
+            })
+          })
+  }
+  popupClose()
