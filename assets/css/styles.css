@@ -1063,8 +1063,8 @@ textarea:focus {
 .popup__header {
   position: relative;
   display: flex;
-  ;align-items: center;
-  justify-content: end;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
   width: 100%;
   border-radius: 50px 50px 0 0;
@@ -1074,6 +1074,9 @@ textarea:focus {
   padding: 28px 28px 28px 28px;
   margin: 0 25px;
   bottom: 2px;
+}
+.close-popup {
+  position: absolute;
 }
 .form__title {
   font-size: 15px;
@@ -1285,7 +1288,7 @@ textarea:focus {
   /* padding: 26px 0; */
 }
 .popup img {
-  /* position: absolute; */
+  position: absolute;
   top: 28px;
   right: 28px;
   cursor: pointer;
@@ -1382,10 +1385,10 @@ textarea:focus {
 /* .comment__popup-wrapper .popup p:nth-child(1) {
   padding: 16px 0;
 } */
-.comment__popup-wrapper .form__title {
+/* .comment__popup-wrapper .form__title {
   margin: auto;
   transform: translateX(25px);
-}
+} */
 .comment__popup-wrapper .popup__header {
   padding: 15px 28px 15px;
 }
@@ -1930,7 +1933,7 @@ textarea:focus {
     font-size: 10px;
   }
   .popup__header {
-    border-radius: 30px 30px 0 0;
+    border-radius: 20px 20px 0 0;
   }
   .form__title {
     font-weight: 900;
@@ -2169,6 +2172,11 @@ textarea:focus {
 }
 
 @media (max-width: 700px) { 
+  .popup img  {
+    top: 20px;
+    height: 18px;
+    width: 18px;
+  }
   .review, .review__content, .contact, .contact__content, .footer {
     margin: 0px auto 0;
   }
@@ -2507,6 +2515,10 @@ textarea:focus {
   }
 }
 @media (max-width: 625px) {
+  .popup img{
+    top: 20px;
+    right: 1;
+  }
   .header__logo {
     width: 125px;
   }
@@ -2745,6 +2757,7 @@ textarea:focus {
   .popup img {
     width: 18px;
     height: 18px;
+    right: 18px;
   }
   .label {
     gap: 0;
@@ -2847,9 +2860,9 @@ textarea:focus {
   #comment {
     font-size: 9px;
   }
-  .comment__popup-wrapper .form__title {
+  /* .comment__popup-wrapper .form__title {
     transform: translateX(15px);
-  }
+  } */
 }
 
 @media (max-width: 461px) {
