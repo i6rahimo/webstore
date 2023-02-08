@@ -2313,7 +2313,7 @@ textarea:focus {
   }
   .header__link-drop.drop ~ .header__list-drop{
     display: block;
-    height: 80px;
+    height: 110px;
   }
   .header__droplist-img_dop.header__droplist-img_dop.header__droplist-img_dop {
     height: 50px;
