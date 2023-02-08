@@ -149,7 +149,7 @@ button {
 }
 .header__left {
   display: flex;
-  align-items: center;
+  align-items: end;
   gap: 111px;
 }
 .header__left .light-logo {
@@ -170,7 +170,7 @@ button {
   max-width: 100%;
   display: flex;
   justify-content: space-between;
-  
+  align-items: baseline;
 }
 .header__list-drop {
   margin: 8px 3px 0;
@@ -218,7 +218,7 @@ button {
 }
 .header__droplist-img_dop {
   width: 150px;
-  margin: 0 -14px 0;
+  margin: -10px -14px 0;
 }
 .header__droplist-img_dop img{
   /* display: flex; */
@@ -2291,6 +2291,9 @@ textarea:focus {
   }
   .header__link.header__link {
     color: var(--black-color);
+  }
+  .header__list {
+    text-align: center;
   }
   .header__logo {
     display: none;
