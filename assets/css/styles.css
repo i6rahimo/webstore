@@ -1720,10 +1720,13 @@ textarea:focus {
   bottom: 0;left: 0;right: 0;
   background: #4944FF;
   text-align: center;
-  padding: 20px;
+  padding: 14px;
+  display: none;
+}
+.form-sent-comment {
+  /* display: block; */
 }
 .form-sent p {
-  text-transform: uppercase;
   font-size: 24px;
   line-height: 24px;
 }
