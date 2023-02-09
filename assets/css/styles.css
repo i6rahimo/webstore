@@ -2497,7 +2497,8 @@ textarea:focus {
   }
  
   .contact__col-third .popup__header .form__title {
-    font-weight: 900;
+    /* font-weight: 900; */
+    font-family: 'Lato Heavy', sans-serif;
     font-size: 10px;
     line-height: 12px;  
   }
