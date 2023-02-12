@@ -1720,14 +1720,17 @@ textarea:focus {
   bottom: 0;left: 0;right: 0;
   background: #4944FF;
   text-align: center;
-  padding: 14px;
+  padding: 5px;
   display: none;
+}
+.form-sent.active {
+  display: block;
 }
 .form-sent-comment {
   /* display: block; */
 }
 .form-sent p {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 24px;
 }
 @media (max-width: 1714px) {
