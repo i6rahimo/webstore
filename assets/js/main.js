@@ -282,8 +282,22 @@ function commentPopup() {
 
 commentPopup()
 
-
-
+function checkEmpty() {
+  const input = document.querySelectorAll('.input');
+  const btn = document.querySelector('.form__btn');
+  const tel = document.querySelector
+  btn.addEventListener('click', ()=> {
+    input.forEach(e => {
+      const isValidEmail = e.checkValidity();
+      if( isValidEmail) {
+        e.classList.remove('error')
+      } else {
+        e.classList.add('error')
+      }
+    })
+  })
+}
+checkEmpty()
 function popupStart() {
   const popupStartBtn = document.querySelector('.service__item-btn_start'),
         popupStartWrapper = document.querySelector('.service__popup-wrapper_start');
