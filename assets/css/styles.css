@@ -1851,7 +1851,10 @@ textarea:focus {
     /* height: 500px; */
   }
 }
-@media (max-width: 1200px) {  
+@media (max-width: 1200px) {
+  .error-img.error-img {
+    top: 33px;
+  }  
   .service__item-inner {
     /* width: 226px; */
     padding: 12px 14px 14px 13px;
@@ -2256,6 +2259,10 @@ textarea:focus {
 }
 
 @media (max-width: 700px) { 
+  .error-img.error-img {
+    right: -20px;
+    top: 45px;
+  }
   .politic__title-title {
     font-size: 11px;
   }
@@ -2844,6 +2851,9 @@ textarea:focus {
 
 
 @media (max-width: 481px)  {
+  .error-img.error-img {
+    top: 29px;
+  }
   .comment__popup-wrapper .popup__header {
     padding: 10px;
   }

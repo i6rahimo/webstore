@@ -285,7 +285,12 @@ commentPopup()
 function checkEmpty() {
   const input = document.querySelectorAll('.input');
   const btn = document.querySelector('.form__btn');
-  const tel = document.querySelector
+  const tel = document.querySelectorAll('.input[type="tel"]');
+  tel.forEach(e => {
+    if(e.value === '') {
+      console.log('nul');
+    }
+  })
   btn.addEventListener('click', ()=> {
     input.forEach(e => {
       const isValidEmail = e.checkValidity();
