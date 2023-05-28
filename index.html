@@ -1,12 +1,14 @@
 <!DOCTYPE html>
     <html lang="ru">
 
+
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="" type="image/x-icon">
+        <link rel="shortcut icon" href="assets/img/Logo Web Store круг.png" type="image/x-icon">
 
         <!--=============== BOXICONS ===============-->
         
@@ -19,19 +21,21 @@
 
         <!--=============== CSS ===============-->
         
-        <link rel="stylesheet" href="/assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
 
         <title>Webstore Website</title>
     </head>
-    <body>
+    <body  >
+
 
         <!--==================== HEADER ====================-->
         <header class="header container" id="header">
+
             <picture class="header__logo header__logo-mobile">
                 
-                <source srcset="/assets/img/small-logo.svg" media="(max-width: 700px)">  
-                <img class=" night-logo" src="/assets/img/footer-logo.svg" alt="Логотип">
-                <img class="light-logo" src="/assets/img/logo.svg" alt="Логотип">
+                <source srcset="assets/img/small-logo.svg" media="(max-width: 700px)">  
+                <img class=" night-logo" src="assets/img/logo.svg" alt="Лог отип">
+                <img class="light-logo" src="assets/img/logo.svg" alt="Логотип">
             </picture>
             <div class="header__wrapper">
                 <div class="header__left">
@@ -42,16 +46,16 @@
                 <nav class="header__nav">
                     <ul class="header__ul">
                         <li class="header__list">
-                            <a href="#service" class=" header__link-drop header__droplist-links ">услуги
+                            <a href="#" class=" header__link-drop header__droplist-links ">услуги
                                 <img class="light-arrow" src="assets/img/arrow-open.svg" alt="Открыть">
-                                <img class="night-arrow" src="/assets/img/arrow-night.svg" alt="Открыть">
+                                <img class="night-arrow" src="assets/img/arrow-night.svg" alt="Открыть">
                             </a>
                             <ul class="header__list-drop  list__drop">
                                 <li class="list__drop-li">
                                     <a class="list__drop-link" href="#complex">Комплексы услуг</a>
                                 </li>
                                 <li class="list__drop-li">
-                                    <a class="list__drop-link" href="#website">Разработка сайтов <img src="/assets/img/services.svg" alt="Корона"></a>
+                                    <a class="list__drop-link" href="#website">Разработка сайтов <img src="assets/img/services.svg" alt="Корона"></a>
                                 </li>
                                 <li class="list__drop-li">
                                     <a class="list__drop-link" href="#graph">Графический дизайн</a>
@@ -74,54 +78,51 @@
                             <a href="#contact" class="header__link">Контакты 
                             </a>
                             <picture class=" header__droplist-img header__link-drop">
-                                <img class="light-arrow" src="/assets/img/arrow-open.svg" alt="Открыть">
-                                <img class="night-arrow" src="/assets/img/arrow-night.svg" alt="Открыть">
+                                <img class="light-arrow" src="assets/img/arrow-open.svg" alt="Открыть">
+                                <img class="night-arrow" src="assets/img/arrow-night.svg" alt="Открыть">
                             </picture>
                             <ul class="header__list-drop list__drop header__droplist-img_dop">
                                 <a href="https://vk.com/webstoresite" target="_blank">
-                                    <img src="/assets/img/vk.svg" alt="Вконтакте">
+                                    <img src="assets/img/vk.svg" alt="Вконтакте">
                                 </a>
                                 <a href="https://www.youtube.com/channel/UCyJBbL5ZcZDQSsF-8KFXgBA" target="_blank">
-                                    <img src="/assets/img/youtube.svg" alt="Ютуб">
+                                    <img src="assets/img/youtube.svg" alt="Ютуб">
                                 </a>
                                 <a href="https://t.me/webstoresite" target="_blank">
-                                    <img src="/assets/img/telegram.svg" alt="Телеграм">
+                                    <img src="assets/img/telegram.svg" alt="Телеграм">
                                 </a>
                             </ul>
                         </li>
                     </ul>
                 </nav>
             </div>
-                <div class="header__switch"><img src="/assets/img/switch.svg" alt="Переключатель"></div>
+                <div class="header__switch"><img src="assets/img/switch.svg" alt="Переключатель"></div>
             </div>
-            <div class="popup__wrapper home__popup-wrapper ">
-                <form class="contact__col-third form popup header-popup">
+            <div class="popup__wrapper home__popup-wrapper">
+                <form class="contact__col-third form popup header-popup home__form" >
                     <div class="popup__header">
                         <p class="form__title">заполните форму, чтобы <br> обсудить проект</p>
-                        <img src="/assets/img/close.svg" alt="Закрыть" class="close-popup">
+                        <img src="assets/img/close.svg" alt="Закрыть" class="close-popup">
                     </div>
-                    <div class="form__wrapper">
-
-                    <label for="name" class="name-title label">
-                        ИМЯ
-                        <input required class="input-text input " type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
-                        <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
-                    </label>
-                    <label for="tel" class="name-title label">
-                        НОМЕР ТЕЛЕФОНА
-                        <input required class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00" size="11">
-                        <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
-
-                    </label>
-                    <label for="email" class="name-title label">
-                        E-MAIL
-                        <input required class="input-text input " type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
-                        <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
-
-                    </label>
-                    <button class="btn form__btn">ЗАКАЗАТЬ ЗВОНОК</button>
-                    <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="assets/pages/politic.html">политикой конфеденциальности</a></p>
-                </div>
+                        <div class="form__wrapper">
+                        <label for="name" class="name-title label">
+                            ИМЯ
+                            <input required class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ" >
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+                        </label>
+                        <label for="tel" class="name-title label">
+                            НОМЕР ТЕЛЕФОНА
+                            <input required class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+                        </label>
+                        <label for="email" class="name-title label">
+                            E-MAIL
+                            <input required class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+                        </label>
+                        <button class="btn form__btn main-form">ЗАКАЗАТЬ ЗВОНОК</button>
+                        <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="pc.html">политикой конфеденциальности</a></p>
+                    </div>
                 </form>
                 <div class="wrapper-popup"></div>
             </div>
@@ -134,12 +135,13 @@
 
         <!--==================== MAIN ====================-->
         <main class="main">
+            
             <!--==================== HOME ====================-->
             <section class="home container" id="home">
                 <div class="home__wrapper">
                     <div class="home__text">
                         <h1 class="home__title">Получите бесплатное обслуживание сайта</h1>
-                        <p class="home__subtitle"><span>З</span>АКАЖИТЕ РАЗРАБОТКУ САЙТА В КОМПЛЕКСЕ С <span>SEO</span><br> продвижением И ПОЛУЧИТЕ В ПОДАРОК БЕСПЛАТНОЕ <br> ОБСЛУЖИВАНИЕ САЙТА НА 12 МЕСЯЦЕВ</p>
+                        <p class="home__subtitle"><span>З</span>АКАЖИТЕ РАЗРАБОТКУ САЙТА В КОМПЛЕКСЕ С <span>SEO</span><br> продвижением И ПОЛУЧИТЕ В ПОДАРОК БЕСПЛАТНОЕ <br> ОБСЛУЖИВАНИЕ САЙТА НА 6 МЕСЯЦЕВ</p>
                         <button class="btn home__btn">Обсудить проект</button>
                     </div>
                     <div class="home__img">
@@ -148,13 +150,13 @@
                             <div class="swiper-wrapper-home">
                               <!-- Slides -->
                               <div class="swiper-slide home-slide">
-                                  <img src="/assets/img/homebg.png" alt="Главный фон">
+                                  <img src="assets/img/homebg.webp" alt="Главный фон">
                               </div>
                               <div class="swiper-slide home-slide">
-                                <img src="/assets/img/home1.png" alt="Главный фон">
+                                <img src="assets/img/home1.webp" alt="Главный фон">
                               </div>
                               <div class="swiper-slide home-slide">
-                                <img src="/assets/img/home2.png" alt="Главный фон">
+                                <img src="assets/img/home2.webp" alt="Главный фон">
                               </div>
                             </div>
                           
@@ -198,18 +200,18 @@
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper-web">
                           <!-- Slides -->
-                          <div class="swiper-slide"><img src="/assets/img/w1.png" alt="W1"></div>
-                          <div class="swiper-slide"><img src="/assets/img/w2.png" alt="W2"></div>
-                          <div class="swiper-slide"><img src="/assets/img/w3.png" alt="W3"></div>
-                          <div class="swiper-slide"><img src="/assets/img/w4.png" alt="W4"></div>
-                          <div class="swiper-slide"><img src="/assets/img/w5.png" alt="W5"></div>
-                          <div class="swiper-slide"><img src="/assets/img/w6.png" alt="W6"></div>
-                          <div class="swiper-slide"><img src="/assets/img/w7.png" alt="W7"></div>
-                          <div class="swiper-slide"><img src="/assets/img/w8.png" alt="W8"></div>
-                          <div class="swiper-slide"><img src="/assets/img/w9.png" alt="W9"></div>
-                          <div class="swiper-slide"><img src="/assets/img/w10.png" alt="W10"></div>
-                          <div class="swiper-slide"><img src="/assets/img/w11.png" alt="W11"></div>
-                          <div class="swiper-slide"><img src="/assets/img/w12.png" alt="W12"></div>
+                          <div class="swiper-slide"><img src="assets/img/w1.webp" alt="W1"></div>
+                          <div class="swiper-slide"><img src="assets/img/w2.webp" alt="W2"></div>
+                          <div class="swiper-slide"><img src="assets/img/w3.webp" alt="W3"></div>
+                          <div class="swiper-slide"><img src="assets/img/w4.webp" alt="W4"></div>
+                          <div class="swiper-slide"><img src="assets/img/w5.webp" alt="W5"></div>
+                          <div class="swiper-slide"><img src="assets/img/w6.webp" alt="W6"></div>
+                          <div class="swiper-slide"><img src="assets/img/w7.webp" alt="W7"></div>
+                          <div class="swiper-slide"><img src="assets/img/w8.webp" alt="W8"></div>
+                          <div class="swiper-slide"><img src="assets/img/w9.webp" alt="W9"></div>
+                          <div class="swiper-slide"><img src="assets/img/w10.webp" alt="W10"></div>
+                          <div class="swiper-slide"><img src="assets/img/w11.webp" alt="W11"></div>
+                          <div class="swiper-slide"><img src="assets/img/w12.webp" alt="W12"></div>
                           
                         </div>
                         <!-- If we need pagination -->
@@ -229,13 +231,13 @@
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper-graph">
                               <!-- Slides -->
-                              <div class="swiper-slide"><img src="/assets/img/graph1.png" alt="Графические работы"></div>
-                              <div class="swiper-slide"><img src="/assets/img/graph2.png" alt="Графические работы"></div>
-                              <div class="swiper-slide"><img src="/assets/img/graph3.png" alt="Графические работы"></div>
-                              <div class="swiper-slide"><img src="/assets/img/graph4.png" alt="Графические работы"></div>
-                              <div class="swiper-slide"><img src="/assets/img/graph5.png" alt="Графические работы"></div>
-                              <div class="swiper-slide"><img src="/assets/img/graph6.png" alt="Графические работы"></div>
-                              <div class="swiper-slide"><img src="/assets/img/graph7.png" alt="Графические работы"></div>
+                              <div class="swiper-slide"><img src="assets/img/graph1.png" alt="Графические работы"></div>
+                              <div class="swiper-slide"><img src="assets/img/graph2.webp" alt="Графические работы"></div>
+                              <div class="swiper-slide"><img src="assets/img/graph3.webp" alt="Графические работы"></div>
+                              <div class="swiper-slide"><img src="assets/img/graph4.webp" alt="Графические работы"></div>
+                              <div class="swiper-slide"><img src="assets/img/graph5.webp" alt="Графические работы"></div>
+                              <div class="swiper-slide"><img src="assets/img/graph6.webp" alt="Графические работы"></div>
+                              <div class="swiper-slide"><img src="assets/img/graph7.png" alt="Графические работы"></div>
                               
                             </div>
                             <!-- If we need pagination -->
@@ -250,216 +252,261 @@
                 </div>
             </section>
 
-            <!--==================== VALUE ====================-->
-            <section class="service section container">
-                <div class="service__complex" id="complex">
-                    <div class="project__title">
-                        <p class="project___title-text">УСЛУГИ</p>
-                        <h2 class="project__title-title">КОМПЛЕКСЫ УСЛУГ</h2>
+    
+            <section class="service section container" id="complex">
+                <div class="popup__wrapper complex__projects-popup-start ">
+                    <form class="contact__col-third form popup start__popup">
+                        <div class="popup__header">
+                            <p class="form__title">заполните форму, чтобы <br>  заказать комплекс "START"</p>
+                            <img src="assets/img/close.svg" alt="Закрыть" class="close-popup">
+                        </div>
+                        <div class="form__wrapper">
+                        <label for="name" class="name-title label">
+                            ИМЯ
+                            <input required class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
+                    <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
+                        </label>
+                        <label for="tel" class="name-title label">
+                            НОМЕР ТЕЛЕФОНА
+                            <input required class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
+                    <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
+                        </label>
+                        <label for="email" class="name-title label">
+                            E-MAIL
+                            <input required class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
+                    <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
+                        </label>
+                        <button class="btn form__btn">СДЕЛАТЬ ЗАКАЗ</button>
+                        <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="pc.html">политикой конфеденциальности</a></p>
                     </div>
-                    <div class="popup__wrapper service__popup-wrapper_start project__popup-wrapper ">
-                        <form class="contact__col-third form popup header-popup">
-                            <div class="popup__header">
-                                <p class="form__title">заполните форму, чтобы заказать <br> комплекс "start”</p>
-                                <img src="/assets/img/close.svg" alt="Закрыть" class="close-popup">
-                            </div>
-                            <div class="form__wrapper">
-                            <label for="name" class="name-title label">
-                                ИМЯ
-                                <input class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
-                            </label>
-                            <label for="tel" class="name-title label">
-                                НОМЕР ТЕЛЕФОНА
-                                <input class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
-                            </label>
-                            <label for="email" class="name-title label">
-                                E-MAIL
-                                <input class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
-                            </label>
-                            <button class="btn form__btn">СДЕЛАТЬ ЗАКАЗ</button>
-                            <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="assets/pages/politic.html">политикой конфеденциальности</a></p>
-                        </div>
-                        </form>
-                         <div class="wrapper-popup"></div>
-                    </div> 
-                    <div class="popup__wrapper service__popup-wrapper_business project__popup-wrapper ">
-                        <form class="contact__col-third form popup header-popup">
-                            <div class="popup__header">
-                                <p class="form__title">заполните форму, чтобы заказать <br> комплекс "business”</p>
-                                <img src="/assets/img/close.svg" alt="Закрыть" class="close-popup">
-                            </div>
-                            <div class="form__wrapper">
-                            <label for="name" class="name-title label">
-                                ИМЯ
-                                <input class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
-                            </label>
-                            <label for="tel" class="name-title label">
-                                НОМЕР ТЕЛЕФОНА
-                                <input class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
-                            </label>
-                            <label for="email" class="name-title label">
-                                E-MAIL
-                                <input class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
-                            </label>
-                            <button class="btn form__btn">СДЕЛАТЬ ЗАКАЗ</button>
-                            <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="assets/pages/politic.html">политикой конфеденциальности</a></p>
-                        </div>
-                        </form>
-                         <div class="wrapper-popup"></div>
-                    </div> 
-                    <div class="popup__wrapper service__popup-wrapper_premium project__popup-wrapper ">
-                        <form class="contact__col-third form popup header-popup">
-                            <div class="popup__header">
-                                <p class="form__title">заполните форму, чтобы заказать <br> комплекс “premium”</p>
-                                <img src="/assets/img/close.svg" alt="Закрыть" class="close-popup">
-                            </div>
-                            <div class="form__wrapper">
-                            <label for="name" class="name-title label">
-                                ИМЯ
-                                <input class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
-                            </label>
-                            <label for="tel" class="name-title label">
-                                НОМЕР ТЕЛЕФОНА
-                                <input class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
-                            </label>
-                            <label for="email" class="name-title label">
-                                E-MAIL
-                                <input class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
-                            </label>
-                            <button class="btn form__btn">СДЕЛАТЬ ЗАКАЗ</button>
-                            <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="assets/pages/politic.html">политикой конфеденциальности</a></p>
-                        </div>
-                        </form>
-                         <div class="wrapper-popup"></div>
-                    </div> 
-                    <div class="service__complex-items service__items">
-                        
-                        <div class="service__items-wrapper">
-                            
-                            <div class="service__item">
-                                <div class="service__item-inner ">
-                                <p class="service__item-title">START</p>
-                                <div class="service__item-textitem service__item-textitem-first">
-                                    <p>ЛЕНДИНГ</p>
-                                    <p>ЛОГОТИП</p>
-                                    <p>ГАРАНТИЯ 12 МЕСЯЦЕВ</p>
-                                </div>
-                                <p class="service__item-price">40.000Р</p>
-                                </div>
-                                <button class="btn service__item-btn service__item-btn_start">ЗАКАЗАТЬ КОМПЛЕКС</button>
-                                  
-                            </div>
-                            
-                            
-                            <div class="service__item">
-                                <div class="service__item-inner service__item-inner2">
-                                    <p class="service__item-title">BUSINESS <img src="/assets/img/services.svg" alt="Корона"></p>
-                                <div class="service__item-textitem">
-                                    <p>ЛЕНДИНГ</p>
-                                    <p>УПАКОВКА БРЕНДА</p>
-                                    <p>CEO ПРОДВИЖЕНИЕ</p>
-                                    <p>ГАРАНТИЯ 12 МЕСЯЦЕВ</p>
-                                </div>
-                                <p class="service__item-price">59.000Р</p>
-                            </div>
-                                <button class="btn service__item-btn service__item-btn_business">ЗАКАЗАТЬ КОМПЛЕКС</button>
-                            </div>
-                            <div class="service__item">
-                                <div class="service__item-inner service__item-inner3">
-                                <p class="service__item-title">PREMIUM</p>
-                                <div class="service__item-textitem">
-                                    <p>ИНТЕРНЕТ МАГАЗИН</p>
-                                    <p>УПАКОВКА БРЕНДА</p>
-                                    <p>CEO ПРОДВИЖЕНИЕ</p>
-                                    <p>ГАРАНТИЯ 12 МЕСЯЦЕВ</p>
-                                </div>
-                                <p class="service__item-price">95.000Р</p>
-                            </div>
-                                <button class="btn service__item-btn service__item-btn_premium">ЗАКАЗАТЬ КОМПЛЕКС</button>
-                            </div>
-                        </div>
-                        <div class="swiper-button-prev complex-btn-prev"></div>
-                        <div class="swiper-button-next complex-btn-next"></div>
-                        
-                    </div>
+                    </form>
+                     <div class="wrapper-popup"></div>
                     
-                </div>
+                </div> 
+                 <div class="popup__wrapper complex__projects-popup-business ">
+                    <form class="contact__col-third form popup business__popup">
+                        <div class="popup__header">
+                            <p class="form__title">заполните форму, чтобы <br>  заказать комплекс "BUSINESS"</p>
+                            <img src="assets/img/close.svg" alt="Закрыть" class="close-popup">
+                        </div>
+                        <div class="form__wrapper">
+                        <label for="name" class="name-title label">
+                            ИМЯ
+                            <input required class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
+                    <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
+                        </label>
+                        <label for="tel" class="name-title label">
+                            НОМЕР ТЕЛЕФОНА
+                            <input required class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
+                    <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
+                        </label>
+                        <label for="email" class="name-title label">
+                            E-MAIL
+                            <input required class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
+                    <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
+                        </label>
+                        <button class="btn form__btn">СДЕЛАТЬ ЗАКАЗ</button>
+                        <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="pc.html">политикой конфеденциальности</a></p>
+                    </div>
+                    </form>
+                     <div class="wrapper-popup"></div>
+                    
+                </div> 
+
+                 <div class="popup__wrapper complex__projects-popup-premium ">
+                    <form class="contact__col-third form popup premium__popup">
+                        <div class="popup__header">
+                            <p class="form__title">заполните форму, чтобы <br>  заказать комплекс "PREMIUM"</p>
+                            <img src="assets/img/close.svg" alt="Закрыть" class="close-popup">
+                        </div>
+                        <div class="form__wrapper">
+                        <label for="name" class="name-title label">
+                            ИМЯ
+                            <input required class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
+                    <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
+                        </label>
+                        <label for="tel" class="name-title label">
+                            НОМЕР ТЕЛЕФОНА
+                            <input required class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
+                    <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
+                        </label>
+                        <label for="email" class="name-title label">
+                            E-MAIL
+                            <input required class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
+                    <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
+                        </label>
+                        <button class="btn form__btn">СДЕЛАТЬ ЗАКАЗ</button>
+                        <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="pc.html">политикой конфеденциальности</a></p>
+                    </div>
+                    </form>
+                     <div class="wrapper-popup"></div>
+                    
+                </div> 
                 <div class="project__swiper-web project__swiper-service" id="website">
-                    <h2>РАЗРАБОТКА САЙТОВ</h2>
+                    <div class="complex__project">
+                        <div class="project__title">
+                            <p class="project___title-text">УСЛУГИ</p>
+                            <h2 class="project__title-title">КОМПЛЕКС УСЛУГ</h2>
+                        </div>
+                        <div class="complex__projects">
+                            <div class="complex__projects-wrapper ">
+                                <div class="complex__projects-slide complex__projects-slide__start">
+                                    <img src="assets/img/s1.webp" alt="">
+                                    <p class="complex__projects-slide__name">START</p>
+                                    <div class="complex__projects-slide__items">
+                                        <span>Лендинг</span>
+                                        <span>Логотип</span>
+                                        <span>Гарантия 6 месяцев</span>
+                                    </div>
+                                    <div class="complex__projects-slide__price">
+                                        <span>44.990Р</span>
+                                        39.990Р
+                                    </div>
+                                    <div class="complex__projects-slide__btn btn">Заказать комлекс</div>
+                                </div>
+                                <div class="complex__projects-slide complex__projects-slide__business">
+                                    <img src="assets/img/s2.webp" alt="">
+                                    <p class="complex__projects-slide__name">BUSINESS <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <rect width="17" height="17" fill="url(#pattern0)"/>
+                                        <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_41_7" transform="scale(0.0104167)"/>
+                                        </pattern>
+                                        <image id="image0_41_7" width="96" height="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAFDUlEQVR4nO2czWtcVRjGf2eSzJ1qFBSDHxBpsILoImI22oVNQeM/IFoFl/2g4sYWLAgKBeNCpYtScO8ioP4DUspkki4Es9BF0EIhBd21pVBEM4kzr4skdDIzmXvv+bh37p33B4WS+/W+52GeZ86Zey8oiqIoiqIoiqIoiqIoiqKMAibvAmyQK0wzziWEhd0/XaPNBXOWG7kWZkHhBJArTDPGr8DjXZvu0WLWfMifedRlSyXvAlIzziV6Bx/gMcb4JutyXCmeAA9spx9vZVaHJ4onwGAk7wLSUkQBrg3Y9lNmVXiieAK0uQDc67PlLmOcy7ocVwongDnLDVrMAj8A93f/fc8YL5uT/JVvdSOGNKIFWY7ezLsOFwr3CdhDBANmEfhKpLh9jCfZaShnnivV90DmMECj+i5sLeVVisv4xM6Eh3HmKWtM8E/0O8Jzu3/a4InmC+YltjKvxXF84j+6wzjz/Ds60zH4ADPcjU7lUovj+MQLMGQzT6kzieHT3g18Jj/zaNb1uI6Pa3hlP/Os1M4DT/bZMkWz9nHW5cQQOz5JBBiamaesTE6BDBhkOSf1h5/KriLAcXziBRimmadsfw48MmCPSSr/9dpTSBzHJ1aAYZl5SqM2A5xMsOtpqUdHQtezh+v4WP8gI8u1i1Q3vzRH+df2HCmvt4SRE4l2NmbJvL75fuCSAJB1qtyunjfzW4s2xzuEcHua7dqqXD/0rP05kiGrE7MYeSf5AXJCVifmApa0c5nrDz3Dneoy8LztOewFqFQaIHO02mtSr81bnycJUvmadLWa3WOCIY1DR2m11sC8tjMWdtgL0GJ5939TVOSqNKqfWJ9rANKIFhDeSH8g86EW6qRROwXtOvA00DkWqXH6UV4a0QZw+MHZ5DvGt077ygURDCu1X0Ds7ET4jWPNV4yh7aWedarciS4DnbPuW+ZYc8b2nG4TMZH9yov5wGsu7C242WKY3Vmoc6fD7/cveXSPQUrcBOjrfX5yQdaYwJiLLucAwJgvZJ2qUy2dft+Ng/+DqwAHe597LvQuuNnitFDX4/fdOPg/eLgxqycHeq6QPhekziSV6Cb913xsuE3UPGJe5X7iGvr7fTdO/g8+fhGL80CbXDh4wc2WVAt1B/p9z45u/g8+BEjkgclzIX7BzZZkC3UD/b4bR/8HHwIk98BkuRC/4GZL7EJdrN934+j/4Onm3Ngc6Llq/1zYWXCTP8DtW8sAtmnzojnevLnvusn8vhtn/wdfd0Wk9cKDckFYJNzgA0wwtv+rbWK/78aD/4MvAay8cH8upF5ws6VjoS6V33fjwf/BlwXVa4epyIbl4VtgPgJ5G8jqJqurYH4EuYztJ65tZszxzVuuhXh7QCN1DhQbL/4PPu+M8+SJhcBjr/4E8OSJhcBjr/4E8PCduDB47NXrQ3ojkgPe/B983x09CjnguUe/AoxCDnju0a8Ao5ADnnv0/qB2yXPAq/9DiCdkypwDAXrzL0CZcyBAb/4FKHMOBOgtyMs6SpoD3v0fQj0lWcYcCNRTGAHKmAOBegojQBlzIFBPwV7YVLIcCOL/EPJJ+TLlQMBewglQphwI2Es4AcqUAwF7CfrSvpLkQDD/h9BvSylDDgTuIawAZciBwD2EFaAMORC4h+AvbpVvi/cmw07MmbBjVNg3TZUFFSBnVICcUQFyRgXIGRUgZ1SAnFEBckYFUBRFURRFURRFURRFURRFUTLgf3glAZUOQauJAAAAAElFTkSuQmCC"/>
+                                        </defs>
+                                        </svg>
+                                        </p>
+                                    <div class="complex__projects-slide__items">
+                                        <span>Лендинг</span>
+                                        <span>Упаковка бренда</span>
+                                        <span>Гарантия 6 месяцев</span>
+                                    </div>
+                                    <div class="complex__projects-slide__price">
+                                        <span>55.990Р</span>
+                                        49.990Р
+                                    </div>
+                                    <div class="complex__projects-slide__btn btn">Заказать комлекс</div>
+                                </div>
+                                <div class="complex__projects-slide complex__projects-slide__premuim">
+                                    <img src="assets/img/s3.webp" alt="">
+                                    <p class="complex__projects-slide__name">PREMIUM</p>
+                                    <div class="complex__projects-slide__items">
+                                        <span>Интернет магазин</span>
+                                        <span>Упаковка бренда</span>
+                                        <span>Гарантия 6 месяцев</span>
+                                    </div>
+                                    <div class="complex__projects-slide__price">
+                                        <span>129.990Р</span>
+                                        105.990Р
+                                    </div>
+                                    <div class="complex__projects-slide__btn btn">Заказать комлекс</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <h2>Разработка сайтов</h2>
                     <div class="swiper-service-dev">
                         <div class="popup__wrapper site__popup-wrapper project__popup-wrapper ">
-                            <form class="contact__col-third form popup header-popup">
+                            <form class="contact__col-third form popup header-popup site__popup">
                                 <div class="popup__header">
-                                    <p class="form__title">заполните форму, чтобы <br>  заказать сайт</p>
-                                    <img src="/assets/img/close.svg" alt="Закрыть" class="close-popup">
+                                    <p class="form__title">заполните форму, чтобы <br>  заказать сайт визитку</p>
+                                    <img src="assets/img/close.svg" alt="Закрыть" class="close-popup">
                                 </div>
                                 <div class="form__wrapper">
                                 <label for="name" class="name-title label">
                                     ИМЯ
-                                    <input class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
+                                    <input required class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                                 </label>
                                 <label for="tel" class="name-title label">
                                     НОМЕР ТЕЛЕФОНА
-                                    <input class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
+                                    <input required class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                                 </label>
                                 <label for="email" class="name-title label">
                                     E-MAIL
-                                    <input class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
+                                    <input required class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                                 </label>
                                 <button class="btn form__btn">СДЕЛАТЬ ЗАКАЗ</button>
-                                <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="assets/pages/politic.html">политикой конфеденциальности</a></p>
+                                <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="pc.html">политикой конфеденциальности</a></p>
                             </div>
                             </form>
                              <div class="wrapper-popup"></div>
                             
                         </div> 
-                        <div class="popup__wrapper landing__popup-wrapper project__popup-wrapper ">
-                            <form class="contact__col-third form popup header-popup">
+                        <div class="popup__wrapper landing__popup-wrapper project__popup-wrapper">
+                            <form class="contact__col-third form popup header-popup landing__popup">
                                 <div class="popup__header">
                                  <p class="form__title">заполните форму, чтобы <br> заказать лендинг</p>
-                                    <img src="/assets/img/close.svg" alt="Закрыть" class="close-popup">
+                                    <img src="assets/img/close.svg" alt="Закрыть" class="close-popup">
                                 </div>
                                 <div class="form__wrapper">
                                 <label for="name" class="name-title label">
                                     ИМЯ
-                                    <input class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
+                                    <input required class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                                 </label>
                                 <label for="tel" class="name-title label">
                                     НОМЕР ТЕЛЕФОНА
-                                    <input class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
+                                    <input required class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                                 </label>
                                 <label for="email" class="name-title label">
                                     E-MAIL
-                                    <input class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
+                                    <input required class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                                 </label>
                                 <button class="btn form__btn">СДЕЛАТЬ ЗАКАЗ</button>
-                                <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="assets/pages/politic.html">политикой конфеденциальности</a></p>
+                                <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="pc.html">политикой конфеденциальности</a></p>
                             </div>
                             </form>
                              <div class="wrapper-popup"></div>
                             
                         </div> 
-                        <div class="popup__wrapper market__popup-wrapper project__popup-wrapper ">
-                            <form class="contact__col-third form popup header-popup">
+                        <div class="popup__wrapper market__popup-wrapper project__popup-wrapper">
+                            <form class="contact__col-third form popup header-popup market__popup">
                                 <div class="popup__header">
                                     <p class="form__title">заполните форму, чтобы заказать <br> интернет магазин</p>
-                                    <img src="/assets/img/close.svg" alt="Закрыть" class="close-popup">
+                                    <img src="assets/img/close.svg" alt="Закрыть" class="close-popup">
                                 </div>
                                 <div class="form__wrapper">
                                 <label for="name" class="name-title label">
                                     ИМЯ
-                                    <input class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
+                                    <input required class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                                 </label>
                                 <label for="tel" class="name-title label">
                                     НОМЕР ТЕЛЕФОНА
-                                    <input class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
+                                    <input required class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                                 </label>
                                 <label for="email" class="name-title label">
                                     E-MAIL
-                                    <input class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
+                                    <input required class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                                 </label>
                                 <button class="btn form__btn">СДЕЛАТЬ ЗАКАЗ</button>
-                                <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="assets/pages/politic.html">политикой конфеденциальности</a></p>
+                                <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="pc.html">политикой конфеденциальности</a></p>
                             </div>
                             </form>
                              <div class="wrapper-popup"></div>
@@ -471,7 +518,7 @@
                             <div class="swiper-slide swiper-slide-service">
                                 <div class="swiper-slide-img">
                                     <div class="slide-img-front">
-                                            <img src="/assets/img/d.png" alt="Сайт визитка">
+                                            <img src="assets/img/d.webp" alt="Сайт визитка">
                                             <div class="swiper-slide-img_more">
                                                 <p>Подробнее</p>
                                             </div>
@@ -481,7 +528,7 @@
                                         <div class="slide-img-backcontent">
                                             <p>Сайт-визитка — это виртуальная визитная карточка компании или отдельного человека. Такой сайт знакомит потенциальных клиентов с брендом или его услугами. Визитки подойдут всем, кто предлагает свои услуги.</p>
                                             <div class="slide-img-backcontent_down">
-                                                <span>от 14.990р</span>
+                                                <span>от 7.990р</span>
                                         <button class="btn swiper-slide-btn swiper-project-site-btn ">ЗАКАЗАТЬ</button>
                                                 
                                                 <!-- <button>Заказать</button> -->
@@ -510,7 +557,7 @@
                             <div class="swiper-slide swiper-slide-service">
                                 <div class="swiper-slide-img">
                                     <div class="slide-img-front">
-                                            <img src="/assets/img/d2.png" alt="Сайт визитка">
+                                            <img src="assets/img/d2.webp" alt="Сайт визитка">
                                             <div class="swiper-slide-img_more">
                                                 <p>Подробнее</p>
                                             </div>
@@ -546,7 +593,7 @@
                             <div class="swiper-slide swiper-slide-service">
                                 <div class="swiper-slide-img">
                                     <div class="slide-img-front">
-                                            <img src="/assets/img/d.png" alt="Сайт визитка">
+                                            <img src="assets/img/d3.webp" alt="Сайт визитка">
                                             <div class="swiper-slide-img_more">
                                                 <p>Подробнее</p>
                                             </div>
@@ -557,7 +604,7 @@
                                             <p>Интернет-магазин - это торговая платформа и интернет-витрина для представления и продажи товаров различного назначения, представляющая компанию и формирующая ее имидж, и способная принимать заявки и оплату в круглосуточном режиме.</p>
                                             <div class="slide-img-backcontent_down">
                                                 <span>от 29.990р</span>
-                                                <button class="btn swiper-slide-btn swiper-project-site-btn swiper-project-market-btn">ЗАКАЗАТЬ</button>
+                                                <button class="btn swiper-slide-btn swiper-project-market-btn">ЗАКАЗАТЬ</button>
                                                 
                                                 <!-- <button>Заказать</button> -->
                                             </div>      
@@ -569,7 +616,7 @@
                                     <p class="swiper-slide-text__subtitle">Интернет-магазин - это торговая платформа и интернет-витрина для представления и продажи товаров различного назначения, представляющая компанию и формирующая ее имидж, и способная принимать заявки и оплату в круглосуточном режиме.</p>
                                     <div class="swiper-slide-down">
                                         <p class="swiper-slide-price">ОТ 29.990Р</p>
-                                        <button class="btn swiper-slide-btn swiper-project-site-btn swiper-project-market-btn">ЗАКАЗАТЬ</button>
+                                        <button class="btn swiper-slide-btn  swiper-project-market-btn">ЗАКАЗАТЬ</button>
                                     </div>
                                 </div>
                                 <div class="swiper-help">
@@ -580,143 +627,174 @@
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-button-prev dev-btn-prev"></div>
+                    <div class="swiper-button-next dev-btn-next"></div>
                     <!-- If we need pagination -->
                     
                     <!-- If we need navigation buttons -->
                     <div class="swiper-pagination swiper-pagination-service-dev">
                     </div>
-                    <div class="swiper-button-prev dev-btn-prev"></div>
-                    <div class="swiper-button-next dev-btn-next"></div>
-                </div>
+                   
+            
                 </div>
                 <div class="project__swiper-web project__swiper-service" id="graph">
-                    <h2>ГРАФИЧЕСКИЙ ДИЗАЙН</h2>
+                    <h2>Графический дизайн</h2>
                     <div class="swiper-service_graph">
                         <div class="popup__wrapper home__popup-wrapper project__popup-wrapper ">
                             <form class="contact__col-third form popup header-popup">
                                 <div class="popup__header">
                                     <p class="form__title">заполните форму, чтобы обсудить проект</p>
-                                    <img src="/assets/img/close.svg" alt="Закрыть" class="close-popup">
+                                    <img src="assets/img/close.svg" alt="Закрыть" class="close-popup">
                                 </div>
                                 <div class="form__wrapper">
                                 <label for="name" class="name-title label">
                                     ИМЯ
-                                    <input class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
+                                    <input required class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                                 </label>
                                 <label for="tel" class="name-title label">
                                     НОМЕР ТЕЛЕФОНА
-                                    <input class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
+                                    <input required class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                                 </label>
                                 <label for="email" class="name-title label">
                                     E-MAIL
-                                    <input class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
+                                    <input required class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                                 </label>
                                 <button class="btn form__btn">СДЕЛАТЬ ЗАКАЗ</button>
-                                <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="assets/pages/politic.html">политикой конфеденциальности</a></p>
+                                <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="pc.html">политикой конфеденциальности</a></p>
                             </div>
                             </form>
                              <div class="wrapper-popup"></div>
                             
                         </div> 
-                        <div class="popup__wrapper logo__popup-wrapper project__popup-wrapper ">
-                            <form class="contact__col-third form popup header-popup">
+                        <div class="popup__wrapper logo__popup-wrapper  ">
+                            <form class="contact__col-third form popup header-popup logo__popup">
                                 <div class="popup__header">
                                     <p class="form__title">заполните форму, чтобы <br> заказать лого</p>
-                                    <img src="/assets/img/close.svg" alt="Закрыть" class="close-popup">
+                                    <img src="assets/img/close.svg" alt="Закрыть" class="close-popup">
                                 </div>
                                 <div class="form__wrapper">
                                 <label for="name" class="name-title label">
                                     ИМЯ
-                                    <input class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
+                                    <input required class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                                 </label>
                                 <label for="tel" class="name-title label">
                                     НОМЕР ТЕЛЕФОНА
-                                    <input class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
+                                    <input required class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                                 </label>
                                 <label for="email" class="name-title label">
                                     E-MAIL
-                                    <input class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
+                                    <input required class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                                 </label>
                                 <button class="btn form__btn">СДЕЛАТЬ ЗАКАЗ</button>
-                                <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="assets/pages/politic.html">политикой конфеденциальности</a></p>
+                                <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="pc.html">политикой конфеденциальности</a></p>
                             </div>
                             </form>
                              <div class="wrapper-popup"></div>
                             
                         </div> 
-                        <div class="popup__wrapper banner__popup-wrapper project__popup-wrapper ">
-                            <form class="contact__col-third form popup header-popup">
+                        <div class="popup__wrapper banner__popup-wrapper  ">
+                            <form class="contact__col-third form popup header-popup banner__popup">
                                 <div class="popup__header">
                                     <p class="form__title">заполните форму, чтобы заказать <br> рекламный баннер</p>
-                                    <img src="/assets/img/close.svg" alt="Закрыть" class="close-popup">
+                                    <img src="assets/img/close.svg" alt="Закрыть" class="close-popup">
                                 </div>
                                 <div class="form__wrapper">
                                 <label for="name" class="name-title label">
                                     ИМЯ
-                                    <input class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
+                                    <input required class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                                 </label>
                                 <label for="tel" class="name-title label">
                                     НОМЕР ТЕЛЕФОНА
-                                    <input class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
+                                    <input required class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                                 </label>
                                 <label for="email" class="name-title label">
                                     E-MAIL
-                                    <input class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
+                                    <input required class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                                 </label>
                                 <button class="btn form__btn">СДЕЛАТЬ ЗАКАЗ</button>
-                                <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="assets/pages/politic.html">политикой конфеденциальности</a></p>
+                                <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="pc.html">политикой конфеденциальности</a></p>
                             </div>
                             </form>
                              <div class="wrapper-popup"></div>
                             
                         </div> 
-                        <div class="popup__wrapper prezentaion__popup-wrapper project__popup-wrapper ">
-                            <form class="contact__col-third form popup header-popup">
+                        <div class="popup__wrapper prezentaion__popup-wrapper ">
+                            <form class="contact__col-third form popup header-popup prezentation__popup">
                                 <div class="popup__header">
                                     <p class="form__title">заполните форму, чтобы заказать <br> презентацию товара</p>
-                                    <img src="/assets/img/close.svg" alt="Закрыть" class="close-popup">
+                                    <img src="assets/img/close.svg" alt="Закрыть" class="close-popup">
                                 </div>
                                 <div class="form__wrapper">
                                 <label for="name" class="name-title label">
                                     ИМЯ
-                                    <input class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
+                                    <input required class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                                 </label>
                                 <label for="tel" class="name-title label">
                                     НОМЕР ТЕЛЕФОНА
-                                    <input class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
+                                    <input required class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                                 </label>
                                 <label for="email" class="name-title label">
                                     E-MAIL
-                                    <input class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
+                                    <input required class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                                 </label>
                                 <button class="btn form__btn">СДЕЛАТЬ ЗАКАЗ</button>
-                                <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="assets/pages/politic.html">политикой конфеденциальности</a></p>
+                                <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="pc.html">политикой конфеденциальности</a></p>
                             </div>
                             </form>
                              <div class="wrapper-popup"></div>
                             
                         </div> 
                         <div class="popup__wrapper paket__popup-wrapper project__popup-wrapper ">
-                            <form class="contact__col-third form popup header-popup">
+                            <form class="contact__col-third form popup header-popup paket__popup">
                                 <div class="popup__header">
                                     <p class="form__title">заполните форму, чтобы заказать <br> упаковку бренда</p>
-                                    <img src="/assets/img/close.svg" alt="Закрыть" class="close-popup">
+                                    <img src="assets/img/close.svg" alt="Закрыть" class="close-popup">
                                 </div>
                                 <div class="form__wrapper">
                                 <label for="name" class="name-title label">
                                     ИМЯ
-                                    <input class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
+                                    <input required class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                                 </label>
                                 <label for="tel" class="name-title label">
                                     НОМЕР ТЕЛЕФОНА
-                                    <input class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
+                                    <input required class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                                 </label>
                                 <label for="email" class="name-title label">
                                     E-MAIL
-                                    <input class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
+                                    <input required class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                                 </label>
                                 <button class="btn form__btn">СДЕЛАТЬ ЗАКАЗ</button>
-                                <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="assets/pages/politic.html">политикой конфеденциальности</a></p>
+                                <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="pc.html">политикой конфеденциальности</a></p>
                             </div>
                             </form>
                              <div class="wrapper-popup"></div>
@@ -728,7 +806,7 @@
                           <div class="swiper-slide swiper-slide-service swiper-slide-service-graph">
                             <div class="swiper-slide-img">
                                 <div class="slide-img-front">
-                                        <img src="/assets/img/g.png" alt="Сайт визитка">
+                                        <img src="assets/img/g.png" alt="Сайт визитка">
                                         <div class="swiper-slide-img_more">
                                             <p>Подробнее</p>
                                         </div>
@@ -739,7 +817,7 @@
                                         <p>Логотип — это графическое изображение, которое служит «лицом» или визитной карточкой Вашей компании. Он выражает основное направление деятельности компании, её ценность и ключевые характеристики создаваемого бренда.</p>
                                         <div class="slide-img-backcontent_down">
                                             <span>от 3.990р</span>
-                                           <button class="btn swiper-slide-btn swiper-project-site-btn swiper-project-logo-btn">ЗАКАЗАТЬ</button>
+                                           <button class="btn swiper-slide-btn swiper-project-logo-btn">ЗАКАЗАТЬ</button>
                                              
                                             <!-- <button>Заказать</button> -->
                                         </div>      
@@ -751,7 +829,7 @@
                                   <p class="swiper-slide-text__subtitle">Логотип — это графическое изображение, которое служит «лицом» или визитной карточкой Вашей компании. Он выражает основное направление деятельности компании, её ценность и ключевые характеристики создаваемого бренда.</p>
                                   <div class="swiper-slide-down">
                                       <p class="swiper-slide-price">ОТ 3.990Р</p>
-                                      <button class="btn swiper-slide-btn swiper-project-site-btn swiper-project-logo-btn">ЗАКАЗАТЬ</button>
+                                      <button class="btn swiper-slide-btn  swiper-project-logo-btn">ЗАКАЗАТЬ</button>
                                   </div>
                               </div>
                               <div class="swiper-help">
@@ -764,7 +842,7 @@
                           <div class="swiper-slide swiper-slide-service swiper-slide-service-graph">
                             <div class="swiper-slide-img">
                                 <div class="slide-img-front">
-                                        <img src="/assets/img/g2.png" alt="Сайт визитка">
+                                        <img src="assets/img/g2.webp" alt="Сайт визитка">
                                         <div class="swiper-slide-img_more">
                                             <p>Подробнее</p>
                                         </div>
@@ -775,7 +853,7 @@
                                         <p>Баннерная реклама — это метод продвижения товаров, услуг или брендов, при котором рекламодатель размещает на сторонних площадках графические объекты рекламного характера. Грубо говоря, это реклама, в которой используют баннеры.</p>
                                         <div class="slide-img-backcontent_down">
                                             <span>от 1.490р</span>
-                                            <button class="btn swiper-slide-btn swiper-project-site-btn swiper-project-banner-btn">ЗАКАЗАТЬ</button>
+                                            <button class="btn swiper-slide-btn  swiper-project-banner-btn">ЗАКАЗАТЬ</button>
                                             
                                             <!-- <button>Заказать</button> -->
                                         </div>      
@@ -787,7 +865,7 @@
                                 <p class="swiper-slide-text__subtitle">Баннерная реклама — это метод продвижения товаров, услуг или брендов, при котором рекламодатель размещает на сторонних площадках графические объекты рекламного характера. Грубо говоря, это реклама, в которой используют баннеры.</p>
                                 <div class="swiper-slide-down">
                                     <p class="swiper-slide-price">ОТ 1.490Р</p>
-                                    <button class="btn swiper-slide-btn swiper-project-site-btn swiper-project-banner-btn">ЗАКАЗАТЬ</button>
+                                    <button class="btn swiper-slide-btn  swiper-project-banner-btn">ЗАКАЗАТЬ</button>
                                 </div>
                             </div>
                             <div class="swiper-help">
@@ -800,7 +878,7 @@
                           <div class="swiper-slide swiper-slide-service swiper-slide-service-graph">
                             <div class="swiper-slide-img">
                                 <div class="slide-img-front">
-                                        <img src="/assets/img/g3.png" alt="Сайт визитка">
+                                        <img src="assets/img/g3.webp" alt="Сайт визитка">
                                         <div class="swiper-slide-img_more">
                                             <p>Подробнее</p>
                                         </div>
@@ -811,7 +889,7 @@
                                         <p>Презентация товара — это основной этап процесса продажи. Его цель — представить преимущества продукта и мотивировать клиента к совершению покупки.</p>
                                         <div class="slide-img-backcontent_down">
                                             <span>от 5.990р</span>
-                                            <button class="btn swiper-slide-btn swiper-project-site-btn swiper-project-prezentation-btn">ЗАКАЗАТЬ</button>
+                                            <button class="btn swiper-slide-btn  swiper-project-prezentation-btn">ЗАКАЗАТЬ</button>
                                             
                                             <!-- <button>Заказать</button> -->
                                         </div>      
@@ -823,7 +901,7 @@
                                 <p class="swiper-slide-text__subtitle">Презентация товара — это основной этап процесса продажи. Его цель — представить преимущества продукта и мотивировать клиента к совершению покупки.</p>
                                 <div class="swiper-slide-down">
                                     <p class="swiper-slide-price">ОТ 5.990Р</p>
-                                    <button class="btn swiper-slide-btn swiper-project-site-btn swiper-project-prezentation-btn">ЗАКАЗАТЬ</button>
+                                    <button class="btn swiper-slide-btn  swiper-project-prezentation-btn">ЗАКАЗАТЬ</button>
                                 </div>
                             </div>
                             <div class="swiper-help">
@@ -835,7 +913,7 @@
                           <div class="swiper-slide swiper-slide-service swiper-slide-service-graph">
                             <div class="swiper-slide-img">
                                 <div class="slide-img-front">
-                                        <img src="/assets/img/g.png" alt="Сайт визитка">
+                                        <img src="assets/img/g.png" alt="Сайт визитка">
                                         <div class="swiper-slide-img_more">
                                             <p>Подробнее</p>
                                         </div>
@@ -868,7 +946,7 @@
                                 </div>
                                 <div class="swiper-slide-down">
                                     <p class="swiper-slide-price">ОТ 5.990Р</p>
-                                    <button class="btn swiper-slide-btn swiper-project-site-btn swiper-project-paket-btn">ЗАКАЗАТЬ</button>
+                                    <button class="btn swiper-slide-btn swiper-project-paket-btn">ЗАКАЗАТЬ</button>
                                 </div>
                             </div>
                             <div class="swiper-help">
@@ -888,28 +966,34 @@
                         <div class="swiper-button-next graph-btn-next"></div>
                 </div>
                 <div class="project__swiper-web project__swiper-service" id="ceo">
-                    <h2>ПРОДВИЖЕНИЕ</h2>
-                    <div class="popup__wrapper home__popup-wrapper ceo__popup-wrapper">
-                        <form class="contact__col-third form popup header-popup">
+                    <h2>Продвижение</h2>
+                    <div class="popup__wrapper seo__popup-wrapper ceo__popup-wrapper">
+                        <form class="contact__col-third form popup header-popup seo__popup">
                             <div class="popup__header">
                                 <p class="form__title">заполните форму, чтобы обсудить <br> продвижение сайта</p>
-                                <img src="/assets/img/close.svg" alt="Закрыть" class="close-popup">
+                                <img src="assets/img/close.svg" alt="Закрыть" class="close-popup">
                             </div>
                             <div class="form__wrapper">
                             <label for="name" class="name-title label">
                                 ИМЯ
-                                <input class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
+                                <input required class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                             </label>
                             <label for="tel" class="name-title label">
                                 НОМЕР ТЕЛЕФОНА
-                                <input class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
+                                <input required class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                             </label>
                             <label for="email" class="name-title label">
                                 E-MAIL
-                                <input class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
+                                <input required class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                             </label>
                             <button class="btn form__btn">СДЕЛАТЬ ЗАКАЗ</button>
-                            <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="assets/pages/politic.html">политикой конфеденциальности</a></p>
+                            <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="pc.html">политикой конфеденциальности</a></p>
                         </div>
                         </form>
                         <div class="wrapper-popup"></div>
@@ -919,7 +1003,7 @@
                           <div class="ceo">
                             <div class="swiper-slide-img">
                                 <div class="slide-img-front">
-                                        <img src="/assets/img/c.png" alt="Сайт визитка">
+                                        <img src="assets/img/c.png" alt="Сайт визитка">
                                         <div class="swiper-slide-img_more">
                                             <p>Подробнее</p>
                                         </div>
@@ -957,7 +1041,7 @@
 
             </section>
 
-            <section class="comment section container" id="comment">
+            <!-- <section class="comment section container" id="comment">
                 <div class="project__wrapper">
                     <div class="project__title">
                         <p class="project___title-text">ОТЗЫВЫ</p>
@@ -966,11 +1050,9 @@
                     <div class="project__swiper-web">
                     <div class="swiper-service_comment">
 
-                        <!-- Additional required wrapper -->
                         <div class=" swiper-wrapper-service_comment">
-                          <!-- Slides -->
                           <div class="swiper-slide comment-slide">
-                              <img src="/assets/img/comment.png" alt="ава">
+                              <img src="assets/img/comment.png" alt="ава">
                               <p class="webstore">WEBSTORE</p>
                               <div class="comment-slide-name">
                                 <div class="comment-slide-line"></div>
@@ -980,7 +1062,8 @@
                               <p class="slide-text">Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из  философского трактата Марка Туллия Цицерона</p>
                           </div> 
                           <div class="swiper-slide comment-slide">
-                            <img src="/assets/img/comment.png" alt="ава">
+
+                            <img src="assets/img/comment.png" alt="ава">
                             <p class="webstore">WEBSTORE</p>
                             <div class="comment-slide-name">
                                 <div class="comment-slide-line"></div>
@@ -990,7 +1073,7 @@
                             <p class="slide-text">Lorem ipsum — классический текст-«рыба». Является искажённым отрывком из  философского трактата Марка Туллия Цицерона</p>
                         </div> 
                         <div class="swiper-slide comment-slide">
-                            <img src="/assets/img/comment.png" alt="ава">
+                            <img src="assets/img/comment.png" alt="ава">
                             <p class="webstore">WEBSTORE</p>
                             <div class="comment-slide-name">
                                 <div class="comment-slide-line"></div>
@@ -1007,25 +1090,25 @@
                     
                  
                 </div>
-                <button class="comment__btn btn">ОСТАВИТЬ ОТЗЫВ</button>
+                <button class="comment__btn btn file-btn">ОСТАВИТЬ ОТЗЫВ</button>
                   <div class="popup__wrapper comment__popup-wrapper">
-                    <form class=" form popup header-popup">
+                    <form class=" form popup header-popup comment__popup"  enctype="multipart/form-data">
                         <div class="popup__header">
                             <p class="form__title">Оставьте отзыв о <br> нашей работе</p>
-                            <img src="/assets/img/close.svg" alt="Закрыть" class="close-popup">
+                            <img src="assets/img/close.svg" alt="Закрыть" class="close-popup">
                         </div>
                         <div class="form__wrapper">
                         <label for="name" class="name-title label">
                             ИМЯ
-                            <input class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
+                            <input required class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
                         </label>
                         <label for="name" class="name-title label">
                             НАЗВАНИЕ КОМПАНИИ
-                            <input class="input-text input" type="text" name="name_company" id="name" placeholder="WEBSTORE">
+                            <input required class="input-text input" type="text" name="name_company" id="name" placeholder="WEBSTORE">
                         </label>    
                         <label for="tel" class="name-title label">
                             НОМЕР ТЕЛЕФОНА
-                            <input class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
+                            <input required class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
                         </label>
                         <label for="comment" class="name-title label">
                             ВАШ ОТЗЫВ
@@ -1033,18 +1116,18 @@
                         </label>
                         <div class="file-choose">
    
-                            <input type="file" name="file" id="file-input" >
+                            <input required type="file" type="file" name="file[]" multiple id="file-input">
                             <label for="file-input" class="name-title label file-wrapper"> Загрузить логотип</label>
                             
                         </div>
-                            <button class="btn form__btn">ОСТАВИТЬ ОТЗЫВ</button>
-                        <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="assets/pages/politic.html">политикой конфеденциальности</a></p>
+                        <button class="btn form__btn">ОСТАВИТЬ ОТЗЫВ</button>
+                        <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="pc.html">политикой конфеденциальности</a></p>
                     </div>
-                    </form>
-                    <div class="wrapper-popup"></div>
+                </form>
+                <div class="wrapper-popup"></div>
                     
                 </div>  
-            </section>
+            </section> -->
             <!--==================== CONTACT ====================-->
             <section class="review section container" id="review">
                 <div class="project__title">
@@ -1053,7 +1136,13 @@
                 </div>
                 <div class="review__content">
                     <div class="review__col-one">
-                        <img src="/assets/img/review.png" alt="Видео">
+                        <iframe class="review__col-one__yt" width="660" height="415" src="https://www.youtube.com/embed/NEDhkKMZKi8" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                        <!-- <img src="assets/img/review.png" alt="Видео"> -->
                     </div>
                     <div class="review__col-wrapper">
                         <div class="review__col-two col__text">
@@ -1064,13 +1153,13 @@
                             <p class="col__text-social">БОЛЬШЕ О НАС</p>
                             <div class="col__text-img">
                                 <a href="https://vk.com/webstoresite" target="_blank">
-                                    <img src="/assets/img/vk.svg" alt="Вконтакте">
+                                    <img src="assets/img/vk.svg" alt="Вконтакте">
                                 </a>
                                 <a href="https://www.youtube.com/channel/UCyJBbL5ZcZDQSsF-8KFXgBA" target="_blank">
-                                    <img src="/assets/img/youtube.svg" alt="Ютуб">
+                                    <img src="assets/img/youtube.svg" alt="Ютуб">
                                 </a>
                                 <a href="https://t.me/webstoresite" target="_blank">
-                                    <img src="/assets/img/telegram.svg" alt="Телеграм">
+                                    <img src="assets/img/telegram.svg" alt="Телеграм">
                                 </a>
                             </div>
                         </div>
@@ -1094,7 +1183,9 @@
                             </div>
                             <div class="read-more">
                                 <p>ЧИТАТЬ ДАЛЕЕ</p>
-                                <img src="/assets/img/arrow-open.svg" alt="Читать далее">
+                                <img class="light-arrow" src="assets/img/arrow-open.svg" alt="Открыть">
+                                <img class="night-arrow" src="assets/img/arrow-night.svg" alt="Открыть">
+                                <!-- <img src="assets/img/arrow-open.svg" alt="Читать далее"> -->
                             </div>
                         </div>
                     </div>
@@ -1109,7 +1200,7 @@
                     <div class="contact__content">
                         <div class="contact__content-left">
                         <div class="contact__col-first">
-                            <img src="/assets/img/form-logo.svg" alt="Логотип">
+                            <img src="assets/img/form-logo.svg" alt="Логотип">
                             <p class="contact__col-first_name">ИМЯ: <span>WEBSTORE</span></p>
                         </div>
                         <address class="contact__col-second col__second">
@@ -1129,13 +1220,13 @@
                                 <p class="col__second-name name-title">СОЦ.СЕТИ</p>
                                 <div class="col__second-social">
                                     <a href="https://vk.com/webstoresite" target="_blank">
-                                        <img src="/assets/img/vk.svg" alt="Вконтакте">
+                                        <img src="assets/img/vk.svg" alt="Вконтакте">
                                     </a>
                                     <a href="https://www.youtube.com/channel/UCyJBbL5ZcZDQSsF-8KFXgBA" target="_blank">
-                                        <img src="/assets/img/youtube.svg" alt="Ютуб">
+                                        <img src="assets/img/youtube.svg" alt="Ютуб">
                                     </a>
                                     <a href="https://t.me/webstoresite" target="_blank">
-                                        <img src="/assets/img/telegram.svg" alt="Телеграм">
+                                        <img src="assets/img/telegram.svg" alt="Телеграм">
                                     </a>
                                 </div>
                             </div>
@@ -1151,48 +1242,48 @@
                         <p class="col__second-text">
                             Это связано с тем, что мы работаем по всей территории рф, а как мы знаем часовых поясов у нас тоже много и мы не можем позволить себе не ответить на звонок нашего клиента</p>
                     </div>
-                        <form class="contact__col-third form">
+                        <form class="contact__col-third form main__form">
                             <div class="popup__header">
                                 <p class="form__title">ЗАПОЛНИТЕ ФОРМУ ДЛЯ ЗАКАЗА ЗВОНКА</p>
                             </div>
                             <div class="form__wrapper">
                             <label for="name" class="name-title label">
                                 ИМЯ
-                                <input class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
+                                <input required class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
+                                <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                             </label>
                             <label for="tel" class="name-title label">
                                 НОМЕР ТЕЛЕФОНА
-                                <input class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
+                                <input required class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                             </label>
                             <label for="email" class="name-title label">
                                 E-MAIL
-                                <input class="input-text input" type="email" name="email" id="email" placeholder="webstore@gmail.com">
+                                <input required class="input-text input" type="email" name="email" id="email" placeholder="webstore@gmail.com">
+                            <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                             </label>
                             <div class="contact__form-choose">
                                 <p class="name-title">ПРЕДМЕТ ЗВОНКА</p>
                                 <div class="choose__wrapper">
+                                    
                                     <div class="choose">
-                                        <input type="radio" id="contactChoice1"
-                                        name="contact" value="email" class="check__input">
-                                        <!-- <span class="check__box"></span> -->
+                                        <input type="checkbox" id="contactChoice1"
+                                        name="order"  value="Выбрано обсудить заказ" class="check__input">
                                         <label for="contactChoice1">Обсудить заказ</label>
                                     </div>
                                     <div class="choose">
-                                        <input type="radio" id="contactChoice2"
-                                        name="contact" value="phone" class="check__input">
-                                        <!-- <span class="check__box"></span> -->
+                                        <input type="checkbox"   id="contactChoice2"
+                                        name="consult"  value="Выбрана консультация" class="check__input">
                                         <label for="contactChoice2">Консультация</label>
                                     </div>
                                 
                                   </div>
-                            <!-- <p class="name-title">ПРЕДМЕТ ЗВОНКА</p>
-                            <label for="">
-                                <input type="checkbox" name="talk" id="">
-                                <input type="checkbox" name="cansult" id="">
-                            </label> -->
-                            <button class="btn form__btn">ЗАКАЗАТЬ ЗВОНОК</button>
-                            <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="assets/pages/politic.html">политикой конфеденциальности</a></p>
-                        </div>
+                                <button class="btn form__btn">ЗАКАЗАТЬ ЗВОНОК</button>
+                                <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="pc.html">политикой конфеденциальности</a></p>
+                            </div>
                         </form>
                     </div> 
             </section>
@@ -1208,18 +1299,16 @@
                     <picture class="header__logo">
                         <img class="light-logo logo-dt" src="assets/img/footer-logo-desktop.svg" alt="Лого">
                         <img class="night-logo logo-dt" src="assets/img/logo-night-desktop.svg" alt="Лого">
-                        <!-- <img class="light-logo logo-tl" src="/assets/img/footer-logo-tablet.svg" alt="Логотип">
-                        <img class="night-logo logo-tl" src="/assets/img/logo-night-tablet.svg" alt="Логотип">
-                        <img class="light-logo logo-mb" src="/assets/img/footer-logo-mobile.svg" alt="Логотип">
-                        <img class="night-logo logo-mb" src="/assets/img/logo-night-mobile.svg" alt="Логотип"> -->
+                  
                     </picture>
                     <nav class="header__nav">
                         <ul class="header__ul">
                             <li class="header__list">
-                                <a href="#" class="header__link">Услуги</a>
+
+                                <a href="#project" class="header__link">Услуги</a>
                                 <ul class="header__list-drop list__drop">
                                     <li class="list__drop-li">
-                                        <a class="list__drop-link" href="">Разработка сайтов <img src="/assets/img/services.svg" alt="Корона"></a>
+                                        <a class="list__drop-link" href="">Разработка сайтов <img src="assets/img/services.svg" alt="Корона"></a>
                                     </li>
                                     <li class="list__drop-li">
                                         <a class="list__drop-link" href="">Графичкский дизайн</a>
@@ -1230,86 +1319,88 @@
                                 </ul>
                             </li>
                             <li class="header__list">
-                                <a href="#" class="header__link">Наши проекты</a>
+                                <a href="#project" class="header__link">Наши проекты</a>
                             </li>
                             <li class="header__list">
-                                <a href="#" class="header__link">О нас</a>
+                                <a href="#review" class="header__link">О нас</a>
                             </li>
                             <li class="header__list">
                                 <a href="#" class="header__link">Отзывы</a>
                             </li>
                             <li class="header__list">
-                                <a href="#" class="header__link">Контакты</a>
+                                <a href="#contact" class="header__link">Контакты</a>
                                 <ul class="header__list-drop list__drop"><a href="https://vk.com/webstoresite" target="_blank">
-                                    <img src="/assets/img/vk.svg" alt="Вконтакте">
+                                    <img src="assets/img/vk.svg" alt="Вконтакте">
                                 </a>
                                 <a href="https://www.youtube.com/channel/UCyJBbL5ZcZDQSsF-8KFXgBA" target="_blank">
-                                    <img src="/assets/img/youtube.svg" alt="Ютуб">
+                                    <img src="assets/img/youtube.svg" alt="Ютуб">
                                 </a>
                                 <a href="https://t.me/webstoresite" target="_blank">
-                                    <img src="/assets/img/telegram.svg" alt="Телеграм">
+                                    <img src="assets/img/telegram.svg" alt="Телеграм">
                                 </a>
                                 </ul>
                             </li>
                         </ul>
                     </nav>
                 </div>
-                    <div class="header__switch footer__switch"><img src="/assets/img/switch.svg" alt="Переключатель"></div>
+                    <div class="header__switch footer__switch"><img src="assets/img/switch.svg" alt="Переключатель"></div>
                 </div>
                 <div class="footer__social">
                     <a href="https://vk.com/webstoresite" target="_blank">
-                        <img src="/assets/img/vk.svg" alt="Вконтакте">
+                        <img src="assets/img/vk.svg" alt="Вконтакте">
                     </a>
                     <a href="https://www.youtube.com/channel/UCyJBbL5ZcZDQSsF-8KFXgBA" target="_blank">
-                        <img src="/assets/img/youtube.svg" alt="Ютуб">
+                        <img src="assets/img/youtube.svg" alt="Ютуб">
                     </a>
                     <a href="https://t.me/webstoresite" target="_blank">
-                        <img src="/assets/img/telegram.svg" alt="Телеграм">
+                        <img src="assets/img/telegram.svg" alt="Телеграм">
                     </a>
                 </div>
                 <div class="footer__text">
-                    <a href="assets/pages/politic.html">Политика конфеденциальности</a>
+                    <a href="pc.html">Политика конфеденциальности</a>
                     <p class="tech-btn">Техническая поддержка</p>
                 </div>
             </div>
             <div class="popup__wrapper tech__popup-wrapper">
-                <form class="contact__col-third form popup header-popup">
+                <form class="contact__col-third form popup header-popup tech__popup">
                     <div class="popup__header">
                         <p class="form__title">заполните форму для обращения <br> в тех.поддержку</p>
-                        <img src="/assets/img/close.svg" alt="Закрыть" class="close-popup">
+                        <img src="assets/img/close.svg" alt="Закрыть" class="close-popup">
                     </div>
                     <div class="form__wrapper">
                     <label for="name" class="name-title label">
                         ИМЯ
-                        <input class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
+                        <input required class="input-text input" type="text" name="name" id="name" placeholder="ВЛАДИСЛАВ">
+                        <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                     </label>
                     <label for="tel" class="name-title label">
                         НОМЕР ТЕЛЕФОНА
-                        <input class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
+                        <input required class="input-text input" type="tel" name="tel" id="tel" placeholder="+7 (900)-000-00-00 ">
+                        <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                     </label>
                     <label for="email" class="name-title label">
                         E-MAIL
-                        <input class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
+                        <input required class="input-text input" type="email" name="email" id="email" placeholder="webstoresitemarket@gmail.com">
+                        <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                     </label>
                     <label for="comment" class="name-title label">
                         ВАШ ВОПРОС
-                        <textarea class="input-text input comment__text" type="text" name="comment" id="comment" placeholder="задайте свой вопрос" ></textarea>
+                        <textarea required class="input-text input comment__text" type="text" name="comment" id="comment" placeholder="задайте свой вопрос" ></textarea>
+                        <img src="assets/img/error.svg" alt="Ошибка" class="error-img">
+
                     </label>
                     <button class="btn form__btn">ЗАКАЗАТЬ ЗВОНОК</button>
-                    <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="assets/pages/politic.html">политикой конфеденциальности</a></p>
+                    <p class="form__politic">При заказе звонка, вы автоматически соглашаетесь с нашей <a href="pc.html">политикой конфеденциальности</a></p>
                 </div>
                 </form>
                 <div class="wrapper-popup"></div>
             </div>
         </footer>
-        <div class="form-sent ">
-            <p>Форма заполнена успешно, в ближайшее время с вами свяжется менеджер</p>
-        </div>
-        <div class="form-sent-comment form-sent">
-            <p>Спасибо, что оценили нашу работу</p>
-        </div>
         <script src="assets/js/inputmask.min.js"></script>
-        <script src="/assets/js/main.js" type="module" ></script>
+        <script src="assets/js/main.js" type="module" ></script>
     </body>
 </html>
 

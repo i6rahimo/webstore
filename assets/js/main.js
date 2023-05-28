@@ -3,7 +3,7 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
 
 
 
-
+window.addEventListener('DOMContentLoaded', ()=> {
   const swiperWeb = new Swiper('.swiper-web', {
     direction: 'horizontal',
     loop: true,
@@ -69,34 +69,24 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.brow
   
  
   })
-  const swiperServiceComplex = new Swiper('.service__complex-items', {
-    direction: 'horizontal',
-    slidesPerView: 3,
+  const swiperServiceComplex = new Swiper('.complex__projects', {
+    direction: 'horizontal',  
+    wrapperClass: 'complex__projects-wrapper',
+    slideClass: 'complex__projects-slide',
     spaceBetween: 30,
-    wrapperClass: 'service__items-wrapper',
-    slideClass: 'service__item',
-    
-  
     breakpoints: {
       320: {
         slidesPerView: 1,
         loop: true,
-        centeredSlides: true,
-        spaceBetween: 30
-        
+        centeredSlides: true,  
+        spaceBetween: 10,
       },
-      700: {
+      625: {
         slidesPerView: 3,
-        spaceBetween: 30
-        
+        loop: false,
+        // centeredSlides: false,
       }
-    },
-    // Navigation arrows
-    navigation: {
-      nextEl: '.complex-btn-next',
-      prevEl: '.complex-btn-prev',
-    },
- 
+    }
   })
   const swiperServiceDev = new Swiper('.swiper-service-dev', {
     direction: 'horizontal',
@@ -225,7 +215,6 @@ function popupClose() {
         closeImg.forEach(e => {
           e.addEventListener('click', (el) => {
             const selfImg = el.currentTarget;
-            console.log(selfImg);
             popup.forEach(e => {
               e.classList.remove('active')
             })
@@ -234,6 +223,11 @@ function popupClose() {
           wrapper.addEventListener('click', () => {
             popup.forEach(e => {
               e.classList.remove('active')
+              const input = document.querySelectorAll('.input')
+              input.forEach(inputs => {
+                inputs.classList.remove('error')
+              })
+              
             })
           })
         })
@@ -252,94 +246,6 @@ homePopup()
 
 
 
-// function servicePopup() {
-//   const serviceBtn = document.querySelector('.service__item-btn'),
-//         homePopup = document.querySelector('.service__popup-wrapper'),
-//         closeImg = document.querySelector('.close-popup'),
-//         popup = document.querySelector('.popup__wrapper');
-//   closeImg.addEventListener('click', () => {
-//     if(!popup.classList.contains('active')) {
-//       popup.classList.add('active')
-//     }else {
-//       popup.classList.remove('active')
-//     }
-//   })
-//   serviceBtn.addEventListener('click', () => {
-//     homePopup.classList.toggle('active')
-//   })
-// }
-// servicePopup();
-
-
-function commentPopup() {
-  const commentBtn = document.querySelector('.comment__btn');
-  const commentPopup = document.querySelector('.comment__popup-wrapper')
-
-  commentBtn.addEventListener('click', () => {
-    commentPopup.classList.add('active')
-  })
-}
-
-commentPopup()
-
-function checkEmpty() {
-  const input = document.querySelectorAll('.input');
-  const btn = document.querySelector('.form__btn');
-  const tel = document.querySelectorAll('.input[type="tel"]');
-  tel.forEach(e => {
-    if(e.value === '') {
-      console.log('nul');
-    }
-  })
-  btn.addEventListener('click', ()=> {
-    input.forEach(e => {
-      const isValidEmail = e.checkValidity();
-      if( isValidEmail) {
-        e.classList.remove('error')
-      } else {
-        e.classList.add('error')
-      }
-    })
-  })
-}
-checkEmpty()
-function popupStart() {
-  const popupStartBtn = document.querySelector('.service__item-btn_start'),
-        popupStartWrapper = document.querySelector('.service__popup-wrapper_start');
-
-  popupStartBtn.addEventListener('click', ()=> {
-    popupStartWrapper.classList.toggle('active')
-  })
-}
-popupStart()
-function popupBusines() {
-  const popupBusinessBtn = document.querySelector('.service__item-btn_business'),
-        popupBusinesstWrapper = document.querySelector('.service__popup-wrapper_business');
-
-        popupBusinessBtn.addEventListener('click', ()=> {
-          popupBusinesstWrapper.classList.toggle('active')
-  })
-}
-popupBusines()
-function popupPremium() {
-  const popupPremiumBtn = document.querySelector('.service__item-btn_premium'),
-        popupPremiumWrapper = document.querySelector('.service__popup-wrapper_premium');
-
-        popupPremiumBtn.addEventListener('click', ()=> {
-          popupPremiumWrapper.classList.toggle('active')
-  })
-}
-popupPremium()
-
-
-// function servicePopupSite() {
-//   const popup = document.querySelector('.site__popup-wrapper');
-//   const btn = document.querySelector('.swiper-service-site-btn');
-//   btn.addEventListener('click', ()=> {
-//     popup.classList.add('active')
-//   })
-// }
-// servicePopupSite()
 
 function projectPopup() {
   const popup = document.querySelector('.site__popup-wrapper');
@@ -354,7 +260,6 @@ projectPopup()
 function landingPopup() {
   const popup = document.querySelector('.landing__popup-wrapper');
   const btn = document.querySelectorAll('.swiper-project-landing-btn');
-  console.log(popup);
   btn.forEach(e => {
     e.addEventListener('click', ()=> {
       popup.classList.toggle('active')
@@ -367,7 +272,6 @@ landingPopup();
 function marketPopup() {
   const popup = document.querySelector('.market__popup-wrapper');
   const btn = document.querySelectorAll('.swiper-project-market-btn');
-  console.log(popup);
   btn.forEach(e => {
     e.addEventListener('click', ()=> {
       popup.classList.toggle('active')
@@ -403,11 +307,12 @@ bannerPopup()
 function prezentationPopup() {
   const popup = document.querySelector('.prezentaion__popup-wrapper');
   const btn = document.querySelectorAll('.swiper-project-prezentation-btn')
-  btn.forEach(e => {
+    btn.forEach(e => {
     e.addEventListener('click', ()=> {
-      popup.classList.toggle('active')
+      popup.classList.add('active')
     })
-  })
+    })
+
 }
 prezentationPopup()
 
@@ -514,4 +419,955 @@ function techPopup() {
 techPopup()
 
 
+function sendMainForm() {
 
+  const form = document.querySelector('.home__form');
+  
+  function checkEmpty() {
+
+    const input = form.querySelectorAll('.input');
+    const btn = form.querySelector('.form__btn');
+    const title = form.querySelector('.form__title');
+    btn.addEventListener('click', ()=> {
+
+      input.forEach(e => {
+        const isValidEmail = e.checkValidity();
+        if( isValidEmail) {
+          e.classList.remove('error');
+        } else {
+          e.classList.add('error')
+          title.innerHTML = 'Форма заполнена Некорректно';
+        }
+      })
+    })
+  }
+  checkEmpty()
+  
+  form.addEventListener('submit', (e)=> {
+    e.preventDefault();
+    const formData = new FormData(form);    
+    fetch('assets/php/send.php', {
+      method: 'post',
+      body: formData,
+    })
+    .then(response => {
+      
+      if(response.ok) {
+        const input = document.querySelectorAll('.input')
+        input.forEach(inputs => {
+          inputs.classList.remove('error')
+        })
+        const title = form.querySelector('.form__title');
+        const inputDelete = () => {
+          const inputDelete = document.querySelectorAll('.input-text');
+          inputDelete.forEach(e => {
+            e.value = ''
+          })
+        }
+        inputDelete()
+        title.innerHTML = 'Форма заполнена успешно';
+        setTimeout(()=> {
+          const popup = document.querySelector('.home__popup-wrapper').classList.remove('active');
+        }, 1000);
+      }
+    } )
+    .catch(error => {
+      alert('К сожалению, по техническим причинам произошла ошибка отправки формы, свяжытесь с нами любым другим удобным для вас способом')
+    })
+    
+  })
+}
+sendMainForm();
+
+
+ function sendStartForm() {
+
+  const form = document.querySelector('.start__popup'); 
+  function checkEmpty() {
+
+    const input = form.querySelectorAll('.input');
+    const btn = form.querySelector('.form__btn');
+    const title = form.querySelector('.form__title');
+    btn.addEventListener('click', ()=> {
+
+      input.forEach(e => {
+        const isValidEmail = e.checkValidity();
+        if( isValidEmail) {
+          e.classList.remove('error');
+        } else {
+          e.classList.add('error')
+          title.innerHTML = 'Форма заполнена Некорректно';
+        }
+      })
+    })
+  }
+  checkEmpty()
+   form.addEventListener('submit', (e)=> {
+
+    e.preventDefault();
+    const formData = new FormData(form);
+    fetch('assets/php/start.php', {
+      method: 'post',
+      body: formData,
+    })
+    .then(response => {
+      if(response.ok) {
+        const input = document.querySelectorAll('.input')
+        input.forEach(inputs => {
+          inputs.classList.remove('error')
+        })
+        const title = form.querySelector('.form__title');
+        const inputDelete = () => {
+          const inputDelete = document.querySelectorAll('.input-text');
+          inputDelete.forEach(e => {
+            e.value = ''
+          })
+        }
+        inputDelete()
+        title.innerHTML = 'Форма заполнена успешно';
+        setTimeout(()=> {
+          const popup = document.querySelector('.complex__projects-popup-start').classList.remove('active');
+        }, 1000);
+      }
+    } )
+    .catch(error => {
+      alert('К сожалению, по техническим причинам произошла ошибка отправки формы, свяжытесь с нами любым другим удобным для вас способом')
+    })
+  })
+}
+sendStartForm();
+
+
+function sendBusinessForm() {
+
+
+  const form = document.querySelector('.business__popup'); 
+  function checkEmpty() {
+
+    const input = form.querySelectorAll('.input');
+    const btn = form.querySelector('.form__btn');
+    const title = form.querySelector('.form__title');
+    btn.addEventListener('click', ()=> {
+
+      input.forEach(e => {
+        const isValidEmail = e.checkValidity();
+        if( isValidEmail) {
+          e.classList.remove('error');
+        } else {
+          e.classList.add('error')
+          title.innerHTML = 'Форма заполнена Некорректно';
+        }
+      })
+    })
+  }
+  checkEmpty()
+   form.addEventListener('submit', (e)=> {
+
+    e.preventDefault();
+    const formData = new FormData(form);
+    fetch('assets/php/business.php', {
+      method: 'post',
+      body: formData,
+    })
+    .then(response => {
+
+      if(response.ok) {
+
+        
+        const input = document.querySelectorAll('.input')
+        input.forEach(inputs => {
+          inputs.classList.remove('error')
+        })
+        const title = form.querySelector('.form__title');
+        const inputDelete = () => {
+          const inputDelete = document.querySelectorAll('.input-text');
+          inputDelete.forEach(e => {
+            e.value = ''
+          })
+        }
+        inputDelete()
+        title.innerHTML = 'Форма заполнена успешно';
+        setTimeout(()=> {
+          const popup = document.querySelector('.complex__projects-popup-business').classList.remove('active');
+        }, 1000);
+      }
+    } )
+    .catch(error => {
+      alert('К сожалению, по техническим причинам произошла ошибка отправки формы, свяжытесь с нами любым другим удобным для вас способом')
+    
+    })
+  })
+}
+sendBusinessForm();
+
+
+function sendPremiuimForm() {
+
+
+  const form = document.querySelector('.premium__popup'); 
+  function checkEmpty() {
+
+    const input = form.querySelectorAll('.input');
+    const btn = form.querySelector('.form__btn');
+    const title = form.querySelector('.form__title');
+    btn.addEventListener('click', ()=> {
+
+      input.forEach(e => {
+        const isValidEmail = e.checkValidity();
+        if( isValidEmail) {
+          e.classList.remove('error');
+        } else {
+          e.classList.add('error')
+          title.innerHTML = 'Форма заполнена Некорректно';
+        }
+      })
+    })
+  }
+  checkEmpty()
+   form.addEventListener('submit', (e)=> {
+    e.preventDefault();
+    const formData = new FormData(form);
+    fetch('assets/php/premium.php', {
+      method: 'post',
+      body: formData,
+    })
+    .then(response => {
+
+      if(response.ok) {
+        const input = document.querySelectorAll('.input')
+        input.forEach(inputs => {
+          inputs.classList.remove('error')
+        })
+        const title = form.querySelector('.form__title');
+        const inputDelete = () => {
+          const inputDelete = document.querySelectorAll('.input-text');
+          inputDelete.forEach(e => {
+            e.value = ''
+          })
+        }
+        inputDelete()
+        title.innerHTML = 'Форма заполнена успешно';
+        setTimeout(()=> {
+          const popup = document.querySelector('.complex__projects-popup-premium').classList.remove('active');
+        }, 1000
+        );
+      }
+    } )
+    .catch(error => {
+      alert('К сожалению, по техническим причинам произошла ошибка отправки формы, свяжытесь с нами любым другим удобным для вас способом')
+    
+    })
+  })
+}
+sendPremiuimForm();
+
+function sendSiteForm() {
+  const form = document.querySelector('.site__popup'); 
+  function checkEmpty() {
+
+    const input = form.querySelectorAll('.input');
+    const btn = form.querySelector('.form__btn');
+    const title = form.querySelector('.form__title');
+    btn.addEventListener('click', ()=> {
+
+      input.forEach(e => {
+        const isValidEmail = e.checkValidity();
+        if( isValidEmail) {
+          e.classList.remove('error');
+        } else {
+          e.classList.add('error')
+          title.innerHTML = 'Форма заполнена Некорректно';
+        }
+      })
+    })
+  }
+  checkEmpty()
+   form.addEventListener('submit', (e)=> {
+    e.preventDefault();
+    const formData = new FormData(form);
+    fetch('assets/php/site.php', {
+      method: 'post',
+      body: formData,
+    })
+    .then(response => {
+      if(response.ok) {
+        const input = document.querySelectorAll('.input')
+        input.forEach(inputs => {
+          inputs.classList.remove('error')
+        })
+        const title = form.querySelector('.form__title');
+        const inputDelete = () => {
+          const inputDelete = document.querySelectorAll('.input-text');
+          inputDelete.forEach(e => {
+            e.value = ''
+          })
+        }
+        inputDelete()
+        title.innerHTML = 'Форма заполнена успешно';
+        setTimeout(()=> {
+          const popup = document.querySelector('.site__popup-wrapper').classList.remove('active');
+        }, 1000);
+      }
+    } )
+    .catch(error => {
+      alert('К сожалению, по техническим причинам произошла ошибка отправки формы, свяжытесь с нами любым другим удобным для вас способом')
+    })
+  })
+}
+sendSiteForm();
+
+
+
+
+function sendLandingForm() {
+  const form = document.querySelector('.landing__popup'); 
+  function checkEmpty() {
+
+    const input = form.querySelectorAll('.input');
+    const btn = form.querySelector('.form__btn');
+    const title = form.querySelector('.form__title');
+    btn.addEventListener('click', ()=> {
+
+      input.forEach(e => {
+        const isValidEmail = e.checkValidity();
+        if( isValidEmail) {
+          e.classList.remove('error');
+        } else {
+          e.classList.add('error')
+          title.innerHTML = 'Форма заполнена Некорректно';
+        }
+      })
+    })
+  }
+  checkEmpty()
+   form.addEventListener('submit', (e)=> {
+    e.preventDefault();
+    const formData = new FormData(form);
+    fetch('assets/php/landing.php', {
+      method: 'post',
+      body: formData,
+    })
+    .then(response => {
+      if(response.ok) {
+        const input = document.querySelectorAll('.input')
+        input.forEach(inputs => {
+          inputs.classList.remove('error')
+        })
+        const title = form.querySelector('.form__title');
+        const inputDelete = () => {
+          const inputDelete = document.querySelectorAll('.input-text');
+          inputDelete.forEach(e => {
+            e.value = ''
+          })
+        }
+        inputDelete()
+        title.innerHTML = 'Форма заполнена успешно';
+        setTimeout(()=> {
+          const popup = document.querySelector('.landing__popup-wrapper').classList.remove('active');
+        }, 1000);
+      }
+    } )
+    .catch(error => {
+      alert('К сожалению, по техническим причинам произошла ошибка отправки формы, свяжытесь с нами любым другим удобным для вас способом')
+    })
+  })
+}
+sendLandingForm();
+
+
+function sendMarketForm() {
+  const form = document.querySelector('.market__popup'); 
+  function checkEmpty() {
+
+    const input = form.querySelectorAll('.input');
+    const btn = form.querySelector('.form__btn');
+    const title = form.querySelector('.form__title');
+    btn.addEventListener('click', ()=> {
+
+      input.forEach(e => {
+        const isValidEmail = e.checkValidity();
+        if( isValidEmail) {
+          e.classList.remove('error');
+        } else {
+          e.classList.add('error')
+          title.innerHTML = 'Форма заполнена Некорректно';
+        }
+      })
+    })
+  }
+  checkEmpty()
+   form.addEventListener('submit', (e)=> {
+    e.preventDefault();
+    const formData = new FormData(form);
+    fetch('assets/php/market.php', {
+      method: 'post',
+      body: formData,
+    })
+    .then(response => {
+      if(response.ok) {
+        const input = document.querySelectorAll('.input')
+        input.forEach(inputs => {
+          inputs.classList.remove('error')
+        })
+        const title = form.querySelector('.form__title');
+        const inputDelete = () => {
+          const inputDelete = document.querySelectorAll('.input-text');
+          inputDelete.forEach(e => {
+            e.value = ''
+          })
+        }
+        inputDelete()
+        title.innerHTML = 'Форма заполнена успешно';
+        setTimeout(()=> {
+          const popup = document.querySelector('.market__popup-wrapper').classList.remove('active');
+        }, 1000);
+      }
+    } )
+    .catch(error => {
+      alert('К сожалению, по техническим причинам произошла ошибка отправки формы, свяжытесь с нами любым другим удобным для вас способом')
+    })
+  })
+}
+sendMarketForm();
+
+
+
+function sendLogoForm() {
+  const form = document.querySelector('.logo__popup'); 
+  function checkEmpty() {
+
+    const input = form.querySelectorAll('.input');
+    const btn = form.querySelector('.form__btn');
+    const title = form.querySelector('.form__title');
+    btn.addEventListener('click', ()=> {
+
+      input.forEach(e => {
+        const isValidEmail = e.checkValidity();
+        if( isValidEmail) {
+          e.classList.remove('error');
+        } else {
+          e.classList.add('error')
+          title.innerHTML = 'Форма заполнена Некорректно';
+        }
+      })
+    })
+  }
+  checkEmpty()
+   form.addEventListener('submit', (e)=> {
+    e.preventDefault();
+    const formData = new FormData(form);
+    fetch('assets/php/logo.php', {
+      method: 'post',
+      body: formData,
+    })
+    .then(response => {
+      if(response.ok) {
+        const input = document.querySelectorAll('.input')
+        input.forEach(inputs => {
+          inputs.classList.remove('error')
+        })
+        const title = form.querySelector('.form__title');
+        const inputDelete = () => {
+          const inputDelete = document.querySelectorAll('.input-text');
+          inputDelete.forEach(e => {
+            e.value = ''
+          })
+        }
+        inputDelete()
+        title.innerHTML = 'Форма заполнена успешно';
+        setTimeout(()=> {
+          const popup = document.querySelector('.logo__popup-wrapper').classList.remove('active');
+        }, 1000);
+      }
+    } )
+    .catch(error => {
+      alert('К сожалению, по техническим причинам произошла ошибка отправки формы, свяжытесь с нами любым другим удобным для вас способом')
+    })
+  })
+}
+sendLogoForm();
+
+
+
+// function sendBannerForm() {
+//   const form = document.querySelector('.banner__popup'); 
+//   function checkEmpty() {
+
+//     const input = form.querySelectorAll('.input');
+//     const btn = form.querySelector('.form__btn');
+//     const title = form.querySelector('.form__title');
+//     btn.addEventListener('click', ()=> {
+
+//       input.forEach(e => {
+//         const isValidEmail = e.checkValidity();
+//         if( isValidEmail) {
+//           e.classList.remove('error');
+//         } else {
+//           e.classList.add('error')
+//           title.innerHTML = 'Форма заполнена Некорректно';
+//         }
+//       })
+//     })
+//   }
+//   checkEmpty()
+//    form.addEventListener('submit', (e)=> {
+//     e.preventDefault();
+//     const formData = new FormData(form);
+//     fetch('assets/php/banner.php', {
+//       method: 'post',
+//       body: formData,
+//     })
+//     .then(response => {
+//       if(response.ok) {
+//         const input = document.querySelectorAll('.input')
+//         input.forEach(inputs => {
+//           inputs.classList.remove('error')
+//         })
+//         const title = form.querySelector('.form__title');
+//         const inputDelete = () => {
+//           const inputDelete = document.querySelectorAll('.input-text');
+//           inputDelete.forEach(e => {
+//             e.value = ''
+//           })
+//         }
+//         inputDelete()
+//         title.innerHTML = 'Форма заполнена успешно';
+//         setTimeout(()=> {
+//           const popup = document.querySelector('.banner__popup-wrapper').classList.remove('active');
+//         }, 1000);
+//       }
+//     } )
+//     .catch(error => {
+//       console.log(error);
+//       alert('К сожалению, по техническим причинам произошла ошибка отправки формы, свяжытесь с нами любым другим удобным для вас способом')
+//     })
+//   })
+// }
+// sendBannerForm();
+
+function sendBannerForm() {
+
+  const form = document.querySelector('.banner__popup'); 
+  function checkEmpty() {
+
+    const input = form.querySelectorAll('.input');
+    const btn = form.querySelector('.form__btn');
+    const title = form.querySelector('.form__title');
+    btn.addEventListener('click', ()=> {
+
+      input.forEach(e => {
+        const isValidEmail = e.checkValidity();
+        if( isValidEmail) {
+          e.classList.remove('error');
+        } else {
+          e.classList.add('error')
+          title.innerHTML = 'Форма заполнена Некорректно';
+        }
+      })
+    })
+  }
+  checkEmpty()
+   form.addEventListener('submit', (e)=> {
+
+    e.preventDefault();
+    const formData = new FormData(form);
+    fetch('assets/php/sendbanner.php', {
+      method: 'post',
+      body: formData,
+    })
+    .then(response => {
+
+      if(response.ok) {
+        const input = document.querySelectorAll('.input')
+        input.forEach(inputs => {
+          inputs.classList.remove('error')
+        })
+        const title = form.querySelector('.form__title');
+        const inputDelete = () => {
+          const inputDelete = document.querySelectorAll('.input-text');
+          inputDelete.forEach(e => {
+            e.value = ''
+          })
+        }
+        inputDelete()
+        title.innerHTML = 'Форма заполнена успешно';
+        setTimeout(()=> {
+          const popup = document.querySelector('.banner__popup-wrapper').classList.remove('active');
+        }, 1000);
+      }
+    } )
+    .catch(error => {
+      console.log(error);
+      alert('К сожалению, по техническим причинам произошла ошибка отправки формы, свяжытесь с нами любым другим удобным для вас способом')
+    })
+  })
+}
+sendBannerForm();
+
+function sendPrezentationForm() {
+
+  const form = document.querySelector('.prezentation__popup'); 
+  function checkEmpty() {
+
+    const input = form.querySelectorAll('.input');
+    const btn = form.querySelector('.form__btn');
+    const title = form.querySelector('.form__title');
+    btn.addEventListener('click', ()=> {
+
+      input.forEach(e => {
+        const isValidEmail = e.checkValidity();
+        if( isValidEmail) {
+          e.classList.remove('error');
+        } else {
+          e.classList.add('error')
+          title.innerHTML = 'Форма заполнена Некорректно';
+        }
+      })
+    })
+  }
+  checkEmpty()
+   form.addEventListener('submit', (e)=> {
+
+    e.preventDefault();
+    const formData = new FormData(form);
+    fetch('assets/php/prezentation.php', {
+      method: 'post',
+      body: formData,
+    })
+    .then(response => {
+
+      if(response.ok) {
+        const input = document.querySelectorAll('.input')
+        input.forEach(inputs => {
+          inputs.classList.remove('error')
+        })
+        const title = form.querySelector('.form__title');
+        const inputDelete = () => {
+          const inputDelete = document.querySelectorAll('.input-text');
+          inputDelete.forEach(e => {
+            e.value = ''
+          })
+        }
+        inputDelete()
+        title.innerHTML = 'Форма заполнена успешно';
+        setTimeout(()=> {
+          const popup = document.querySelector('.prezentaion__popup-wrapper').classList.remove('active');
+        }, 1000);
+      }
+    } )
+    .catch(error => {
+      console.log(error);
+      alert('К сожалению, по техническим причинам произошла ошибка отправки формы, свяжытесь с нами любым другим удобным для вас способом')
+    })
+  })
+}
+sendPrezentationForm();
+
+
+function sendPaketForm() {
+  const form = document.querySelector('.paket__popup'); 
+  function checkEmpty() {
+
+    const input = form.querySelectorAll('.input');
+    const btn = form.querySelector('.form__btn');
+    const title = form.querySelector('.form__title');
+    btn.addEventListener('click', ()=> {
+
+      input.forEach(e => {
+        const isValidEmail = e.checkValidity();
+        if( isValidEmail) {
+          e.classList.remove('error');
+        } else {
+          e.classList.add('error')
+          title.innerHTML = 'Форма заполнена Некорректно';
+        }
+      })
+    })
+  }
+  checkEmpty()
+   form.addEventListener('submit', (e)=> {
+    e.preventDefault();
+    const formData = new FormData(form);
+    fetch('assets/php/paket.php', {
+      method: 'post',
+      body: formData,
+    })
+    .then(response => {
+      if(response.ok) {
+        const input = document.querySelectorAll('.input')
+        input.forEach(inputs => {
+          inputs.classList.remove('error')
+        })
+        const title = form.querySelector('.form__title');
+        const inputDelete = () => {
+          const inputDelete = document.querySelectorAll('.input-text');
+          inputDelete.forEach(e => {
+            e.value = ''
+          })
+        }
+        inputDelete()
+        title.innerHTML = 'Форма заполнена успешно';
+        setTimeout(()=> {
+          const popup = document.querySelector('.paket__popup-wrapper').classList.remove('active');
+        }, 1000);
+      }
+    } )
+    .catch(error => {
+      console.log(error);
+      alert('К сожалению, по техническим причинам произошла ошибка отправки формы, свяжытесь с нами любым другим удобным для вас способом')
+    })
+  })
+}
+sendPaketForm();
+
+
+
+function sendSeoForm() {
+  const form = document.querySelector('.seo__popup'); 
+  function checkEmpty() {
+
+    const input = form.querySelectorAll('.input');
+    const btn = form.querySelector('.form__btn');
+    const title = form.querySelector('.form__title');
+    btn.addEventListener('click', ()=> {
+
+      input.forEach(e => {
+        const isValidEmail = e.checkValidity();
+        if( isValidEmail) {
+          e.classList.remove('error');
+        } else {
+          e.classList.add('error')
+          title.innerHTML = 'Форма заполнена Некорректно';
+        }
+      })
+    })
+  }
+  checkEmpty()
+   form.addEventListener('submit', (e)=> {
+    e.preventDefault();
+    const formData = new FormData(form);
+    fetch('assets/php/seo.php', {
+      method: 'post',
+      body: formData,
+    })
+    .then(response => {
+      if(response.ok) {
+        const input = document.querySelectorAll('.input')
+        input.forEach(inputs => {
+          inputs.classList.remove('error')
+        })
+        const title = form.querySelector('.form__title');
+        const inputDelete = () => {
+          const inputDelete = document.querySelectorAll('.input-text');
+          inputDelete.forEach(e => {
+            e.value = ''
+          })
+        }
+        inputDelete()
+        title.innerHTML = 'Форма заполнена успешно';
+        setTimeout(()=> {
+          const popup = document.querySelector('.seo__popup-wrapper').classList.remove('active');
+        }, 1000);
+      }
+    } )
+    .catch(error => {
+      alert('К сожалению, по техническим причинам произошла ошибка отправки формы, свяжытесь с нами любым другим удобным для вас способом')
+    })
+  })
+}
+sendSeoForm();
+
+
+// function sendCommentForm() {
+//   const form = document.querySelector('.comment__popup'); 
+//    form.addEventListener('submit', (e)=> {
+//     e.preventDefault();
+//     const formData = new FormData(form);
+//     fetch('assets/php/comment.php', {
+//       method: 'post',
+//       body: formData,
+//     })
+//     .then(response => {
+//       if(response.ok) {
+//         const file = document.querySelector('.file-input');
+//         const popup = document.querySelector('.comment__popup-wrapper').classList.remove('active');
+//         const thanks = () => {
+//           let thanksPopup = document.querySelector('.form-sent').classList.add('active')
+//         }
+//         thanks();
+//         const inputDelete = () => {
+//           const inputDelete = document.querySelectorAll('.input-text');
+//           inputDelete.forEach(e => {
+//             e.value = ''
+//           })
+//         }
+//         inputDelete()
+//         setTimeout(()=> {
+//           let thanksPopup = document.querySelector('.form-sent').classList.remove('active')
+//         }, 4000);
+
+//       }
+//     } )
+//     .catch(error => {
+//       console.log(error);
+//       alert('К сожалению, по техническим причинам произошла ошибка отправки формы, свяжытесь с нами любым другим удобным для вас способом')
+//     })
+//   })
+// }
+// sendCommentForm();
+
+
+
+
+function sendConsultForm() {
+  const form = document.querySelector('.main__form'); 
+  function checkEmpty() {
+
+    const input = form.querySelectorAll('.input');
+    const btn = form.querySelector('.form__btn');
+    const title = form.querySelector('.form__title');
+    btn.addEventListener('click', ()=> {
+
+      input.forEach(e => {
+        const isValidEmail = e.checkValidity();
+        if( isValidEmail) {
+          e.classList.remove('error');
+        } else {
+          e.classList.add('error')
+          title.innerHTML = 'Форма заполнена Некорректно';
+        }
+      })
+    })
+  }
+  checkEmpty()
+  form.addEventListener('submit', (e)=> {
+
+    e.preventDefault();
+    const formData = new FormData(form);
+    fetch('assets/php/main.php', {
+      method: 'post',
+      body: formData,
+    })
+    .then(response => {
+      if(response.ok) {
+        const input = document.querySelectorAll('.input')
+        input.forEach(inputs => {
+          inputs.classList.remove('error')
+        })
+        const title = form.querySelector('.form__title');
+        const inputDelete = () => {
+          const inputDelete = document.querySelectorAll('.input-text');
+          inputDelete.forEach(e => {
+            e.value = ''
+          })
+        }
+        inputDelete()
+        title.innerHTML = 'Форма заполнена успешно';
+        const checkFirst = form.querySelector('#contactChoice1').checked = false;
+        const checkSecond = form.querySelector('#contactChoice2').checked = false;
+        setTimeout(()=> {
+          // const popup = document.querySelector('.project__popup-wrapper').classList.remove('active');
+        }, 1000);
+      }
+    } )
+    .catch(error => {
+      console.log(error);
+      alert('К сожалению, по техническим причинам произошла ошибка отправки формы, свяжытесь с нами любым другим удобным для вас способом')
+    })
+  })
+}
+sendConsultForm();
+
+
+function sendTechForm() {
+  const form = document.querySelector('.tech__popup'); 
+  function checkEmpty() {
+
+    const input = form.querySelectorAll('.input');
+    const btn = form.querySelector('.form__btn');
+    const title = form.querySelector('.form__title');
+    btn.addEventListener('click', ()=> {
+
+      input.forEach(e => {
+        const isValidEmail = e.checkValidity();
+        if( isValidEmail) {
+          e.classList.remove('error');
+        } else {
+          e.classList.add('error')
+          title.innerHTML = 'Форма заполнена Некорректно';
+        }
+      })
+    })
+  }
+  checkEmpty()
+   form.addEventListener('submit', (e)=> {
+    e.preventDefault();
+    const formData = new FormData(form);
+    fetch('assets/php/tech.php', {
+      method: 'post',
+      body: formData,
+    })
+    .then(response => {
+      if(response.ok) {
+        const input = document.querySelectorAll('.input')
+        input.forEach(inputs => {
+          inputs.classList.remove('error')
+        })
+        const title = form.querySelector('.form__title');
+        const inputDelete = () => {
+          const inputDelete = document.querySelectorAll('.input-text');
+          inputDelete.forEach(e => {
+            e.value = ''
+          })
+        }
+        inputDelete()
+        title.innerHTML = 'Форма заполнена успешно';
+        setTimeout(()=> {
+          const popup = document.querySelector('.tech__popup-wrapper').classList.remove('active');
+        }, 1000);
+      }
+    } )
+    .catch(error => {
+      console.log(error);
+      alert('К сожалению, по техническим причинам произошла ошибка отправки формы, свяжытесь с нами любым другим удобным для вас способом')
+    })
+  })
+}
+sendTechForm();
+
+
+})
+
+
+
+
+
+function startPopup() {
+  const item = document.querySelector('.complex__projects-slide__start');
+  const popup = document.querySelector('.complex__projects-popup-start');
+  item.addEventListener('click', ()=> {
+    popup.classList.add('active')
+  })
+}
+
+startPopup()
+
+function businessPopup() {
+  const item = document.querySelector('.complex__projects-slide__business');
+  const popup = document.querySelector('.complex__projects-popup-business');
+  item.addEventListener('click', ()=> {
+    popup.classList.add('active')
+  })
+}
+
+businessPopup()
+
+function premiumPopup() {
+  const item = document.querySelector('.complex__projects-slide__premuim');
+  const popup = document.querySelector('.complex__projects-popup-premium');
+  item.addEventListener('click', ()=> {
+    popup.classList.add('active')
+  })
+}
+
+premiumPopup()
