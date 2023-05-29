@@ -429,11 +429,13 @@ button {
   flex-shrink: 0;
   width: 490px;
   max-width: 100%;
-  /* height: 0px; */
-  border-radius: 50px;
+  height: inherit;
+  object-fit: cover;
 }
 .swiper-slide img {
+  border-radius: 50px;
   height: 100%;
+  object-fit: revert;
 }
 
 .swiper-pagination-bullet {
@@ -1810,6 +1812,7 @@ textarea:focus {
   max-width: 100%;
   position: relative;
 }
+
 .complex__projects-slide img {
 
   position: absolute;
@@ -3362,3 +3365,27 @@ textarea:focus {
   }
 }
 
+@media (max-width: 1491px) {
+  .complex__projects-slide, .complex__projects-slide img {
+    height: 400px;
+    width: 100%;
+  } 
+}
+@media (max-width: 1200px) {
+  .complex__projects-slide, .complex__projects-slide img {
+    height: 280px;
+    width: 100%;
+  } 
+}
+@media (max-width: 900px) {
+  .complex__projects-slide, .complex__projects-slide img {
+    height: 230px;
+    width: 100%;
+  } 
+  .complex__projects-slide {
+    padding: 12px 5px 20px 18px;
+  }
+  .complex__projects-slide__price {
+    margin: 0 0 50px;
+  }
+}
